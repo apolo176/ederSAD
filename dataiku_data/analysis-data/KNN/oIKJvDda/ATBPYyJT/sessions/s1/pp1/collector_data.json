@@ -1,0 +1,58 @@
+{
+    "per_feature": {
+        "Especie": {
+            "stats": {}
+        },
+        "Ancho de sepalo": {
+            "stats": {
+                "min": 2.0,
+                "average": 3.0365853658536586,
+                "median": 3.0,
+                "max": 4.4,
+                "p99": 4.178,
+                "std": 0.4406158679198636
+            },
+            "missing_impute_with_value": 3.0365853658536586
+        },
+        "Largo de sepalo": {
+            "stats": {
+                "min": 4.3,
+                "average": 5.8601626016260155,
+                "median": 5.8,
+                "max": 7.9,
+                "p99": 7.7,
+                "std": 0.8370263365618158
+            },
+            "missing_impute_with_value": 5.8601626016260155
+        },
+        "Largo de petalo": {
+            "stats": {
+                "min": 1.1,
+                "average": 3.8146341463414632,
+                "median": 4.3,
+                "max": 6.9,
+                "p99": 6.7,
+                "std": 1.7742088020440825
+            },
+            "missing_impute_with_value": 3.8146341463414632
+        },
+        "Ancho de petalo": {
+            "stats": {
+                "min": 0.1,
+                "average": 1.2243902439024392,
+                "median": 1.3,
+                "max": 2.5,
+                "p99": 2.5,
+                "std": 0.7751616926423185
+            },
+            "missing_impute_with_value": 1.2243902439024392
+        }
+    },
+    "feature_order": [
+        "Especie",
+        "Ancho de sepalo",
+        "Largo de sepalo",
+        "Largo de petalo",
+        "Ancho de petalo"
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "diagnostics": [
+        {
+            "type": "ML_DIAGNOSTICS_DATASET_SANITY_CHECKS",
+            "message": "Training set might be too small (123 rows) for robust training",
+            "step": "Loading train set"
+        },
+        {
+            "type": "ML_DIAGNOSTICS_DATASET_SANITY_CHECKS",
+            "message": "Test set might be too small (27 rows) for reliable performance estimation",
+            "step": "Loading test set"
+        },
+        {
+            "type": "ML_DIAGNOSTICS_DATASET_SANITY_CHECKS",
+            "message": "Target variable distribution in test data does not match the training data distribution (p-value=0.049), metrics could be misleading",
+            "step": "Scoring model"
+        },
+        {
+            "type": "ML_DIAGNOSTICS_LEAKAGE_DETECTION",
+            "message": "AUC=1.000, too good to be true?",
+            "step": "Scoring model"
+        }
+    ]
+}

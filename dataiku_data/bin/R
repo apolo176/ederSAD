@@ -1,0 +1,27 @@
+#!/bin/bash -e
+
+BINDIR=$(cd "$(dirname "$0")" && pwd -P)
+DIP_HOME=$(dirname "$BINDIR")
+
+source "$BINDIR"/env-default.sh
+if [ -z "$DKUINSTALLDIR" ]; then
+  echo >&2 "FATAL: DKUINSTALLDIR is not defined. Please check $BINDIR/env-default.sh"
+  exit 1
+fi
+source "$DKUINSTALLDIR/scripts/_startup.inc.sh"
+
+bkdl_set_R_env
+bkdl_load_env_files
+
+if [ -z "$R_LIBS" ]; then
+	export R_LIBS="$DKURLIB"
+else
+	export R_LIBS="$DKURLIB:$R_LIBS"
+fi
+if [ -n "$DKU_R_DATAIKU_PACKAGES_PATH" ]; then
+  export R_LIBS="$R_LIBS:$DKU_R_DATAIKU_PACKAGES_PATH"
+fi
+
+export R_LIBS_USER="$DKURLIB"
+
+exec "$DKURBIN" "$@"

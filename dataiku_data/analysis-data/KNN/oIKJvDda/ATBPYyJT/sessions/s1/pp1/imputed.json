@@ -1,0 +1,16 @@
+{
+    "num_columns": [
+        "Ancho de sepalo",
+        "Largo de sepalo",
+        "Largo de petalo",
+        "Ancho de petalo"
+    ],
+    "num_values": [
+        3.0365853658536586,
+        5.8601626016260155,
+        3.8146341463414632,
+        1.2243902439024392
+    ],
+    "cat_columns": [],
+    "cat_values": []
+}

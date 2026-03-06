@@ -1,0 +1,4 @@
+#Key and value types
+#Fri Feb 27 08:34:43 UTC 2026
+valueType=com.dataiku.dip.llm.online.LLMClient$SimpleEmbeddingResponseOrError
+keyType=java.lang.String

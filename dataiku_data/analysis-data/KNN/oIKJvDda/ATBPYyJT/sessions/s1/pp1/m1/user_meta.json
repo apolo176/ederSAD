@@ -1,0 +1,48 @@
+{
+  "starred": false,
+  "clusterMetas": {},
+  "customMeta": {
+    "kv": {}
+  },
+  "tags": [],
+  "activeClassifierThreshold": 0.0,
+  "description": "",
+  "name": "K Nearest Neighbors (k\u003d5) (s1)",
+  "labels": [
+    {
+      "secret": false,
+      "key": "trainDataset:dataset-name",
+      "value": "iris"
+    },
+    {
+      "secret": false,
+      "key": "testDataset:dataset-name",
+      "value": "iris"
+    },
+    {
+      "secret": false,
+      "key": "evaluationDataset:dataset-name",
+      "value": "iris"
+    },
+    {
+      "secret": false,
+      "key": "model:algorithm",
+      "value": "KNN"
+    },
+    {
+      "secret": false,
+      "key": "model:name",
+      "value": "K Nearest Neighbors (k\u003d5) (s1)"
+    },
+    {
+      "secret": false,
+      "key": "model:date",
+      "value": "2026-02-27T08:46:26.244+0000"
+    },
+    {
+      "secret": false,
+      "key": "evaluation:date",
+      "value": "2026-02-27T08:46:26.244+0000"
+    }
+  ]
+}

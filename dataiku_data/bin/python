@@ -1,0 +1,2 @@
+#!/bin/bash -e
+exec "/home/dataiku/dss/pyenv/bin/python" "$@"

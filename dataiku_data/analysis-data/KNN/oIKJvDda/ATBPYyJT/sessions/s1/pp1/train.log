@@ -1,0 +1,511 @@
+[2026/02/27-08:46:25.233] [FT-TrainWorkThread-I6j9kmQk-345] [INFO] [dku.analysis.prediction]  - [ct: 0] ******************************************
+[2026/02/27-08:46:25.234] [FT-TrainWorkThread-I6j9kmQk-345] [INFO] [dku.analysis.prediction]  - [ct: 1] ** Start train session s1
+[2026/02/27-08:46:25.234] [FT-TrainWorkThread-I6j9kmQk-345] [INFO] [dku.analysis.prediction]  - [ct: 1] ******************************************
+[2026/02/27-08:46:25.237] [FT-TrainWorkThread-I6j9kmQk-345] [INFO] [dku.shaker.data] T-ATBPYyJT - [ct: 4] Need to compute sampleId before checking memory cache
+[2026/02/27-08:46:25.238] [FT-TrainWorkThread-I6j9kmQk-345] [DEBUG] [dip.shaker.runner] T-ATBPYyJT - [ct: 5] Computed required sample id=2443102060d2aa6c21a3a18a957f8b19-NA-67d2d4a7bb9f68bd5a120c6956099c590--d751713988987e9331980363e24189ce
+[2026/02/27-08:46:25.238] [FT-TrainWorkThread-I6j9kmQk-345] [DEBUG] [dku.shaker.cache] T-ATBPYyJT - Shaker MemoryCache get on dataset KNN.iris key=ds=9ee4576132cbf8550a35c7cd423bdbc5--scr=ec6f1b7c8f09198468850f53c255894b--samp=2443102060d2aa6c21a3a18a957f8b19-NA-67d2d4a7bb9f68bd5a120c6956099c590--d751713988987e9331980363e24189ce: hit
+[2026/02/27-08:46:25.239] [FT-TrainWorkThread-I6j9kmQk-345] [INFO] [dku.shaker.schema] T-ATBPYyJT - [ct: 6] Column Largo de sepalo meaning=DoubleMeaning fail=0
+[2026/02/27-08:46:25.239] [FT-TrainWorkThread-I6j9kmQk-345] [INFO] [dku.shaker.schema] T-ATBPYyJT - [ct: 6] Column Ancho de sepalo meaning=DoubleMeaning fail=0
+[2026/02/27-08:46:25.239] [FT-TrainWorkThread-I6j9kmQk-345] [INFO] [dku.shaker.schema] T-ATBPYyJT - [ct: 6] Column Largo de petalo meaning=DoubleMeaning fail=0
+[2026/02/27-08:46:25.239] [FT-TrainWorkThread-I6j9kmQk-345] [INFO] [dku.shaker.schema] T-ATBPYyJT - [ct: 6] Column Ancho de petalo meaning=DoubleMeaning fail=0
+[2026/02/27-08:46:25.239] [FT-TrainWorkThread-I6j9kmQk-345] [INFO] [dku.shaker.schema] T-ATBPYyJT - [ct: 6] Column Especie meaning=Text fail=0
+[2026/02/27-08:46:25.249] [FT-TrainWorkThread-I6j9kmQk-345] [INFO] [dku.datasets.file] T-ATBPYyJT - [ct: 16] Building Filesystem handler connection=null path=/home/dataiku/dss/uploads/KNN/datasets/iris
+[2026/02/27-08:46:25.249] [FT-TrainWorkThread-I6j9kmQk-345] [INFO] [dku.datasets.ftplike] T-ATBPYyJT - Enumerating Filesystem dataset prefix=
+[2026/02/27-08:46:25.249] [FT-TrainWorkThread-I6j9kmQk-345] [DEBUG] [dku.datasets.fsbased] T-ATBPYyJT - [ct: 16] Building FS provider for dataset handler: KNN.iris
+[2026/02/27-08:46:25.249] [FT-TrainWorkThread-I6j9kmQk-345] [DEBUG] [dku.datasets.fsbased] T-ATBPYyJT - [ct: 16] FS Provider built
+[2026/02/27-08:46:25.249] [FT-TrainWorkThread-I6j9kmQk-345] [DEBUG] [dku.fs.local] T-ATBPYyJT - [ct: 16] Enumerating local filesystem prefix=/
+[2026/02/27-08:46:25.249] [FT-TrainWorkThread-I6j9kmQk-345] [DEBUG] [dku.fs.local] T-ATBPYyJT - [ct: 16] Enumeration done nb_paths=1 size=4622
+[2026/02/27-08:46:25.250] [FT-TrainWorkThread-I6j9kmQk-345] [INFO] [dku.input.push] T-ATBPYyJT - USTP: push selection.method=HEAD_SEQUENTIAL records=100000 ratio=0.02 col=null
+[2026/02/27-08:46:25.251] [FT-TrainWorkThread-I6j9kmQk-345] [INFO] [dku.format] T-ATBPYyJT - [ct: 18] Extractor run: limit={"maxBytes":-1,"maxRecords":100000,"samplingMethod":"HEAD_SEQUENTIAL","samplingRatio":0.02,"samplingSeed":1337,"ordering":{"enabled":false,"rules":[]}} totalRecords=0
+[2026/02/27-08:46:25.252] [FT-TrainWorkThread-I6j9kmQk-345] [INFO] [dku.format] T-ATBPYyJT - [ct: 19] Start uncompressed stream: /home/dataiku/dss/uploads/KNN/datasets/iris/iris.csv / totalRecsBefore=0
+[2026/02/27-08:46:25.260] [FT-TrainWorkThread-I6j9kmQk-345] [INFO] [dku.format] T-ATBPYyJT - [ct: 27] after stream totalComp=4622 totalUncomp=4622 totalRec=150
+[2026/02/27-08:46:25.260] [FT-TrainWorkThread-I6j9kmQk-345] [INFO] [dku.format] T-ATBPYyJT - [ct: 27] Extractor run done, totalCompressed=4622 totalRecords=150
+[2026/02/27-08:46:25.262] [FT-TrainWorkThread-I6j9kmQk-345] [INFO] [dku.analysis.splits] T-ATBPYyJT - [ct: 29] Checking if splits are up to date. Policy: type=SPLIT_SINGLE_DATASET,split=RANDOM,splitBeforePrepare=true,ds=iris,sel=(method=head-s,records=100000),r=0.8,s=1337, instance id: 71d5a4a3d98dc46d77b4a1c355354df7-0
+[2026/02/27-08:46:25.263] [FT-TrainWorkThread-I6j9kmQk-345] [INFO] [dku.analysis.ml.python] T-ATBPYyJT - [ct: 30] Joining processing thread ...
+[2026/02/27-08:46:25.263] [MRT-346] [INFO] [dku.analysis.ml.python]  - TrainAdditionalThread done
+[2026/02/27-08:46:25.263] [MRT-347] [INFO] [dku.analysis.ml.python]  - Running a preprocessing set: pp1 in /home/dataiku/dss/analysis-data/KNN/oIKJvDda/ATBPYyJT/sessions/s1/pp1
+[2026/02/27-08:46:25.264] [FT-TrainWorkThread-I6j9kmQk-345] [INFO] [dku.analysis.ml.python] T-ATBPYyJT - [ct: 31] Processing thread joined ...
+[2026/02/27-08:46:25.264] [FT-TrainWorkThread-I6j9kmQk-345] [INFO] [dku.analysis.ml.python] T-ATBPYyJT - [ct: 31] Joining processing thread ...
+[2026/02/27-08:46:25.267] [MRT-347] [INFO] [dku.block.link]  - Started a socket on port 37443
+[2026/02/27-08:46:25.271] [MRT-347] [INFO] [com.dataiku.dip.analysis.ml.distributed.workers]  - New worker pool created: pool-x1el6yd43ldroiqs
+[2026/02/27-08:46:25.272] [MRT-347] [INFO] [dku.ml.kernel]  - Writing output of python-single-command-kernel to /home/dataiku/dss/analysis-data/KNN/oIKJvDda/ATBPYyJT/sessions/s1/pp1/train.log
+[2026/02/27-08:46:25.273] [MRT-347] [INFO] [dku.code.envs.resolution]  - Executing Python activity in builtin env
+[2026/02/27-08:46:25.275] [MRT-347] [INFO] [dku.python.kernel]  - Starting Python process for kernel  python-single-command-kernel
+[2026/02/27-08:46:25.276] [MRT-347] [INFO] [dip.tickets]  - Creating API ticket for analysis-ml-KNN-TXs6S5N on behalf of admin id=analysis-ml-KNN-TXs6S5N_NlwDm7qsNQo9
+[2026/02/27-08:46:25.276] [MRT-347] [INFO] [dku.process]  - Starting process (regular)
+[2026/02/27-08:46:25.278] [MRT-347] [INFO] [dku.process]  - Process started with pid=1436
+[2026/02/27-08:46:25.281] [KNL-python-single-command-kernel-monitor-351] [DEBUG] [dku.resourceusage]  - Reporting start of CRU:{"context":{"type":"ANALYSIS_ML_TRAIN","authIdentifier":"admin","projectKey":"KNN","analysisId":"oIKJvDda","mlTaskId":"ATBPYyJT","sessionId":"s1"},"type":"LOCAL_PROCESS","id":"TAyt7DBFoRnhMEQV","startTime":1772181985280,"localProcess":{"cpuCurrent":0.0,"cpuAverageOverPast60Seconds":0.0}}
+[2026/02/27-08:46:25.285] [process-resource-monitor-1436-352] [DEBUG] [dku.resource]  - Process stats for pid 1436: {"pid":1436,"commandName":"/home/dataiku/dss/bin/python","cpuUserTimeMS":0,"cpuSystemTimeMS":0,"cpuChildrenUserTimeMS":0,"cpuChildrenSystemTimeMS":0,"cpuTotalMS":0,"cpuCurrent":0.0,"cpuAverageOverPast60Seconds":0.0,"vmSizeMB":8,"vmRSSMB":6,"vmHWMMB":6,"vmRSSAnonMB":1,"vmDataMB":1,"vmSizePeakMB":8,"vmRSSPeakMB":6,"vmRSSTotalMBS":0,"majorFaults":1,"childrenMajorFaults":0}
+Installing debugging signal handler
+[2026-02-27 08:46:25,808] [1436/MainThread] [INFO] [dataiku.base.socket_block_link] no cert found
+[2026-02-27 08:46:25,809] [1436/MainThread] [INFO] [dataiku.base.socket_block_link] Connecting to localhost (127.0.0.1) at port 37443
+[2026-02-27 08:46:25,809] [1436/MainThread] [INFO] [dataiku.base.socket_block_link] Connected to localhost (127.0.0.1) at port 37443
+[2026/02/27-08:46:25.809] [MRT-347] [INFO] [dku.link.secret_protected]  - Connected to kernel
+[2026/02/27-08:46:25.813] [MRT-347] [INFO] [dku.block.link.interaction]  - Execute link command respClazz=true respTypeToken=false respIsString=false is=false asyncInputStream=false os=false
+/home/dataiku/dataiku-dss-14.4.0/python/dataiku/doctor/posttraining/features_distribution.py:18: DeprecationWarning: Please import `mquantiles` from the `scipy.stats.mstats` namespace; the `scipy.stats.mstats_basic` namespace is deprecated and will be removed in SciPy 2.0.0.
+  from scipy.stats.mstats_basic import mquantiles
+[2026-02-27 08:46:26,095] [1436/MainThread] [INFO] [__main__] Running analysis command: train_prediction_models_nosave
+[2026-02-27 08:46:26,095] [1436/MainThread] [INFO] [dataiku.doctor.utils.gpu_execution] Not logging `nvidia-smi`: `useGPU` is False
+[2026-02-27 08:46:26,095] [1436/MainThread] [INFO] [dataiku.doctor.diagnostics.diagnostics] enabling diagnostic callback: DatasetSanityCheckDiagnostic of type DiagnosticType.ML_DIAGNOSTICS_DATASET_SANITY_CHECKS
+[2026-02-27 08:46:26,095] [1436/MainThread] [INFO] [dataiku.doctor.diagnostics.diagnostics] enabling diagnostic callback: ClassifierAccuracyCheckDiagnostic of type DiagnosticType.ML_DIAGNOSTICS_MODEL_CHECK
+[2026-02-27 08:46:26,095] [1436/MainThread] [INFO] [dataiku.doctor.diagnostics.diagnostics] enabling diagnostic callback: RegressionR2CheckDiagnostic of type DiagnosticType.ML_DIAGNOSTICS_MODEL_CHECK
+[2026-02-27 08:46:26,095] [1436/MainThread] [INFO] [dataiku.doctor.diagnostics.diagnostics] enabling diagnostic callback: LeakageDiagnostic of type DiagnosticType.ML_DIAGNOSTICS_LEAKAGE_DETECTION
+[2026-02-27 08:46:26,095] [1436/MainThread] [INFO] [dataiku.doctor.diagnostics.diagnostics] enabling diagnostic callback: TreeOverfitDiagnostic of type DiagnosticType.ML_DIAGNOSTICS_TRAINING_OVERFIT
+[2026-02-27 08:46:26,095] [1436/MainThread] [INFO] [dataiku.doctor.diagnostics.diagnostics] enabling diagnostic callback: MLAssertionsDiagnostic of type DiagnosticType.ML_DIAGNOSTICS_ML_ASSERTIONS
+[2026-02-27 08:46:26,095] [1436/MainThread] [INFO] [dataiku.doctor.diagnostics.diagnostics] enabling diagnostic callback: ModelCheckDiagnostic of type DiagnosticType.ML_DIAGNOSTICS_MODEL_CHECK
+[2026-02-27 08:46:26,095] [1436/MainThread] [INFO] [dataiku.doctor.diagnostics.diagnostics] enabling diagnostic callback: AbnormalPredictionsDetectionDiagnostic of type DiagnosticType.ML_DIAGNOSTICS_ABNORMAL_PREDICTIONS_DETECTION
+[2026-02-27 08:46:26,095] [1436/MainThread] [INFO] [dataiku.doctor.prediction.common] NaN support unavailable: incompatible algorithm KNN
+[2026-02-27 08:46:26,095] [1436/MainThread] [INFO] [dataiku.doctor.commands] PPS is {'feature_selection_params': {'method': 'NONE', 'random_forest_params': {'n_trees': 30, 'depth': 10, 'n_features': 25}, 'lasso_params': {'alpha': [0.01, 0.1, 1.0, 10.0, 100.0], 'cross_validate': True}, 'pca_params': {'n_features': 25, 'variance_proportion': 0.9}, 'ica_params': {'n_components': 25, 'fun': 'logcosh'}, 'correlation_params': {'min_abs_correlation': 0.0, 'max_abs_correlation': 1.0, 'n_features': 25}, 'custom_params': {'code': '# type your code here'}}, 'preprocessingFitSampleRatio': 1.0, 'preprocessingFitSampleSeed': 1337, 'target_remapping': [{'sourceValue': 'Iris-versicolor', 'mappedValue': 0, 'sampleFreq': 50}, {'sourceValue': 'Iris-virginica', 'mappedValue': 1, 'sampleFreq': 50}, {'sourceValue': 'Iris-setosa', 'mappedValue': 2, 'sampleFreq': 50}], 'skipPreprocessing': False, 'per_feature': {'Especie': {'dummy_clip': 'MAX_NB_CATEGORIES', 'cumulative_proportion': 0.95, 'min_samples': 10, 'max_nb_categories': 100, 'max_cat_safety': 200, 'nb_bins_hashing': 1048576, 'hash_whole_categories': True, 'dummy_drop': 'NONE', 'impact_method': 'M_ESTIMATOR', 'impact_m': 10, 'impact_kfold': True, 'impact_kfold_k': 5, 'impact_kfold_seed': 1337, 'ordinal_order': 'COUNT', 'ordinal_ascending': False, 'ordinal_default_mode': 'HIGHEST', 'ordinal_default_value': 0, 'frequency_default_mode': 'EXPLICIT', 'frequency_default_value': 0.0, 'frequency_normalized': True, 'role': 'TARGET', 'type': 'CATEGORY', 'state': {'userModified': False, 'autoModifiedByDSS': False, 'recordedMeaning': 'Text'}, 'customHandlingCode': '', 'customProcessorWantsMatrix': False, 'sendToInput': 'main'}, 'Ancho de sepalo': {'generate_derivative': False, 'numerical_handling': 'REGULAR', 'missing_handling': 'IMPUTE', 'missing_impute_with': 'MEAN', 'impute_constant_value': 0.0, 'keep_regular': False, 'rescaling': 'AVGSTD', 'monotonic': 'NONE', 'quantile_bin_nb_bins': 4, 'binarize_threshold_mode': 'MEDIAN', 'binarize_constant_threshold': 0.0, 'datetime_cyclical_periods': [], 'role': 'INPUT', 'type': 'NUMERIC', 'state': {'userModified': False, 'autoModifiedByDSS': False, 'recordedMeaning': 'DoubleMeaning'}, 'customHandlingCode': '', 'customProcessorWantsMatrix': False, 'sendToInput': 'main'}, 'Largo de sepalo': {'generate_derivative': False, 'numerical_handling': 'REGULAR', 'missing_handling': 'IMPUTE', 'missing_impute_with': 'MEAN', 'impute_constant_value': 0.0, 'keep_regular': False, 'rescaling': 'AVGSTD', 'monotonic': 'NONE', 'quantile_bin_nb_bins': 4, 'binarize_threshold_mode': 'MEDIAN', 'binarize_constant_threshold': 0.0, 'datetime_cyclical_periods': [], 'role': 'INPUT', 'type': 'NUMERIC', 'state': {'userModified': False, 'autoModifiedByDSS': False, 'recordedMeaning': 'DoubleMeaning'}, 'customHandlingCode': '', 'customProcessorWantsMatrix': False, 'sendToInput': 'main'}, 'Largo de petalo': {'generate_derivative': False, 'numerical_handling': 'REGULAR', 'missing_handling': 'IMPUTE', 'missing_impute_with': 'MEAN', 'impute_constant_value': 0.0, 'keep_regular': False, 'rescaling': 'AVGSTD', 'monotonic': 'NONE', 'quantile_bin_nb_bins': 4, 'binarize_threshold_mode': 'MEDIAN', 'binarize_constant_threshold': 0.0, 'datetime_cyclical_periods': [], 'role': 'INPUT', 'type': 'NUMERIC', 'state': {'userModified': False, 'autoModifiedByDSS': False, 'recordedMeaning': 'DoubleMeaning'}, 'customHandlingCode': '', 'customProcessorWantsMatrix': False, 'sendToInput': 'main'}, 'Ancho de petalo': {'generate_derivative': False, 'numerical_handling': 'REGULAR', 'missing_handling': 'IMPUTE', 'missing_impute_with': 'MEAN', 'impute_constant_value': 0.0, 'keep_regular': False, 'rescaling': 'AVGSTD', 'monotonic': 'NONE', 'quantile_bin_nb_bins': 4, 'binarize_threshold_mode': 'MEDIAN', 'binarize_constant_threshold': 0.0, 'datetime_cyclical_periods': [], 'role': 'INPUT', 'type': 'NUMERIC', 'state': {'userModified': False, 'autoModifiedByDSS': False, 'recordedMeaning': 'DoubleMeaning'}, 'customHandlingCode': '', 'customProcessorWantsMatrix': False, 'sendToInput': 'main'}}, 'reduce': {'enabled': False, 'kept_variance': 0.0}, 'feature_generation': {'pairwise_linear': {'behavior': 'DISABLED'}, 'polynomial_combinations': {'behavior': 'DISABLED'}, 'manual_interactions': {'interactions': []}, 'numericals_clustering': {'k': 0, 'all_features': False, 'input_features': [], 'behavior': 'DISABLED'}, 'categoricals_count_transformer': {'all_features': False, 'input_features': [], 'behavior': 'DISABLED'}, 'shifts': {}, 'windows': [], 'windows_rescale_numericals': False, 'windows_max_categories': 10}}
+[2026-02-27 08:46:26,095] [1436/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Loading train set
+[2026-02-27 08:46:26,114] [1436/MainThread] [INFO] [dataiku.doctor.utils] Training on platform: {"architecture": ["64bit", "ELF"], "libc": ["glibc", "2.34"], "machine": "x86_64", "kernelRelease": "6.17.0-14-generic", "kernelVersion": "#14~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Jan 15 15:52:10 UTC 2", "platform": "Linux-6.17.0-14-generic-x86_64-with-glibc2.34", "pythonCompiler": "GCC 11.5.0 20240719 (Red Hat 11.5.0-11)", "pythonImplementation": "CPython", "pythonVersion": "3.9.25", "system": "Linux"}
+[2026-02-27 08:46:26,114] [1436/MainThread] [INFO] [dataiku.doctor.utils] Training on CPU: {"processor": "0", "vendor_id": "GenuineIntel", "cpu family": "6", "model": "198", "model name": "Intel(R) Core(TM) Ultra 5 235", "stepping": "2", "microcode": "0x119", "cpu MHz": "2206.528", "cache size": "24576 KB", "physical id": "0", "siblings": "14", "core id": "0", "cpu cores": "14", "apicid": "0", "initial apicid": "0", "fpu": "yes", "fpu_exception": "yes", "cpuid level": "35", "wp": "yes", "flags": "fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf tsc_known_freq pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb ssbd ibrs ibpb stibp ibrs_enhanced tpr_shadow flexpriority ept vpid ept_ad fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid rdt_a rdseed adx smap clflushopt clwb intel_pt sha_ni xsaveopt xsavec xgetbv1 xsaves split_lock_detect user_shstk avx_vnni lam wbnoinvd dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp hwp_pkg_req hfi vnmi umip pku ospke waitpkg gfni vaes vpclmulqdq rdpid bus_lock_detect movdiri movdir64b fsrm md_clear serialize pconfig arch_lbr ibt flush_l1d arch_capabilities", "vmx flags": "vnmi preemption_timer posted_intr invvpid ept_x_only ept_ad ept_1gb flexpriority apicv tsc_offset vtpr mtf vapic ept vpid unrestricted_guest vapic_reg vid ple shadow_vmcs pml ept_violation_ve ept_mode_based_exec tsc_scaling usr_wait_pause notify_vm_exiting ipi_virt", "bugs": "spectre_v1 spectre_v2 spec_store_bypass swapgs bhi spectre_v2_user vmscape", "bogomips": "6758.40", "clflush size": "64", "cache_alignment": "64", "address sizes": "46 bits physical, 48 bits virtual"}
+[2026-02-27 08:46:26,128] [1436/MainThread] [INFO] [dataiku.doctor.utils] Training with main package versions: {"pandas": "2.2.3", "scikit-learn": "1.5.2", "scipy": "1.13.1", "lightgbm": "4.6.0", "flask": "2.2.5", "itsdangerous": "2.2.0", "jinja2": "3.1.6", "xgboost": "1.7.6", "werkzeug": "3.1.5", "statsmodels": "0.14.6", "pillow": "11.3.0", "markupsafe": "3.0.3", "cloudpickle": "1.5.0"} 
+[2026-02-27 08:46:26,128] [1436/MainThread] [INFO] [root] Reading with dtypes: None
+[2026-02-27 08:46:26,128] [1436/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Largo de sepalo: <class 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=INPUT)
+[2026-02-27 08:46:26,128] [1436/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Ancho de sepalo: <class 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=INPUT)
+[2026-02-27 08:46:26,128] [1436/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Largo de petalo: <class 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=INPUT)
+[2026-02-27 08:46:26,128] [1436/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Ancho de petalo: <class 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=INPUT)
+[2026-02-27 08:46:26,128] [1436/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Especie: <class 'numpy.object_'> (schema_type=string feature_type=CATEGORY feature_role=TARGET)
+[2026-02-27 08:46:26,128] [1436/MainThread] [INFO] [root] Reading with FIXED dtypes: {'Largo de sepalo': <class 'numpy.float64'>, 'Ancho de sepalo': <class 'numpy.float64'>, 'Largo de petalo': <class 'numpy.float64'>, 'Ancho de petalo': <class 'numpy.float64'>, 'Especie': <class 'numpy.object_'>}
+[2026-02-27 08:46:26,130] [1436/MainThread] [INFO] [root] Loaded table
+[2026-02-27 08:46:26,130] [1436/MainThread] [INFO] [dataiku.doctor.utils] Coercion done
+/home/dataiku/dataiku-dss-14.4.0/python/dataiku/doctor/diagnostics/dataset_sanity_check.py:100: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  min_norm = counts[-1] / float(counts.sum())
+[2026-02-27 08:46:26,131] [1436/MainThread] [INFO] [dataiku.doctor.diagnostics.diagnostics] Adding diagnostic: <DoctorDiagnostic ML_DIAGNOSTICS_DATASET_SANITY_CHECKS: Training set might be too small (123 rows) for robust training>
+[2026-02-27 08:46:26,131] [1436/MainThread] [INFO] [dataiku.doctor.utils.split] Loaded train df: shape=(123,5)
+[2026-02-27 08:46:26,131] [1436/MainThread] [INFO] [dataiku.doctor.commands] Train col : Largo de sepalo (float64)
+[2026-02-27 08:46:26,131] [1436/MainThread] [INFO] [dataiku.doctor.commands] Train col : Ancho de sepalo (float64)
+[2026-02-27 08:46:26,131] [1436/MainThread] [INFO] [dataiku.doctor.commands] Train col : Largo de petalo (float64)
+[2026-02-27 08:46:26,131] [1436/MainThread] [INFO] [dataiku.doctor.commands] Train col : Ancho de petalo (float64)
+[2026-02-27 08:46:26,131] [1436/MainThread] [INFO] [dataiku.doctor.commands] Train col : Especie (object)
+[2026-02-27 08:46:26,131] [1436/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Loading train set
+[2026-02-27 08:46:26,131] [1436/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Loading test set
+[2026-02-27 08:46:26,131] [1436/MainThread] [INFO] [root] Reading with dtypes: None
+[2026-02-27 08:46:26,131] [1436/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Largo de sepalo: <class 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=INPUT)
+[2026-02-27 08:46:26,131] [1436/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Ancho de sepalo: <class 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=INPUT)
+[2026-02-27 08:46:26,131] [1436/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Largo de petalo: <class 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=INPUT)
+[2026-02-27 08:46:26,131] [1436/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Ancho de petalo: <class 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=INPUT)
+[2026-02-27 08:46:26,131] [1436/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Especie: <class 'numpy.object_'> (schema_type=string feature_type=CATEGORY feature_role=TARGET)
+[2026-02-27 08:46:26,131] [1436/MainThread] [INFO] [root] Reading with FIXED dtypes: {'Largo de sepalo': <class 'numpy.float64'>, 'Ancho de sepalo': <class 'numpy.float64'>, 'Largo de petalo': <class 'numpy.float64'>, 'Ancho de petalo': <class 'numpy.float64'>, 'Especie': <class 'numpy.object_'>}
+[2026-02-27 08:46:26,132] [1436/MainThread] [INFO] [root] Loaded table
+[2026-02-27 08:46:26,132] [1436/MainThread] [INFO] [dataiku.doctor.utils] Coercion done
+/home/dataiku/dataiku-dss-14.4.0/python/dataiku/doctor/diagnostics/dataset_sanity_check.py:100: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  min_norm = counts[-1] / float(counts.sum())
+[2026-02-27 08:46:26,132] [1436/MainThread] [INFO] [dataiku.doctor.diagnostics.diagnostics] Adding diagnostic: <DoctorDiagnostic ML_DIAGNOSTICS_DATASET_SANITY_CHECKS: Test set might be too small (27 rows) for reliable performance estimation>
+[2026-02-27 08:46:26,132] [1436/MainThread] [INFO] [dataiku.doctor.utils.split] Loaded test df: shape=(27,5)
+[2026-02-27 08:46:26,132] [1436/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Loading test set
+[2026-02-27 08:46:26,132] [1436/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Collecting statistics
+[2026-02-27 08:46:26,132] [1436/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Especie... (type=CATEGORY)
+[2026-02-27 08:46:26,132] [1436/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Ancho de sepalo... (type=NUMERIC)
+[2026-02-27 08:46:26,132] [1436/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2026-02-27 08:46:26,133] [1436/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Largo de sepalo... (type=NUMERIC)
+[2026-02-27 08:46:26,133] [1436/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2026-02-27 08:46:26,133] [1436/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Largo de petalo... (type=NUMERIC)
+[2026-02-27 08:46:26,133] [1436/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2026-02-27 08:46:26,134] [1436/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Looking at Ancho de petalo... (type=NUMERIC)
+[2026-02-27 08:46:26,134] [1436/MainThread] [INFO] [dataiku.doctor.preprocessing_collector] Checking series of type: float64 (isM8=False)
+[2026-02-27 08:46:26,134] [1436/MainThread] [INFO] [dataiku.doctor.preprocessing_handler] generating interactions
+[2026-02-27 08:46:26,134] [1436/MainThread] [INFO] [dataiku.doctor.preprocessing_handler] {'feature_selection_params': {'method': 'NONE', 'random_forest_params': {'n_trees': 30, 'depth': 10, 'n_features': 25}, 'lasso_params': {'alpha': [0.01, 0.1, 1.0, 10.0, 100.0], 'cross_validate': True}, 'pca_params': {'n_features': 25, 'variance_proportion': 0.9}, 'ica_params': {'n_components': 25, 'fun': 'logcosh'}, 'correlation_params': {'min_abs_correlation': 0.0, 'max_abs_correlation': 1.0, 'n_features': 25}, 'custom_params': {'code': '# type your code here'}}, 'preprocessingFitSampleRatio': 1.0, 'preprocessingFitSampleSeed': 1337, 'target_remapping': [{'sourceValue': 'Iris-versicolor', 'mappedValue': 0, 'sampleFreq': 50}, {'sourceValue': 'Iris-virginica', 'mappedValue': 1, 'sampleFreq': 50}, {'sourceValue': 'Iris-setosa', 'mappedValue': 2, 'sampleFreq': 50}], 'skipPreprocessing': False, 'per_feature': {'Especie': {'dummy_clip': 'MAX_NB_CATEGORIES', 'cumulative_proportion': 0.95, 'min_samples': 10, 'max_nb_categories': 100, 'max_cat_safety': 200, 'nb_bins_hashing': 1048576, 'hash_whole_categories': True, 'dummy_drop': 'NONE', 'impact_method': 'M_ESTIMATOR', 'impact_m': 10, 'impact_kfold': True, 'impact_kfold_k': 5, 'impact_kfold_seed': 1337, 'ordinal_order': 'COUNT', 'ordinal_ascending': False, 'ordinal_default_mode': 'HIGHEST', 'ordinal_default_value': 0, 'frequency_default_mode': 'EXPLICIT', 'frequency_default_value': 0.0, 'frequency_normalized': True, 'role': 'TARGET', 'type': 'CATEGORY', 'state': {'userModified': False, 'autoModifiedByDSS': False, 'recordedMeaning': 'Text'}, 'customHandlingCode': '', 'customProcessorWantsMatrix': False, 'sendToInput': 'main'}, 'Ancho de sepalo': {'generate_derivative': False, 'numerical_handling': 'REGULAR', 'missing_handling': 'IMPUTE', 'missing_impute_with': 'MEAN', 'impute_constant_value': 0.0, 'keep_regular': False, 'rescaling': 'AVGSTD', 'monotonic': 'NONE', 'quantile_bin_nb_bins': 4, 'binarize_threshold_mode': 'MEDIAN', 'binarize_constant_threshold': 0.0, 'datetime_cyclical_periods': [], 'role': 'INPUT', 'type': 'NUMERIC', 'state': {'userModified': False, 'autoModifiedByDSS': False, 'recordedMeaning': 'DoubleMeaning'}, 'customHandlingCode': '', 'customProcessorWantsMatrix': False, 'sendToInput': 'main'}, 'Largo de sepalo': {'generate_derivative': False, 'numerical_handling': 'REGULAR', 'missing_handling': 'IMPUTE', 'missing_impute_with': 'MEAN', 'impute_constant_value': 0.0, 'keep_regular': False, 'rescaling': 'AVGSTD', 'monotonic': 'NONE', 'quantile_bin_nb_bins': 4, 'binarize_threshold_mode': 'MEDIAN', 'binarize_constant_threshold': 0.0, 'datetime_cyclical_periods': [], 'role': 'INPUT', 'type': 'NUMERIC', 'state': {'userModified': False, 'autoModifiedByDSS': False, 'recordedMeaning': 'DoubleMeaning'}, 'customHandlingCode': '', 'customProcessorWantsMatrix': False, 'sendToInput': 'main'}, 'Largo de petalo': {'generate_derivative': False, 'numerical_handling': 'REGULAR', 'missing_handling': 'IMPUTE', 'missing_impute_with': 'MEAN', 'impute_constant_value': 0.0, 'keep_regular': False, 'rescaling': 'AVGSTD', 'monotonic': 'NONE', 'quantile_bin_nb_bins': 4, 'binarize_threshold_mode': 'MEDIAN', 'binarize_constant_threshold': 0.0, 'datetime_cyclical_periods': [], 'role': 'INPUT', 'type': 'NUMERIC', 'state': {'userModified': False, 'autoModifiedByDSS': False, 'recordedMeaning': 'DoubleMeaning'}, 'customHandlingCode': '', 'customProcessorWantsMatrix': False, 'sendToInput': 'main'}, 'Ancho de petalo': {'generate_derivative': False, 'numerical_handling': 'REGULAR', 'missing_handling': 'IMPUTE', 'missing_impute_with': 'MEAN', 'impute_constant_value': 0.0, 'keep_regular': False, 'rescaling': 'AVGSTD', 'monotonic': 'NONE', 'quantile_bin_nb_bins': 4, 'binarize_threshold_mode': 'MEDIAN', 'binarize_constant_threshold': 0.0, 'datetime_cyclical_periods': [], 'role': 'INPUT', 'type': 'NUMERIC', 'state': {'userModified': False, 'autoModifiedByDSS': False, 'recordedMeaning': 'DoubleMeaning'}, 'customHandlingCode': '', 'customProcessorWantsMatrix': False, 'sendToInput': 'main'}}, 'reduce': {'enabled': False, 'kept_variance': 0.0}, 'feature_generation': {'pairwise_linear': {'behavior': 'DISABLED'}, 'polynomial_combinations': {'behavior': 'DISABLED'}, 'manual_interactions': {'interactions': []}, 'numericals_clustering': {'k': 0, 'all_features': False, 'input_features': [], 'behavior': 'DISABLED'}, 'categoricals_count_transformer': {'all_features': False, 'input_features': [], 'behavior': 'DISABLED'}, 'shifts': {}, 'windows': [], 'windows_rescale_numericals': False, 'windows_max_categories': 10}}
+[2026-02-27 08:46:26,134] [1436/MainThread] [INFO] [dataiku.doctor.preprocessing_handler] No feature selection to perform
+[2026-02-27 08:46:26,134] [1436/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Collecting statistics
+[2026-02-27 08:46:26,134] [1436/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Preprocessing train set
+[2026-02-27 08:46:26,134] [1436/MainThread] [INFO] [dataiku.doctor.multiframe] Set MF index len 123
+[2026-02-27 08:46:26,134] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RemapValueToOutput
+[2026-02-27 08:46:26,135] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:MultipleImputeMissingFromInput
+[2026-02-27 08:46:26,135] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {'Ancho de sepalo': 3.0365853658536586, 'Largo de sepalo': 5.8601626016260155, 'Largo de petalo': 3.8146341463414632, 'Ancho de petalo': 1.2243902439024392}
+[2026-02-27 08:46:26,135] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:MultipleImputeMissingFromInput
+[2026-02-27 08:46:26,135] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2026-02-27 08:46:26,135] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (Ancho de sepalo)
+[2026-02-27 08:46:26,135] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Ancho de sepalo (avg=3.0365853658536586 std=0.4406158679198636 shift=3.0365853658536586 inv_scale=2.2695505831893317 nulls=0)
+[2026-02-27 08:46:26,135] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (Largo de sepalo)
+[2026-02-27 08:46:26,135] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Largo de sepalo (avg=5.8601626016260155 std=0.8370263365618158 shift=5.8601626016260155 inv_scale=1.1947055383079315 nulls=0)
+[2026-02-27 08:46:26,135] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (Largo de petalo)
+[2026-02-27 08:46:26,136] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Largo de petalo (avg=3.8146341463414632 std=1.7742088020440825 shift=3.8146341463414632 inv_scale=0.5636315178055089 nulls=0)
+[2026-02-27 08:46:26,136] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RescalingProcessor2 (Ancho de petalo)
+[2026-02-27 08:46:26,136] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Ancho de petalo (avg=1.2243902439024392 std=0.7751616926423185 shift=1.2243902439024392 inv_scale=1.2900534294867796 nulls=0)
+[2026-02-27 08:46:26,136] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FlushDFBuilder(num_flagonly)
+[2026-02-27 08:46:26,136] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FlushDFBuilder(datetime_cyclical)
+[2026-02-27 08:46:26,136] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:MultipleImputeMissingFromInput
+[2026-02-27 08:46:26,136] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2026-02-27 08:46:26,136] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FlushDFBuilder(cat_flagpresence)
+[2026-02-27 08:46:26,136] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:MultipleImputeMissingFromInput
+[2026-02-27 08:46:26,136] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2026-02-27 08:46:26,136] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:MultipleImputeMissingFromInput
+[2026-02-27 08:46:26,136] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2026-02-27 08:46:26,136] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:FlushDFBuilder(interaction)
+[2026-02-27 08:46:26,136] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:RealignTarget
+[2026-02-27 08:46:26,136] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] Realign target series = (123,)
+[2026-02-27 08:46:26,136] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] After realign target: (123,)
+[2026-02-27 08:46:26,136] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:DropRowsWhereNoTarget
+[2026-02-27 08:46:26,136] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] Deleting 0 rows because one of ['target'] is missing or infinity
+[2026-02-27 08:46:26,136] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] MF before = (123, 4)
+[2026-02-27 08:46:26,136] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] target before = (123,)
+[2026-02-27 08:46:26,136] [1436/MainThread] [INFO] [dataiku.doctor.multiframe] MultiFrame, dropping rows: []
+[2026-02-27 08:46:26,137] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] After DRWNT input_df=(123, 5)
+[2026-02-27 08:46:26,137] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] MF after = (123, 4)
+[2026-02-27 08:46:26,137] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] target after = (123,)
+[2026-02-27 08:46:26,137] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:DumpPipelineState
+[2026-02-27 08:46:26,137] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] ********* Pipeline state (Before feature selection)
+[2026-02-27 08:46:26,137] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]    input_df= (123, 5) 
+[2026-02-27 08:46:26,137] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]    current_mf=(123, 4) 
+[2026-02-27 08:46:26,137] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]    PPR: 
+[2026-02-27 08:46:26,137] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]       target = <class 'pandas.core.series.Series'> ((123,))
+[2026-02-27 08:46:26,137] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:EmitCurrentMFAsResult
+[2026-02-27 08:46:26,137] [1436/MainThread] [INFO] [dataiku.doctor.multiframe] Set MF index len 123
+[2026-02-27 08:46:26,137] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] FIT/PROCESS WITH Step:DumpPipelineState
+[2026-02-27 08:46:26,137] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] ********* Pipeline state (At end)
+[2026-02-27 08:46:26,137] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]    input_df= (123, 5) 
+[2026-02-27 08:46:26,137] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]    current_mf=(0, 0) 
+[2026-02-27 08:46:26,137] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]    PPR: 
+[2026-02-27 08:46:26,137] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]       target = <class 'pandas.core.series.Series'> ((123,))
+[2026-02-27 08:46:26,137] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]       TRAIN = <class 'dataiku.doctor.multiframe.MultiFrame'> ((123, 4))
+[2026-02-27 08:46:26,137] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]       UNPROCESSED = <class 'pandas.core.frame.DataFrame'> ((123, 5))
+[2026-02-27 08:46:26,137] [1436/MainThread] [INFO] [dataiku.doctor.diagnostics.modeling_parameters] train multiframe initial size: 123
+[2026-02-27 08:46:26,137] [1436/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Preprocessing train set
+[2026-02-27 08:46:26,137] [1436/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Preprocessing test set
+[2026-02-27 08:46:26,137] [1436/MainThread] [INFO] [dataiku.doctor.multiframe] Set MF index len 27
+[2026-02-27 08:46:26,137] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RemapValueToOutput
+[2026-02-27 08:46:26,138] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:MultipleImputeMissingFromInput
+[2026-02-27 08:46:26,138] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {'Ancho de sepalo': 3.0365853658536586, 'Largo de sepalo': 5.8601626016260155, 'Largo de petalo': 3.8146341463414632, 'Ancho de petalo': 1.2243902439024392}
+[2026-02-27 08:46:26,138] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:MultipleImputeMissingFromInput
+[2026-02-27 08:46:26,138] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2026-02-27 08:46:26,138] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (Ancho de sepalo)
+[2026-02-27 08:46:26,138] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Ancho de sepalo (avg=3.1333333333333333 std=0.39807227793648037 shift=3.0365853658536586 inv_scale=2.2695505831893317 nulls=0)
+[2026-02-27 08:46:26,138] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (Largo de sepalo)
+[2026-02-27 08:46:26,138] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Largo de sepalo (avg=5.7666666666666675 std=0.7966275068156914 shift=5.8601626016260155 inv_scale=1.1947055383079315 nulls=0)
+[2026-02-27 08:46:26,138] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (Largo de petalo)
+[2026-02-27 08:46:26,138] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Largo de petalo (avg=3.5037037037037044 std=1.728601364705778 shift=3.8146341463414632 inv_scale=0.5636315178055089 nulls=0)
+[2026-02-27 08:46:26,139] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (Ancho de petalo)
+[2026-02-27 08:46:26,139] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Ancho de petalo (avg=1.0814814814814815 std=0.7076706301647121 shift=1.2243902439024392 inv_scale=1.2900534294867796 nulls=0)
+[2026-02-27 08:46:26,139] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FlushDFBuilder(num_flagonly)
+[2026-02-27 08:46:26,139] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FlushDFBuilder(datetime_cyclical)
+[2026-02-27 08:46:26,139] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:MultipleImputeMissingFromInput
+[2026-02-27 08:46:26,139] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2026-02-27 08:46:26,139] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FlushDFBuilder(cat_flagpresence)
+[2026-02-27 08:46:26,139] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:MultipleImputeMissingFromInput
+[2026-02-27 08:46:26,139] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2026-02-27 08:46:26,139] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:MultipleImputeMissingFromInput
+[2026-02-27 08:46:26,139] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2026-02-27 08:46:26,139] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FlushDFBuilder(interaction)
+[2026-02-27 08:46:26,139] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RealignTarget
+[2026-02-27 08:46:26,139] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] Realign target series = (27,)
+[2026-02-27 08:46:26,139] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] After realign target: (27,)
+[2026-02-27 08:46:26,139] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:DropRowsWhereNoTarget
+[2026-02-27 08:46:26,139] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] Deleting 0 rows because one of ['target'] is missing or infinity
+[2026-02-27 08:46:26,139] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] MF before = (27, 4)
+[2026-02-27 08:46:26,139] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] target before = (27,)
+[2026-02-27 08:46:26,139] [1436/MainThread] [INFO] [dataiku.doctor.multiframe] MultiFrame, dropping rows: []
+[2026-02-27 08:46:26,139] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] After DRWNT input_df=(27, 5)
+[2026-02-27 08:46:26,139] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] MF after = (27, 4)
+[2026-02-27 08:46:26,139] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] target after = (27,)
+[2026-02-27 08:46:26,139] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:DumpPipelineState
+[2026-02-27 08:46:26,139] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] ********* Pipeline state (Before feature selection)
+[2026-02-27 08:46:26,139] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]    input_df= (27, 5) 
+[2026-02-27 08:46:26,139] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]    current_mf=(27, 4) 
+[2026-02-27 08:46:26,139] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]    PPR: 
+[2026-02-27 08:46:26,139] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]       target = <class 'pandas.core.series.Series'> ((27,))
+[2026-02-27 08:46:26,139] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:EmitCurrentMFAsResult
+[2026-02-27 08:46:26,139] [1436/MainThread] [INFO] [dataiku.doctor.multiframe] Set MF index len 27
+[2026-02-27 08:46:26,139] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:DumpPipelineState
+[2026-02-27 08:46:26,139] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] ********* Pipeline state (At end)
+[2026-02-27 08:46:26,139] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]    input_df= (27, 5) 
+[2026-02-27 08:46:26,140] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]    current_mf=(0, 0) 
+[2026-02-27 08:46:26,140] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]    PPR: 
+[2026-02-27 08:46:26,140] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]       target = <class 'pandas.core.series.Series'> ((27,))
+[2026-02-27 08:46:26,140] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]       TRAIN = <class 'dataiku.doctor.multiframe.MultiFrame'> ((27, 4))
+[2026-02-27 08:46:26,140] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]       UNPROCESSED = <class 'pandas.core.frame.DataFrame'> ((27, 5))
+[2026-02-27 08:46:26,140] [1436/MainThread] [INFO] [dataiku.doctor.diagnostics.modeling_parameters] test multiframe initial size: 27
+[2026-02-27 08:46:26,140] [1436/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Preprocessing test set
+[2026-02-27 08:46:26,140] [1436/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Fitting model
+[2026-02-27 08:46:26,140] [1436/MainThread] [INFO] [dataiku.doctor.prediction.common] NaN support unavailable: incompatible algorithm KNN
+[2026-02-27 08:46:26,140] [1436/MainThread] [INFO] [dataiku.doctor.sparse] Algorithm KNN doesn't support sparse matrices, using NPA
+[2026-02-27 08:46:26,140] [1436/MainThread] [INFO] [dataiku.doctor.prediction.common] Create CLF from params: {'algorithm': 'KNN', 'knn_grid': {'k': {'gridMode': 'EXPLICIT', 'randomMode': 'RANGE', 'limit': {'min': 1}, 'values': [5], 'range': {'min': 3, 'max': 7, 'nbValues': 4, 'scaling': 'LINEAR'}}, 'distance_weighting': False, 'algorithm': 'auto', 'p': 2, 'leaf_size': 30, 'enabled': True}, 'max_ensemble_nodes_serialized': 6000, 'metrics': {'customMetrics': [], 'evaluationMetric': 'ROC_AUC', 'classAveragingMethod': 'MACRO', 'costMatrixWeights': {'tpGain': 1.0, 'tnGain': 0.0, 'fpGain': -0.3, 'fnGain': 0.0}, 'liftPoint': 0.4, 'netUpliftPoint': 0.5, 'causalWeighting': 'NO_WEIGHTING'}, 'autoOptimizeThreshold': True, 'forcedClassifierThreshold': 0.0, 'isShiftWindowsCompatible': False, 'gridLength': 1, 'grid_search_params': {'mode': 'KFOLD', 'splitRatio': 0.8, 'shuffleIterations': 1, 'nFolds': 5, 'cvSeed': 1337, 'stratified': True, 'grouped': False, 'strategy': 'GRID', 'bayesianOptimizer': 'SCIKIT_OPTIMIZE', 'randomized': True, 'seed': 1337, 'nIter': 0, 'nIterRandom': 5, 'timeout': 0, 'nJobs': 4, 'distributed': False, 'nContainers': 4, 'foldOffset': True, 'equalDurationFolds': False}, 'pluginAlgoCustomGridSearch': False, 'computeLearningCurves': False, 'skipExpensiveReports': False, 'skipPermutationImportance': True, 'perIdentifierPermutationImportance': False, 'propensityModeling': {'enabled': True, 'calibrateProbabilities': False, 'calibrationDataRatio': 0.1}} for algorithm KNN
+[2026-02-27 08:46:26,140] [1436/MainThread] [INFO] [dataiku.doctor.prediction.common] Using stratified K-Fold CV with k=5
+[2026-02-27 08:46:26,140] [1436/MainThread] [INFO] [dataiku.doctor.prediction.common] Computing multiclass metrics with "macro" class averaging method
+[2026-02-27 08:46:26,149] [1436/MainThread] [INFO] [dataiku.doctor.crossval.search_evaluation_monitor] No distributed container configuration is available to run this search
+[2026-02-27 08:46:26,149] [1436/MainThread] [WARNING] [dataiku.doctor.prediction.common] Class weights are not supported for estimator <class 'sklearn.neighbors._classification.KNeighborsClassifier'>
+[2026-02-27 08:46:26,150] [1436/MainThread] [INFO] [dataiku.doctor.crossval.search_runner] Got single-point space, not performing hyperparameter search
+[2026-02-27 08:46:26,150] [1436/MainThread] [INFO] [dataiku.doctor.crossval.strategies.grid_search_strategy] Running GridSearchStrategy for hyperparameters space: <dataiku.doctor.prediction.common.HyperparametersSpace object at 0x7c6b521ea070>
+[2026-02-27 08:46:26,150] [1436/MainThread] [INFO] [dataiku.doctor.prediction.common] Fitting model:
+[2026-02-27 08:46:26,150] [1436/MainThread] [INFO] [dataiku.doctor.prediction.common]   Model is: KNeighborsClassifier()
+[2026-02-27 08:46:26,150] [1436/MainThread] [INFO] [dataiku.doctor.prediction.common]   train_X class: <class 'numpy.ndarray'>
+[2026-02-27 08:46:26,150] [1436/MainThread] [INFO] [dataiku.doctor.prediction.common]   train_X shape: (123, 4)
+[2026-02-27 08:46:26,150] [1436/MainThread] [INFO] [dataiku.doctor.prediction.common]   train_y shape: (123,)
+[2026-02-27 08:46:26,151] [1436/MainThread] [INFO] [dataiku.doctor.prediction.classification_fit] Selected KNN Params are {'algorithm': 'auto', 'leaf_size': 30, 'metric': 'minkowski', 'metric_params': None, 'n_jobs': None, 'n_neighbors': 5, 'p': 2, 'weights': 'uniform'} 
+[2026-02-27 08:46:26,151] [1436/MainThread] [INFO] [dataiku.doctor.prediction.classification_fit] Output params are {'resolved': {'algorithm': 'KNN', 'skipExpensiveReports': False, 'knn': {'k': 5, 'distance_weighting': False, 'algorithm': 'auto', 'p': 2, 'leaf_size': 30}}, 'other': {}}
+[2026-02-27 08:46:26,151] [1436/MainThread] [INFO] [dataiku.doctor.prediction.scoring_base] No feature importance in classifier
+[2026-02-27 08:46:26,151] [1436/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Fitting model
+[2026-02-27 08:46:26,151] [1436/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Saving model
+[2026-02-27 08:46:26,164] [1436/MainThread] [INFO] [dataiku.base.dku_pickle] Setting cloudpickle as the pickle dumping tool
+[2026-02-27 08:46:26,164] [1436/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Saving model
+[2026-02-27 08:46:26,164] [1436/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Scoring model
+[2026-02-27 08:46:26,164] [1436/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Intrinsic scoring
+[2026-02-27 08:46:26,164] [1436/MainThread] [INFO] [dataiku.doctor.prediction.scoring_base] Computing feature importance
+[2026-02-27 08:46:26,164] [1436/MainThread] [INFO] [dataiku.doctor.prediction.scoring_base] No feature importance in classifier
+[2026-02-27 08:46:26,164] [1436/MainThread] [INFO] [dataiku.doctor.prediction.linear_coefficients_computation] Not computing linear coefficients because attribute `coef_` is not present
+[2026-02-27 08:46:26,164] [1436/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Extracting rescalers
+[2026-02-27 08:46:26,164] [1436/MainThread] [INFO] [dataiku.doctor.prediction.common] NaN support unavailable: incompatible algorithm KNN
+[2026-02-27 08:46:26,164] [1436/MainThread] [INFO] [dataiku.doctor.sparse] Algorithm KNN doesn't support sparse matrices, using NPA
+[2026-02-27 08:46:26,166] [1436/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Will use probas : True
+[2026-02-27 08:46:26,166] [1436/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Calculated confusion matrix
+[2026-02-27 08:46:26,166] [1436/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Computing multiclass metrics with "macro" class averaging method
+/home/dataiku/dataiku-dss-14.4.0/python/dataiku/doctor/utils/calibration.py:59: RuntimeWarning: invalid value encountered in divide
+  freq_pos = y_true[i_start:i_end].sum() / weight
+/home/dataiku/dataiku-dss-14.4.0/python/dataiku/doctor/utils/calibration.py:60: RuntimeWarning: invalid value encountered in scalar divide
+  avg_pred = y_prob[i_start:i_end].sum() / weight
+/home/dataiku/dataiku-dss-14.4.0/python/dataiku/doctor/utils/metrics.py:134: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
+  mask_i_j = np.in1d(y_true, np.array([i, j]))
+/home/dataiku/dataiku-dss-14.4.0/python/dataiku/doctor/utils/metrics.py:134: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
+  mask_i_j = np.in1d(y_true, np.array([i, j]))
+/home/dataiku/dataiku-dss-14.4.0/python/dataiku/doctor/utils/metrics.py:134: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
+  mask_i_j = np.in1d(y_true, np.array([i, j]))
+/home/dataiku/dataiku-dss-14.4.0/python/dataiku/doctor/utils/metrics.py:134: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
+  mask_i_j = np.in1d(y_true, np.array([i, j]))
+/home/dataiku/dataiku-dss-14.4.0/python/dataiku/doctor/utils/metrics.py:134: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
+  mask_i_j = np.in1d(y_true, np.array([i, j]))
+/home/dataiku/dataiku-dss-14.4.0/python/dataiku/doctor/utils/metrics.py:134: DeprecationWarning: `in1d` is deprecated. Use `np.isin` instead.
+  mask_i_j = np.in1d(y_true, np.array([i, j]))
+[2026-02-27 08:46:26,175] [1436/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Density for Iris-versicolor (id 0)
+[2026-02-27 08:46:26,175] [1436/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] valid_y shape = (27,)
+[2026-02-27 08:46:26,175] [1436/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] CP: <class 'numpy.ndarray'> ((27,))
+[2026-02-27 08:46:26,175] [1436/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Actual shape = (27,)
+[2026-02-27 08:46:26,175] [1436/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] MASK is <class 'numpy.ndarray'> 
+[2026-02-27 08:46:26,175] [1436/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba shape (12,)
+[2026-02-27 08:46:26,177] [1436/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Density for Iris-virginica (id 1)
+[2026-02-27 08:46:26,177] [1436/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] valid_y shape = (27,)
+[2026-02-27 08:46:26,177] [1436/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] CP: <class 'numpy.ndarray'> ((27,))
+[2026-02-27 08:46:26,177] [1436/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Actual shape = (27,)
+[2026-02-27 08:46:26,177] [1436/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] MASK is <class 'numpy.ndarray'> 
+[2026-02-27 08:46:26,177] [1436/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba shape (5,)
+[2026-02-27 08:46:26,177] [1436/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Density for Iris-setosa (id 2)
+[2026-02-27 08:46:26,177] [1436/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] valid_y shape = (27,)
+[2026-02-27 08:46:26,177] [1436/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] CP: <class 'numpy.ndarray'> ((27,))
+[2026-02-27 08:46:26,177] [1436/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Actual shape = (27,)
+[2026-02-27 08:46:26,178] [1436/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] MASK is <class 'numpy.ndarray'> 
+[2026-02-27 08:46:26,178] [1436/MainThread] [INFO] [dataiku.doctor.prediction.classification_scoring] Class proba shape (10,)
+[2026-02-27 08:46:26,184] [1436/MainThread] [INFO] [dataiku.doctor.diagnostics.diagnostics] Adding diagnostic: <DoctorDiagnostic ML_DIAGNOSTICS_DATASET_SANITY_CHECKS: Target variable distribution in test data does not match the training data distribution (p-value=0.049), metrics could be misleading>
+[2026-02-27 08:46:26,186] [1436/MainThread] [INFO] [dataiku.doctor.diagnostics.diagnostics] Adding diagnostic: <DoctorDiagnostic ML_DIAGNOSTICS_LEAKAGE_DETECTION: AUC=1.000, too good to be true?>
+[2026-02-27 08:46:26,186] [1436/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Scoring model
+[2026-02-27 08:46:26,186] [1436/MainThread] [INFO] [dataiku.doctor.utils.listener] START -  Preparing explainability
+[2026-02-27 08:46:26,186] [1436/MainThread] [INFO] [dataiku.doctor.prediction_entrypoints] Starting to compute global explanations
+[2026-02-27 08:46:26,186] [1436/MainThread] [INFO] [dataiku.doctor.prediction_entrypoints] Building model handler
+[2026-02-27 08:46:26,186] [1436/MainThread] [INFO] [dataiku.doctor.utils.gpu_execution] Not logging `nvidia-smi`: `useGPU` is False
+[2026-02-27 08:46:26,187] [1436/MainThread] [INFO] [dataiku.doctor.prediction.common] NaN support unavailable: incompatible algorithm KNN
+[2026-02-27 08:46:26,187] [1436/MainThread] [INFO] [dataiku.doctor.preprocessing_handler] generating interactions
+[2026-02-27 08:46:26,187] [1436/MainThread] [INFO] [dataiku.doctor.preprocessing_handler] {'feature_selection_params': {'method': 'NONE', 'random_forest_params': {'n_trees': 30, 'depth': 10, 'n_features': 25}, 'lasso_params': {'alpha': [0.01, 0.1, 1.0, 10.0, 100.0], 'cross_validate': True}, 'pca_params': {'n_features': 25, 'variance_proportion': 0.9}, 'ica_params': {'n_components': 25, 'fun': 'logcosh'}, 'correlation_params': {'min_abs_correlation': 0.0, 'max_abs_correlation': 1.0, 'n_features': 25}, 'custom_params': {'code': '# type your code here'}}, 'preprocessingFitSampleRatio': 1.0, 'preprocessingFitSampleSeed': 1337, 'target_remapping': [{'sourceValue': 'Iris-versicolor', 'mappedValue': 0, 'sampleFreq': 50}, {'sourceValue': 'Iris-virginica', 'mappedValue': 1, 'sampleFreq': 50}, {'sourceValue': 'Iris-setosa', 'mappedValue': 2, 'sampleFreq': 50}], 'skipPreprocessing': False, 'per_feature': {'Especie': {'dummy_clip': 'MAX_NB_CATEGORIES', 'cumulative_proportion': 0.95, 'min_samples': 10, 'max_nb_categories': 100, 'max_cat_safety': 200, 'nb_bins_hashing': 1048576, 'hash_whole_categories': True, 'dummy_drop': 'NONE', 'impact_method': 'M_ESTIMATOR', 'impact_m': 10, 'impact_kfold': True, 'impact_kfold_k': 5, 'impact_kfold_seed': 1337, 'ordinal_order': 'COUNT', 'ordinal_ascending': False, 'ordinal_default_mode': 'HIGHEST', 'ordinal_default_value': 0, 'frequency_default_mode': 'EXPLICIT', 'frequency_default_value': 0.0, 'frequency_normalized': True, 'role': 'TARGET', 'type': 'CATEGORY', 'state': {'userModified': False, 'autoModifiedByDSS': False, 'recordedMeaning': 'Text'}, 'customHandlingCode': '', 'customProcessorWantsMatrix': False, 'sendToInput': 'main'}, 'Ancho de sepalo': {'generate_derivative': False, 'numerical_handling': 'REGULAR', 'missing_handling': 'IMPUTE', 'missing_impute_with': 'MEAN', 'impute_constant_value': 0.0, 'keep_regular': False, 'rescaling': 'AVGSTD', 'monotonic': 'NONE', 'quantile_bin_nb_bins': 4, 'binarize_threshold_mode': 'MEDIAN', 'binarize_constant_threshold': 0.0, 'datetime_cyclical_periods': [], 'role': 'INPUT', 'type': 'NUMERIC', 'state': {'userModified': False, 'autoModifiedByDSS': False, 'recordedMeaning': 'DoubleMeaning'}, 'customHandlingCode': '', 'customProcessorWantsMatrix': False, 'sendToInput': 'main'}, 'Largo de sepalo': {'generate_derivative': False, 'numerical_handling': 'REGULAR', 'missing_handling': 'IMPUTE', 'missing_impute_with': 'MEAN', 'impute_constant_value': 0.0, 'keep_regular': False, 'rescaling': 'AVGSTD', 'monotonic': 'NONE', 'quantile_bin_nb_bins': 4, 'binarize_threshold_mode': 'MEDIAN', 'binarize_constant_threshold': 0.0, 'datetime_cyclical_periods': [], 'role': 'INPUT', 'type': 'NUMERIC', 'state': {'userModified': False, 'autoModifiedByDSS': False, 'recordedMeaning': 'DoubleMeaning'}, 'customHandlingCode': '', 'customProcessorWantsMatrix': False, 'sendToInput': 'main'}, 'Largo de petalo': {'generate_derivative': False, 'numerical_handling': 'REGULAR', 'missing_handling': 'IMPUTE', 'missing_impute_with': 'MEAN', 'impute_constant_value': 0.0, 'keep_regular': False, 'rescaling': 'AVGSTD', 'monotonic': 'NONE', 'quantile_bin_nb_bins': 4, 'binarize_threshold_mode': 'MEDIAN', 'binarize_constant_threshold': 0.0, 'datetime_cyclical_periods': [], 'role': 'INPUT', 'type': 'NUMERIC', 'state': {'userModified': False, 'autoModifiedByDSS': False, 'recordedMeaning': 'DoubleMeaning'}, 'customHandlingCode': '', 'customProcessorWantsMatrix': False, 'sendToInput': 'main'}, 'Ancho de petalo': {'generate_derivative': False, 'numerical_handling': 'REGULAR', 'missing_handling': 'IMPUTE', 'missing_impute_with': 'MEAN', 'impute_constant_value': 0.0, 'keep_regular': False, 'rescaling': 'AVGSTD', 'monotonic': 'NONE', 'quantile_bin_nb_bins': 4, 'binarize_threshold_mode': 'MEDIAN', 'binarize_constant_threshold': 0.0, 'datetime_cyclical_periods': [], 'role': 'INPUT', 'type': 'NUMERIC', 'state': {'userModified': False, 'autoModifiedByDSS': False, 'recordedMeaning': 'DoubleMeaning'}, 'customHandlingCode': '', 'customProcessorWantsMatrix': False, 'sendToInput': 'main'}}, 'reduce': {'enabled': False, 'kept_variance': 0.0}, 'feature_generation': {'pairwise_linear': {'behavior': 'DISABLED'}, 'polynomial_combinations': {'behavior': 'DISABLED'}, 'manual_interactions': {'interactions': []}, 'numericals_clustering': {'k': 0, 'all_features': False, 'input_features': [], 'behavior': 'DISABLED'}, 'categoricals_count_transformer': {'all_features': False, 'input_features': [], 'behavior': 'DISABLED'}, 'shifts': {}, 'windows': [], 'windows_rescale_numericals': False, 'windows_max_categories': 10}}
+[2026-02-27 08:46:26,187] [1436/MainThread] [INFO] [dataiku.doctor.preprocessing_handler] No feature selection to perform
+[2026-02-27 08:46:26,187] [1436/MainThread] [INFO] [dataiku.doctor.preprocessing_handler] generating interactions
+[2026-02-27 08:46:26,187] [1436/MainThread] [INFO] [dataiku.doctor.preprocessing_handler] {'feature_selection_params': {'method': 'NONE', 'random_forest_params': {'n_trees': 30, 'depth': 10, 'n_features': 25}, 'lasso_params': {'alpha': [0.01, 0.1, 1.0, 10.0, 100.0], 'cross_validate': True}, 'pca_params': {'n_features': 25, 'variance_proportion': 0.9}, 'ica_params': {'n_components': 25, 'fun': 'logcosh'}, 'correlation_params': {'min_abs_correlation': 0.0, 'max_abs_correlation': 1.0, 'n_features': 25}, 'custom_params': {'code': '# type your code here'}}, 'preprocessingFitSampleRatio': 1.0, 'preprocessingFitSampleSeed': 1337, 'target_remapping': [{'sourceValue': 'Iris-versicolor', 'mappedValue': 0, 'sampleFreq': 50}, {'sourceValue': 'Iris-virginica', 'mappedValue': 1, 'sampleFreq': 50}, {'sourceValue': 'Iris-setosa', 'mappedValue': 2, 'sampleFreq': 50}], 'skipPreprocessing': False, 'per_feature': {'Especie': {'dummy_clip': 'MAX_NB_CATEGORIES', 'cumulative_proportion': 0.95, 'min_samples': 10, 'max_nb_categories': 100, 'max_cat_safety': 200, 'nb_bins_hashing': 1048576, 'hash_whole_categories': True, 'dummy_drop': 'NONE', 'impact_method': 'M_ESTIMATOR', 'impact_m': 10, 'impact_kfold': True, 'impact_kfold_k': 5, 'impact_kfold_seed': 1337, 'ordinal_order': 'COUNT', 'ordinal_ascending': False, 'ordinal_default_mode': 'HIGHEST', 'ordinal_default_value': 0, 'frequency_default_mode': 'EXPLICIT', 'frequency_default_value': 0.0, 'frequency_normalized': True, 'role': 'TARGET', 'type': 'CATEGORY', 'state': {'userModified': False, 'autoModifiedByDSS': False, 'recordedMeaning': 'Text'}, 'customHandlingCode': '', 'customProcessorWantsMatrix': False, 'sendToInput': 'main'}, 'Ancho de sepalo': {'generate_derivative': False, 'numerical_handling': 'REGULAR', 'missing_handling': 'IMPUTE', 'missing_impute_with': 'MEAN', 'impute_constant_value': 0.0, 'keep_regular': False, 'rescaling': 'AVGSTD', 'monotonic': 'NONE', 'quantile_bin_nb_bins': 4, 'binarize_threshold_mode': 'MEDIAN', 'binarize_constant_threshold': 0.0, 'datetime_cyclical_periods': [], 'role': 'INPUT', 'type': 'NUMERIC', 'state': {'userModified': False, 'autoModifiedByDSS': False, 'recordedMeaning': 'DoubleMeaning'}, 'customHandlingCode': '', 'customProcessorWantsMatrix': False, 'sendToInput': 'main'}, 'Largo de sepalo': {'generate_derivative': False, 'numerical_handling': 'REGULAR', 'missing_handling': 'IMPUTE', 'missing_impute_with': 'MEAN', 'impute_constant_value': 0.0, 'keep_regular': False, 'rescaling': 'AVGSTD', 'monotonic': 'NONE', 'quantile_bin_nb_bins': 4, 'binarize_threshold_mode': 'MEDIAN', 'binarize_constant_threshold': 0.0, 'datetime_cyclical_periods': [], 'role': 'INPUT', 'type': 'NUMERIC', 'state': {'userModified': False, 'autoModifiedByDSS': False, 'recordedMeaning': 'DoubleMeaning'}, 'customHandlingCode': '', 'customProcessorWantsMatrix': False, 'sendToInput': 'main'}, 'Largo de petalo': {'generate_derivative': False, 'numerical_handling': 'REGULAR', 'missing_handling': 'IMPUTE', 'missing_impute_with': 'MEAN', 'impute_constant_value': 0.0, 'keep_regular': False, 'rescaling': 'AVGSTD', 'monotonic': 'NONE', 'quantile_bin_nb_bins': 4, 'binarize_threshold_mode': 'MEDIAN', 'binarize_constant_threshold': 0.0, 'datetime_cyclical_periods': [], 'role': 'INPUT', 'type': 'NUMERIC', 'state': {'userModified': False, 'autoModifiedByDSS': False, 'recordedMeaning': 'DoubleMeaning'}, 'customHandlingCode': '', 'customProcessorWantsMatrix': False, 'sendToInput': 'main'}, 'Ancho de petalo': {'generate_derivative': False, 'numerical_handling': 'REGULAR', 'missing_handling': 'IMPUTE', 'missing_impute_with': 'MEAN', 'impute_constant_value': 0.0, 'keep_regular': False, 'rescaling': 'AVGSTD', 'monotonic': 'NONE', 'quantile_bin_nb_bins': 4, 'binarize_threshold_mode': 'MEDIAN', 'binarize_constant_threshold': 0.0, 'datetime_cyclical_periods': [], 'role': 'INPUT', 'type': 'NUMERIC', 'state': {'userModified': False, 'autoModifiedByDSS': False, 'recordedMeaning': 'DoubleMeaning'}, 'customHandlingCode': '', 'customProcessorWantsMatrix': False, 'sendToInput': 'main'}}, 'reduce': {'enabled': False, 'kept_variance': 0.0}, 'feature_generation': {'pairwise_linear': {'behavior': 'DISABLED'}, 'polynomial_combinations': {'behavior': 'DISABLED'}, 'manual_interactions': {'interactions': []}, 'numericals_clustering': {'k': 0, 'all_features': False, 'input_features': [], 'behavior': 'DISABLED'}, 'categoricals_count_transformer': {'all_features': False, 'input_features': [], 'behavior': 'DISABLED'}, 'shifts': {}, 'windows': [], 'windows_rescale_numericals': False, 'windows_max_categories': 10}}
+[2026-02-27 08:46:26,187] [1436/MainThread] [INFO] [dataiku.doctor.preprocessing_handler] No feature selection to perform
+[2026-02-27 08:46:26,187] [1436/MainThread] [INFO] [dataiku.doctor.multiframe] Set MF index len 1
+[2026-02-27 08:46:26,187] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:MultipleImputeMissingFromInput
+[2026-02-27 08:46:26,187] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {'Ancho de sepalo': 3.0365853658536586, 'Largo de sepalo': 5.8601626016260155, 'Largo de petalo': 3.8146341463414632, 'Ancho de petalo': 1.2243902439024392}
+[2026-02-27 08:46:26,187] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:MultipleImputeMissingFromInput
+[2026-02-27 08:46:26,187] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2026-02-27 08:46:26,187] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (Ancho de sepalo)
+[2026-02-27 08:46:26,188] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Ancho de sepalo (avg=3.0365853658536586 std=nan shift=3.0365853658536586 inv_scale=2.2695505831893317 nulls=0)
+[2026-02-27 08:46:26,188] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (Largo de sepalo)
+[2026-02-27 08:46:26,188] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Largo de sepalo (avg=5.8601626016260155 std=nan shift=5.8601626016260155 inv_scale=1.1947055383079315 nulls=0)
+[2026-02-27 08:46:26,188] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (Largo de petalo)
+[2026-02-27 08:46:26,188] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Largo de petalo (avg=3.8146341463414632 std=nan shift=3.8146341463414632 inv_scale=0.5636315178055089 nulls=0)
+[2026-02-27 08:46:26,188] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (Ancho de petalo)
+[2026-02-27 08:46:26,188] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Ancho de petalo (avg=1.2243902439024392 std=nan shift=1.2243902439024392 inv_scale=1.2900534294867796 nulls=0)
+[2026-02-27 08:46:26,188] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FlushDFBuilder(num_flagonly)
+[2026-02-27 08:46:26,188] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FlushDFBuilder(datetime_cyclical)
+[2026-02-27 08:46:26,188] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:MultipleImputeMissingFromInput
+[2026-02-27 08:46:26,188] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2026-02-27 08:46:26,188] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FlushDFBuilder(cat_flagpresence)
+[2026-02-27 08:46:26,188] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:MultipleImputeMissingFromInput
+[2026-02-27 08:46:26,188] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2026-02-27 08:46:26,188] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:MultipleImputeMissingFromInput
+[2026-02-27 08:46:26,188] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2026-02-27 08:46:26,188] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FlushDFBuilder(interaction)
+[2026-02-27 08:46:26,188] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:DumpPipelineState
+[2026-02-27 08:46:26,188] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] ********* Pipeline state (Before feature selection)
+[2026-02-27 08:46:26,188] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]    input_df= (1, 5) 
+[2026-02-27 08:46:26,188] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]    current_mf=(1, 4) 
+[2026-02-27 08:46:26,188] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]    PPR: 
+[2026-02-27 08:46:26,188] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:EmitCurrentMFAsResult
+[2026-02-27 08:46:26,188] [1436/MainThread] [INFO] [dataiku.doctor.multiframe] Set MF index len 1
+[2026-02-27 08:46:26,188] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:DumpPipelineState
+[2026-02-27 08:46:26,188] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] ********* Pipeline state (At end)
+[2026-02-27 08:46:26,188] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]    input_df= (1, 5) 
+[2026-02-27 08:46:26,188] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]    current_mf=(0, 0) 
+[2026-02-27 08:46:26,189] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]    PPR: 
+[2026-02-27 08:46:26,189] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]       TRAIN = <class 'dataiku.doctor.multiframe.MultiFrame'> ((1, 4))
+[2026-02-27 08:46:26,189] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]       UNPROCESSED = <class 'pandas.core.frame.DataFrame'> ((1, 5))
+[2026-02-27 08:46:26,189] [1436/MainThread] [INFO] [dataiku.doctor.individual_explainer] Preparing explainer components: column importance, background rows and feature histograms
+[2026-02-27 08:46:26,189] [1436/MainThread] [INFO] [dataiku.doctor.individual_explainer] Loading train dataset to allow for computation of explanations.
+[2026-02-27 08:46:26,189] [1436/MainThread] [INFO] [root] Reading with dtypes: None
+[2026-02-27 08:46:26,189] [1436/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Largo de sepalo: <class 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=INPUT)
+[2026-02-27 08:46:26,189] [1436/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Ancho de sepalo: <class 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=INPUT)
+[2026-02-27 08:46:26,189] [1436/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Largo de petalo: <class 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=INPUT)
+[2026-02-27 08:46:26,189] [1436/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Ancho de petalo: <class 'numpy.float64'> (schema_type=double feature_type=NUMERIC feature_role=INPUT)
+[2026-02-27 08:46:26,189] [1436/MainThread] [INFO] [dataiku.doctor.utils] Computed dtype for Especie: <class 'numpy.object_'> (schema_type=string feature_type=CATEGORY feature_role=TARGET)
+[2026-02-27 08:46:26,189] [1436/MainThread] [INFO] [root] Reading with FIXED dtypes: {'Largo de sepalo': <class 'numpy.float64'>, 'Ancho de sepalo': <class 'numpy.float64'>, 'Largo de petalo': <class 'numpy.float64'>, 'Ancho de petalo': <class 'numpy.float64'>, 'Especie': <class 'numpy.object_'>}
+[2026-02-27 08:46:26,189] [1436/MainThread] [INFO] [root] Loaded table
+[2026-02-27 08:46:26,189] [1436/MainThread] [INFO] [dataiku.doctor.utils] Coercion done
+[2026-02-27 08:46:26,190] [1436/MainThread] [INFO] [dataiku.doctor.multiframe] Set MF index len 123
+[2026-02-27 08:46:26,190] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:MultipleImputeMissingFromInput
+[2026-02-27 08:46:26,190] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {'Ancho de sepalo': 3.0365853658536586, 'Largo de sepalo': 5.8601626016260155, 'Largo de petalo': 3.8146341463414632, 'Ancho de petalo': 1.2243902439024392}
+[2026-02-27 08:46:26,190] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:MultipleImputeMissingFromInput
+[2026-02-27 08:46:26,190] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2026-02-27 08:46:26,190] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (Ancho de sepalo)
+[2026-02-27 08:46:26,190] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Ancho de sepalo (avg=3.0365853658536586 std=0.4406158679198636 shift=3.0365853658536586 inv_scale=2.2695505831893317 nulls=0)
+[2026-02-27 08:46:26,190] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (Largo de sepalo)
+[2026-02-27 08:46:26,190] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Largo de sepalo (avg=5.8601626016260155 std=0.8370263365618158 shift=5.8601626016260155 inv_scale=1.1947055383079315 nulls=0)
+[2026-02-27 08:46:26,190] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (Largo de petalo)
+[2026-02-27 08:46:26,190] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Largo de petalo (avg=3.8146341463414632 std=1.7742088020440825 shift=3.8146341463414632 inv_scale=0.5636315178055089 nulls=0)
+[2026-02-27 08:46:26,190] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:RescalingProcessor2 (Ancho de petalo)
+[2026-02-27 08:46:26,191] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]   Rescale Ancho de petalo (avg=1.2243902439024392 std=0.7751616926423185 shift=1.2243902439024392 inv_scale=1.2900534294867796 nulls=0)
+[2026-02-27 08:46:26,191] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FlushDFBuilder(num_flagonly)
+[2026-02-27 08:46:26,191] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FlushDFBuilder(datetime_cyclical)
+[2026-02-27 08:46:26,191] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:MultipleImputeMissingFromInput
+[2026-02-27 08:46:26,191] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2026-02-27 08:46:26,191] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FlushDFBuilder(cat_flagpresence)
+[2026-02-27 08:46:26,191] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:MultipleImputeMissingFromInput
+[2026-02-27 08:46:26,191] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2026-02-27 08:46:26,191] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:MultipleImputeMissingFromInput
+[2026-02-27 08:46:26,191] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] MIMIFI: Imputing with map {}
+[2026-02-27 08:46:26,191] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:FlushDFBuilder(interaction)
+[2026-02-27 08:46:26,191] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:DumpPipelineState
+[2026-02-27 08:46:26,191] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] ********* Pipeline state (Before feature selection)
+[2026-02-27 08:46:26,191] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]    input_df= (123, 5) 
+[2026-02-27 08:46:26,191] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]    current_mf=(123, 4) 
+[2026-02-27 08:46:26,191] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]    PPR: 
+[2026-02-27 08:46:26,191] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:EmitCurrentMFAsResult
+[2026-02-27 08:46:26,191] [1436/MainThread] [INFO] [dataiku.doctor.multiframe] Set MF index len 123
+[2026-02-27 08:46:26,191] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] PROCESS WITH Step:DumpPipelineState
+[2026-02-27 08:46:26,191] [1436/MainThread] [DEBUG] [dku.ml.preprocessing] ********* Pipeline state (At end)
+[2026-02-27 08:46:26,191] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]    input_df= (123, 5) 
+[2026-02-27 08:46:26,191] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]    current_mf=(0, 0) 
+[2026-02-27 08:46:26,191] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]    PPR: 
+[2026-02-27 08:46:26,191] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]       TRAIN = <class 'dataiku.doctor.multiframe.MultiFrame'> ((123, 4))
+[2026-02-27 08:46:26,191] [1436/MainThread] [DEBUG] [dku.ml.preprocessing]       UNPROCESSED = <class 'pandas.core.frame.DataFrame'> ((123, 5))
+[2026-02-27 08:46:26,191] [1436/MainThread] [INFO] [dataiku.doctor.prediction.common] NaN support unavailable: incompatible algorithm KNN
+[2026-02-27 08:46:26,191] [1436/MainThread] [INFO] [dataiku.doctor.sparse] Algorithm KNN doesn't support sparse matrices, using NPA
+[2026-02-27 08:46:26,194] [1436/MainThread] [INFO] [dataiku.doctor.prediction.column_importance_handler] Computing feature importances
+[2026-02-27 08:46:26,224] [1436/MainThread] [INFO] [dataiku.doctor.prediction.column_importance_handler] Saving column importance
+[2026-02-27 08:46:26,226] [1436/MainThread] [INFO] [dataiku.doctor.prediction.background_rows_handler] Building background rows
+[2026-02-27 08:46:26,226] [1436/MainThread] [INFO] [dataiku.doctor.prediction.background_rows_handler] Background estimated bias <= 0.15198455209747608
+[2026-02-27 08:46:26,227] [1436/MainThread] [INFO] [dataiku.doctor.prediction.background_rows_handler] Built background rows with shape=(123, 5)
+[2026-02-27 08:46:26,227] [1436/MainThread] [INFO] [dataiku.doctor.prediction.background_rows_handler] Saving background rows with shape=(123, 5)
+[2026-02-27 08:46:26,227] [1436/MainThread] [INFO] [dataiku.doctor.utils] Coercion done
+[2026-02-27 08:46:26,227] [1436/MainThread] [INFO] [dataiku.doctor.posttraining.features_distribution] Computing features distribution
+[2026-02-27 08:46:26,230] [1436/MainThread] [INFO] [dataiku.doctor.posttraining.features_distribution] Saving features distribution
+[2026-02-27 08:46:26,244] [1436/MainThread] [INFO] [dataiku.doctor.prediction_entrypoints] Skipped feature importance computations due to long computation time for KNN algorithm . They can be done post-training.
+[2026-02-27 08:46:26,244] [1436/MainThread] [INFO] [dataiku.doctor.utils.listener] END -  Preparing explainability
+[2026-02-27 08:46:26,244] [1436/MainThread] [INFO] [dataiku.base.socket_block_link] Client closed
+[2026/02/27-08:46:26.245] [MRT-347] [INFO] [dku.block.link.interaction]  - Check result for nullity exceptionIfNull=true result=not null
+[2026/02/27-08:46:26.245] [MRT-347] [INFO] [dku.analysis.prediction]  - Training returned ok
+[2026/02/27-08:46:26.246] [MRT-347] [INFO] [dku.ml.versioning]  - Dumping version info {"trainedWithDSSVersion":"14.4.0","trainedWithDSSConfVersion":"14400","trainedWithDSSBackend":"PY_MEMORY","backendCompatibilityVersion":18} in /home/dataiku/dss/analysis-data/KNN/oIKJvDda/ATBPYyJT/sessions/s1/pp1/m1
+[2026/02/27-08:46:26.251] [MRT-347] [INFO] [dku.analysis.ml]  - preTrain={
+  "algorithm": "KNN",
+  "knn_grid": {
+    "k": {
+      "gridMode": "EXPLICIT",
+      "randomMode": "RANGE",
+      "limit": {
+        "min": 1
+      },
+      "values": [
+        5
+      ],
+      "range": {
+        "min": 3,
+        "max": 7,
+        "nbValues": 4,
+        "scaling": "LINEAR"
+      }
+    },
+    "distance_weighting": false,
+    "algorithm": "auto",
+    "p": 2,
+    "leaf_size": 30,
+    "enabled": true
+  },
+  "max_ensemble_nodes_serialized": 6000,
+  "metrics": {
+    "customMetrics": [],
+    "evaluationMetric": "ROC_AUC",
+    "classAveragingMethod": "MACRO",
+    "costMatrixWeights": {
+      "tpGain": 1.0,
+      "tnGain": 0.0,
+      "fpGain": -0.3,
+      "fnGain": 0.0
+    },
+    "liftPoint": 0.4,
+    "netUpliftPoint": 0.5,
+    "causalWeighting": "NO_WEIGHTING"
+  },
+  "autoOptimizeThreshold": true,
+  "forcedClassifierThreshold": 0.0,
+  "isShiftWindowsCompatible": false,
+  "gridLength": 1,
+  "grid_search_params": {
+    "mode": "KFOLD",
+    "splitRatio": 0.8,
+    "shuffleIterations": 1,
+    "nFolds": 5,
+    "cvSeed": 1337,
+    "stratified": true,
+    "grouped": false,
+    "strategy": "GRID",
+    "bayesianOptimizer": "SCIKIT_OPTIMIZE",
+    "randomized": true,
+    "seed": 1337,
+    "nIter": 0,
+    "nIterRandom": 5,
+    "timeout": 0,
+    "nJobs": 4,
+    "distributed": false,
+    "nContainers": 4,
+    "foldOffset": true,
+    "equalDurationFolds": false
+  },
+  "pluginAlgoCustomGridSearch": false,
+  "computeLearningCurves": false,
+  "skipExpensiveReports": false,
+  "skipPermutationImportance": true,
+  "perIdentifierPermutationImportance": false,
+  "propensityModeling": {
+    "enabled": true,
+    "calibrateProbabilities": false,
+    "calibrationDataRatio": 0.1
+  }
+}
+[2026/02/27-08:46:26.251] [MRT-347] [INFO] [dku.analysis.ml]  - amp={
+  "resolved": {
+    "algorithm": "KNN",
+    "knn": {
+      "k": 5,
+      "distance_weighting": false,
+      "algorithm": "auto",
+      "p": 2,
+      "leaf_size": 30
+    },
+    "skipExpensiveReports": false
+  },
+  "other": {}
+}
+[2026/02/27-08:46:26.252] [MRT-347] [WARN] [dku.kernels]  - Killing kernel python-single-command-kernel
+[2026/02/27-08:46:26.252] [MRT-347] [INFO] [dku.utils]  - Killing process PID: 1436
+[2026/02/27-08:46:26.254] [MRT-347] [INFO] [dku.engine]  - Schedule closing for WorkerPool
+[2026/02/27-08:46:26.255] [MRT-347] [INFO] [dip.tickets]  - Destroying API ticket for analysis-ml-KNN-TXs6S5N on behalf of admin
+[2026/02/27-08:46:26.255] [AsyncCloser-0] [INFO] [com.dataiku.dip.analysis.ml.distributed.workers]  - Closing worker pool pool-x1el6yd43ldroiqs
+[2026/02/27-08:46:26.255] [AsyncCloser-0] [INFO] [com.dataiku.dip.analysis.ml.distributed.workers]  - Unregistered worker pool: pool-x1el6yd43ldroiqs
+[2026/02/27-08:46:26.255] [AsyncCloser-0] [INFO] [dku.engine]  - Successfully closed WorkerPool
+[2026/02/27-08:46:26.260] [KNL-python-single-command-kernel-out-353] [DEBUG] [process]  - StreamToLine: EOF (stream closed)
+[2026/02/27-08:46:26.260] [KNL-python-single-command-kernel-err-354] [DEBUG] [process]  - StreamToLine: EOF (stream closed)
+[2026/02/27-08:46:26.261] [KNL-python-single-command-kernel-monitor-351] [INFO] [dku.kernels]  - Process done with code 143
+[2026/02/27-08:46:26.261] [KNL-python-single-command-kernel-monitor-351] [WARN] [dku.resource]  - stat file for pid 1436 does not exist. Process died?
+[2026/02/27-08:46:26.261] [KNL-python-single-command-kernel-monitor-351] [DEBUG] [dku.resourceusage]  - Reporting completion of CRU:{"context":{"type":"ANALYSIS_ML_TRAIN","authIdentifier":"admin","projectKey":"KNN","analysisId":"oIKJvDda","mlTaskId":"ATBPYyJT","sessionId":"s1"},"type":"LOCAL_PROCESS","id":"TAyt7DBFoRnhMEQV","startTime":1772181985280,"localProcess":{"pid":1436,"commandName":"/home/dataiku/dss/bin/python","cpuUserTimeMS":0,"cpuSystemTimeMS":0,"cpuChildrenUserTimeMS":0,"cpuChildrenSystemTimeMS":0,"cpuTotalMS":0,"cpuCurrent":0.0,"cpuAverageOverPast60Seconds":0.0,"vmSizeMB":8,"vmRSSMB":6,"vmHWMMB":6,"vmRSSAnonMB":1,"vmDataMB":1,"vmSizePeakMB":8,"vmRSSPeakMB":6,"vmRSSTotalMBS":0,"majorFaults":1,"childrenMajorFaults":0}}
+[2026/02/27-08:46:26.262] [MRT-347] [INFO] [dku.block.link]  - Closed socket
+[2026/02/27-08:46:26.262] [MRT-347] [INFO] [dku.block.link]  - Closed socket
+[2026/02/27-08:46:26.263] [MRT-347] [INFO] [dku.block.link]  - Closed serverSocket
+[2026/02/27-08:46:26.263] [FT-TrainWorkThread-I6j9kmQk-345] [INFO] [dku.analysis.ml.python] T-ATBPYyJT - [ct: 1030] Processing thread joined ...
+[2026/02/27-08:46:26.263] [FT-TrainWorkThread-I6j9kmQk-345] [INFO] [dku.analysis] T-ATBPYyJT - [ct: 1030] Train done
+[2026/02/27-08:46:26.263] [FT-TrainWorkThread-I6j9kmQk-345] [INFO] [dku.analysis.prediction] T-ATBPYyJT - [ct: 1030] Train done
+[2026/02/27-08:46:26.268] [FT-TrainWorkThread-I6j9kmQk-345] [INFO] [dku.analysis.trainingdetails] T-ATBPYyJT - Publishing mltask-train-done reflected event
+[2026/02/27-08:46:26.268] [FT-TrainWorkThread-I6j9kmQk-345] [INFO] [dku.futures]  - [ct: 1035] Completed future execution: TrainWorkThread

@@ -1,0 +1,14 @@
+{
+    "columns": [
+        "Ancho de sepalo",
+        "Largo de sepalo",
+        "Largo de petalo",
+        "Ancho de petalo"
+    ],
+    "importances": [
+        0.013994861252634515,
+        0.009182828734392318,
+        0.557269541462887,
+        0.4195527685500862
+    ]
+}

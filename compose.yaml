@@ -1,0 +1,13 @@
+services:
+  dataiku.studio:
+    image: dataiku/dss:14.4.0
+    container_name: dataiku_dss
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+    ports:
+      - "10000:10000"
+    volumes:
+      # Cambiar ./dataiku_data por la ruta absoluta
+      # donde se quieran guardar los datos de Dataiku
+      - ./dataiku_data:/home/dataiku/dss:rw

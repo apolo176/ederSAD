@@ -1,0 +1,216 @@
+{
+  "feature_selection_params": {
+    "method": "NONE",
+    "random_forest_params": {
+      "n_trees": 30,
+      "depth": 10,
+      "n_features": 25
+    },
+    "lasso_params": {
+      "alpha": [
+        0.01,
+        0.1,
+        1.0,
+        10.0,
+        100.0
+      ],
+      "cross_validate": true
+    },
+    "pca_params": {
+      "n_features": 25,
+      "variance_proportion": 0.9
+    },
+    "ica_params": {
+      "n_components": 25,
+      "fun": "logcosh"
+    },
+    "correlation_params": {
+      "min_abs_correlation": 0.0,
+      "max_abs_correlation": 1.0,
+      "n_features": 25
+    },
+    "custom_params": {
+      "code": "# type your code here"
+    }
+  },
+  "preprocessingFitSampleRatio": 1.0,
+  "preprocessingFitSampleSeed": 1337,
+  "target_remapping": [
+    {
+      "sourceValue": "Iris-versicolor",
+      "mappedValue": 0,
+      "sampleFreq": 50
+    },
+    {
+      "sourceValue": "Iris-virginica",
+      "mappedValue": 1,
+      "sampleFreq": 50
+    },
+    {
+      "sourceValue": "Iris-setosa",
+      "mappedValue": 2,
+      "sampleFreq": 50
+    }
+  ],
+  "skipPreprocessing": false,
+  "per_feature": {
+    "Especie": {
+      "dummy_clip": "MAX_NB_CATEGORIES",
+      "cumulative_proportion": 0.95,
+      "min_samples": 10,
+      "max_nb_categories": 100,
+      "max_cat_safety": 200,
+      "nb_bins_hashing": 1048576,
+      "hash_whole_categories": true,
+      "dummy_drop": "NONE",
+      "impact_method": "M_ESTIMATOR",
+      "impact_m": 10,
+      "impact_kfold": true,
+      "impact_kfold_k": 5,
+      "impact_kfold_seed": 1337,
+      "ordinal_order": "COUNT",
+      "ordinal_ascending": false,
+      "ordinal_default_mode": "HIGHEST",
+      "ordinal_default_value": 0,
+      "frequency_default_mode": "EXPLICIT",
+      "frequency_default_value": 0.0,
+      "frequency_normalized": true,
+      "role": "TARGET",
+      "type": "CATEGORY",
+      "state": {
+        "userModified": false,
+        "autoModifiedByDSS": false,
+        "recordedMeaning": "Text"
+      },
+      "customHandlingCode": "",
+      "customProcessorWantsMatrix": false,
+      "sendToInput": "main"
+    },
+    "Ancho de sepalo": {
+      "generate_derivative": false,
+      "numerical_handling": "REGULAR",
+      "missing_handling": "IMPUTE",
+      "missing_impute_with": "MEAN",
+      "impute_constant_value": 0.0,
+      "keep_regular": false,
+      "rescaling": "AVGSTD",
+      "monotonic": "NONE",
+      "quantile_bin_nb_bins": 4,
+      "binarize_threshold_mode": "MEDIAN",
+      "binarize_constant_threshold": 0.0,
+      "datetime_cyclical_periods": [],
+      "role": "INPUT",
+      "type": "NUMERIC",
+      "state": {
+        "userModified": false,
+        "autoModifiedByDSS": false,
+        "recordedMeaning": "DoubleMeaning"
+      },
+      "customHandlingCode": "",
+      "customProcessorWantsMatrix": false,
+      "sendToInput": "main"
+    },
+    "Largo de sepalo": {
+      "generate_derivative": false,
+      "numerical_handling": "REGULAR",
+      "missing_handling": "IMPUTE",
+      "missing_impute_with": "MEAN",
+      "impute_constant_value": 0.0,
+      "keep_regular": false,
+      "rescaling": "AVGSTD",
+      "monotonic": "NONE",
+      "quantile_bin_nb_bins": 4,
+      "binarize_threshold_mode": "MEDIAN",
+      "binarize_constant_threshold": 0.0,
+      "datetime_cyclical_periods": [],
+      "role": "INPUT",
+      "type": "NUMERIC",
+      "state": {
+        "userModified": false,
+        "autoModifiedByDSS": false,
+        "recordedMeaning": "DoubleMeaning"
+      },
+      "customHandlingCode": "",
+      "customProcessorWantsMatrix": false,
+      "sendToInput": "main"
+    },
+    "Largo de petalo": {
+      "generate_derivative": false,
+      "numerical_handling": "REGULAR",
+      "missing_handling": "IMPUTE",
+      "missing_impute_with": "MEAN",
+      "impute_constant_value": 0.0,
+      "keep_regular": false,
+      "rescaling": "AVGSTD",
+      "monotonic": "NONE",
+      "quantile_bin_nb_bins": 4,
+      "binarize_threshold_mode": "MEDIAN",
+      "binarize_constant_threshold": 0.0,
+      "datetime_cyclical_periods": [],
+      "role": "INPUT",
+      "type": "NUMERIC",
+      "state": {
+        "userModified": false,
+        "autoModifiedByDSS": false,
+        "recordedMeaning": "DoubleMeaning"
+      },
+      "customHandlingCode": "",
+      "customProcessorWantsMatrix": false,
+      "sendToInput": "main"
+    },
+    "Ancho de petalo": {
+      "generate_derivative": false,
+      "numerical_handling": "REGULAR",
+      "missing_handling": "IMPUTE",
+      "missing_impute_with": "MEAN",
+      "impute_constant_value": 0.0,
+      "keep_regular": false,
+      "rescaling": "AVGSTD",
+      "monotonic": "NONE",
+      "quantile_bin_nb_bins": 4,
+      "binarize_threshold_mode": "MEDIAN",
+      "binarize_constant_threshold": 0.0,
+      "datetime_cyclical_periods": [],
+      "role": "INPUT",
+      "type": "NUMERIC",
+      "state": {
+        "userModified": false,
+        "autoModifiedByDSS": false,
+        "recordedMeaning": "DoubleMeaning"
+      },
+      "customHandlingCode": "",
+      "customProcessorWantsMatrix": false,
+      "sendToInput": "main"
+    }
+  },
+  "reduce": {
+    "enabled": false,
+    "kept_variance": 0.0
+  },
+  "feature_generation": {
+    "pairwise_linear": {
+      "behavior": "DISABLED"
+    },
+    "polynomial_combinations": {
+      "behavior": "DISABLED"
+    },
+    "manual_interactions": {
+      "interactions": []
+    },
+    "numericals_clustering": {
+      "k": 0,
+      "all_features": false,
+      "input_features": [],
+      "behavior": "DISABLED"
+    },
+    "categoricals_count_transformer": {
+      "all_features": false,
+      "input_features": [],
+      "behavior": "DISABLED"
+    },
+    "shifts": {},
+    "windows": [],
+    "windows_rescale_numericals": false,
+    "windows_max_categories": 10
+  }
+}

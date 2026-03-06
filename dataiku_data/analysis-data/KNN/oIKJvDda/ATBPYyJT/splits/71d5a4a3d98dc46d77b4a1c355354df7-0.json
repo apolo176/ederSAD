@@ -1,0 +1,56 @@
+{
+  "params": {
+    "ttPolicy": "SPLIT_SINGLE_DATASET",
+    "ssdSplitMode": "RANDOM",
+    "splitBeforePrepare": true,
+    "ssdSelection": {
+      "useMemTable": false,
+      "filter": {
+        "distinct": false,
+        "enabled": false
+      },
+      "partitionSelectionMethod": "ALL",
+      "latestPartitionsN": 1,
+      "ordering": {
+        "enabled": false,
+        "rules": []
+      },
+      "samplingMethod": "HEAD_SEQUENTIAL",
+      "maxRecords": 100000,
+      "targetRatio": 0.02,
+      "ascending": true,
+      "withinFirstN": -1,
+      "maxReadUncompressedBytes": -1,
+      "seed": 1337
+    },
+    "ssdTrainingRatio": 0.8,
+    "ssdStratified": false,
+    "ssdGrouped": false,
+    "ssdSeed": 1337,
+    "testOnLargerValues": true,
+    "streamAll": false,
+    "kfold": false,
+    "nFolds": 5,
+    "instanceIdRefresher": 0,
+    "subSamplingSeed": 1337
+  },
+  "generationDate": 1772181985239,
+  "policyId": "type\u003dSPLIT_SINGLE_DATASET,split\u003dRANDOM,splitBeforePrepare\u003dtrue,ds\u003diris,sel\u003d(method\u003dhead-s,records\u003d100000),r\u003d0.8,s\u003d1337",
+  "instanceId": "71d5a4a3d98dc46d77b4a1c355354df7-0",
+  "format": "csv1",
+  "schema": {
+    "columns": [
+      {"name":"Largo de sepalo","type":"double"},
+      {"name":"Ancho de sepalo","type":"double"},
+      {"name":"Largo de petalo","type":"double"},
+      {"name":"Ancho de petalo","type":"double"},
+      {"name":"Especie","type":"string"}
+    ],
+    "userModified": false
+  },
+  "trainPath": "train-71d5a4a3d98dc46d77b4a1c355354df7-0.csv.gz",
+  "testPath": "test-71d5a4a3d98dc46d77b4a1c355354df7-0.csv.gz",
+  "trainRows": 123,
+  "testRows": 27,
+  "fullRows": 0
+}

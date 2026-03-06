@@ -1,0 +1,221 @@
+{
+  "runsRemotely": false,
+  "callContextStop": false,
+  "env": {
+    "SUPERVISOR_ENABLED": "1",
+    "DKU_VM_INFO": "native",
+    "DKURUNDIR": "/home/dataiku/dss/run",
+    "DKURVERSION": "4.5.2",
+    "DKUHPROXYBIN": "/home/dataiku/dss/bin/hproxy",
+    "R_LIBS": "/home/dataiku/dss/R.lib:/home/dataiku/dataiku-dss-14.4.0/R/4.x",
+    "DSS_VERSION": "14.4.0",
+    "DKU_BASE_PROTOCOL": "http",
+    "PWD": "/home/dataiku",
+    "DKUINSTALLDIR": "/home/dataiku/dataiku-dss-14.4.0",
+    "JUPYTER_RUNTIME_DIR": "/home/dataiku/dss/jupyter-run/jupyter/runtime",
+    "DKU_JEK_JAVA_OPTS": "-Xmx2g -XX:+UseParallelGC -XX:ParallelGCThreads\u003d3 -Xlog:gc,gc+cpu\u003dinfo:stderr:t,um,l,ti,tg ",
+    "PYTHONPATH": "/home/dataiku/dss/lib/python:/home/dataiku/dataiku-dss-14.4.0/python:/home/dataiku/dataiku-dss-14.4.0/dku-jupyter/packages",
+    "FLOW_FORCED_SCHEMAS": "{}",
+    "DKU_FEK_JAVA_OPTS": "-Xmx2g -XX:+UseParallelGC -XX:ParallelGCThreads\u003d3 -Xlog:gc,gc+cpu\u003dinfo:stderr:t,um,l,ti,tg ",
+    "DKU_HPROXY_JAVA_LIBRARY_PATH": "",
+    "DKUBIN": "/home/dataiku/dss/bin/dku",
+    "DKU_JAVA_TMP_DIR": "/home/dataiku/dss/tmp",
+    "DKU_NODE_TYPE": "design",
+    "SUPERVISOR_SERVER_URL": "unix:///home/dataiku/dss/run/svd.sock",
+    "DKUJULIADEPOT": "/home/dataiku/dss/code-envs/julia",
+    "DKU_CAK_JAVA_LIBRARY_PATH": "",
+    "DKUJAVABIN": "/usr/bin/java",
+    "LC_ALL": "en_US.UTF-8",
+    "SUPERVISOR_PROCESS_NAME": "backend",
+    "SUPERVISOR_GROUP_NAME": "backend",
+    "DKU_STORIES_PORT": "10006",
+    "DKUPYTHONBIN": "/home/dataiku/dss/bin/python",
+    "DKU_BACKEND_HOST_FOR_REMOTE": "f40a9e768d7b",
+    "DKU_BACKEND_PROTOCOL": "http",
+    "SHLVL": "0",
+    "DKU_NGINX_PORT": "10000",
+    "DKU_BASE_PORT": "10000",
+    "DKU_DKU_JAVA_LIBRARY_PATH": "",
+    "DKU_FEK_JAVA_LIBRARY_PATH": "",
+    "DKU_RLIBS_SET": "1",
+    "DKU_EVENTSERVER_JAVA_OPTS": "-Xmx2g -XX:+UseG1GC -Xlog:gc,gc+cpu\u003dinfo:stderr:t,um,l,ti,tg ",
+    "DKU_BACKEND_JAVA_OPTS": "-Xmx4g -XX:+UseG1GC -Xlog:gc,gc+cpu\u003dinfo:stderr:t,um,l,ti,tg ",
+    "DKU_HPROXY_PORT": "10003",
+    "DKU_HPROXY_JAVA_OPTS": "-Xmx2g -XX:+UseParallelGC -XX:ParallelGCThreads\u003d3 -Xlog:gc,gc+cpu\u003dinfo:stderr:t,um,l,ti,tg ",
+    "JAVA_HOME": "/usr/lib/jvm/java-17-openjdk-17.0.18.0.8-1.el9.alma.1.x86_64",
+    "DSS_PORT": "10000",
+    "TERM": "xterm",
+    "DKU_IPYTHON_PORT": "10002",
+    "DKUFEKBIN": "/home/dataiku/dss/bin/fek",
+    "DKUDISTRIB": "almalinux 9.7",
+    "DKU_BACKEND_JAVA_LIBRARY_PATH": "",
+    "DKU_SERVER_PROTOCOL": "http",
+    "DKU_DKU_JAVA_OPTS": "-Xmx4g -XX:+UseParallelGC -XX:ParallelGCThreads\u003d3 ",
+    "DKU_EVENTSERVER_JAVA_LIBRARY_PATH": "",
+    "JUPYTER_CONFIG_DIR": "/home/dataiku/dss/jupyter-run/jupyter",
+    "DKU_CURRENT_PROJECT_KEY": "KNN",
+    "DKU_JEK_JAVA_LIBRARY_PATH": "",
+    "DKU_SERVER_PORT": "10001",
+    "DIP_HOME": "/home/dataiku/dss",
+    "DKUJEKBIN": "/home/dataiku/dss/bin/jek",
+    "IPYTHONDIR": "/home/dataiku/dss/jupyter-run/ipython",
+    "DKUCAKBIN": "/home/dataiku/dss/bin/cak",
+    "DKU_JAVA_OPTS": "-ea -Dfile.encoding\u003dutf8 -Djava.awt.headless\u003dtrue -Djava.io.tmpdir\u003d/home/dataiku/dss/tmp -Djava.security.egd\u003dfile:/dev/./urandom -Djdk.http.auth.tunneling.disabledSchemes\u003d -Djdk.http.auth.proxying.disabledSchemes\u003d -Dnet.snowflake.jdbc.enableBouncyCastle\u003dtrue --add-opens java.base/java.lang\u003dALL-UNNAMED --add-opens java.base/java.lang.reflect\u003dALL-UNNAMED --add-opens java.base/java.io\u003dALL-UNNAMED --add-opens java.base/java.nio\u003dALL-UNNAMED --add-opens java.base/java.net\u003dALL-UNNAMED --add-opens java.base/java.util\u003dALL-UNNAMED --add-opens\u003djava.base/java.lang\u003dALL-UNNAMED --add-opens\u003djava.management/com.sun.jmx.mbeanserver\u003dALL-UNNAMED --add-exports\u003djava.management/com.sun.jmx.mbeanserver\u003dALL-UNNAMED --add-exports\u003djava.base/sun.net.dns\u003dALL-UNNAMED --add-exports\u003djava.base/sun.net.util\u003dALL-UNNAMED",
+    "DKU_API_TICKET": "xG9j0VnZZpxtVaR5ZZ9EWGuo6Hp2YeCBsnzTdObxaGhLqZkC2GZB1y3rQaurvDnT",
+    "DKU_BACKEND_PORT": "10001",
+    "DKURBIN": "/usr/bin/R",
+    "HOSTNAME": "f40a9e768d7b",
+    "DKU_SERVER_KIND": "BACKEND",
+    "DKU_EVENTSERVER_PORT": "10004",
+    "DKURLIB": "/home/dataiku/dss/R.lib",
+    "DKU_SERVER_HOST_FOR_REMOTE": "f40a9e768d7b",
+    "DSS_DATADIR": "/home/dataiku/dss",
+    "DKU_CAK_JAVA_OPTS": "-Xmx2g -XX:+UseParallelGC -XX:ParallelGCThreads\u003d3 -Xlog:gc,gc+cpu\u003dinfo:stderr:t,um,l,ti,tg ",
+    "JUPYTER_DATA_DIR": "/home/dataiku/dss/jupyter-run/jupyter",
+    "DKUPATHSET": "1"
+  },
+  "zippedFolders": {},
+  "jobId": "Predict Especie in iris_1.ipynb",
+  "cwd": "/home/dataiku/dss/jupyter-run/dku-workdirs/KNN/Predict_Especie_in_iris_156f53746",
+  "jobExecEnv": {
+    "connections": {
+      "filesystem_managed": {
+        "params": {
+          "root": "${dip.home}/managed_datasets",
+          "forcePathsOnDatasetsImport": false,
+          "manageLocalACLsForManagedFolders": true,
+          "dkuProperties": [],
+          "namingRule": {}
+        },
+        "name": "filesystem_managed",
+        "type": "Filesystem",
+        "allowWrite": true,
+        "allowManagedDatasets": true,
+        "allowManagedFolders": false,
+        "allowKnowledgeBanks": true,
+        "useGlobalProxy": true,
+        "maxActivities": 0,
+        "customFields": {},
+        "credentialsMode": "GLOBAL",
+        "customBasicConnectionCredentialProviderParams": [],
+        "usableBy": "ALL",
+        "allowedGroups": [],
+        "detailsReadability": {
+          "readableBy": "NONE",
+          "allowedGroups": []
+        },
+        "indexingSettings": {
+          "indexIndices": false,
+          "indexForeignKeys": false,
+          "indexSystemTables": false
+        }
+      },
+      "filesystem_folders": {
+        "params": {
+          "root": "${dip.home}/managed_folders",
+          "forcePathsOnDatasetsImport": false,
+          "manageLocalACLsForManagedFolders": true,
+          "dkuProperties": [],
+          "namingRule": {}
+        },
+        "name": "filesystem_folders",
+        "type": "Filesystem",
+        "allowWrite": true,
+        "allowManagedDatasets": false,
+        "allowManagedFolders": true,
+        "allowKnowledgeBanks": true,
+        "useGlobalProxy": true,
+        "maxActivities": 0,
+        "customFields": {},
+        "credentialsMode": "GLOBAL",
+        "customBasicConnectionCredentialProviderParams": [],
+        "usableBy": "ALL",
+        "allowedGroups": [],
+        "detailsReadability": {
+          "readableBy": "NONE",
+          "allowedGroups": []
+        },
+        "indexingSettings": {
+          "indexIndices": false,
+          "indexForeignKeys": false,
+          "indexSystemTables": false
+        }
+      },
+      "filesystem_root": {
+        "params": {
+          "root": "/",
+          "forcePathsOnDatasetsImport": false,
+          "manageLocalACLsForManagedFolders": true,
+          "dkuProperties": [],
+          "namingRule": {}
+        },
+        "name": "filesystem_root",
+        "type": "Filesystem",
+        "allowWrite": false,
+        "allowManagedDatasets": false,
+        "allowManagedFolders": true,
+        "allowKnowledgeBanks": true,
+        "useGlobalProxy": true,
+        "maxActivities": 0,
+        "customFields": {},
+        "credentialsMode": "GLOBAL",
+        "customBasicConnectionCredentialProviderParams": [],
+        "usableBy": "ALL",
+        "allowedGroups": [],
+        "detailsReadability": {
+          "readableBy": "NONE",
+          "allowedGroups": []
+        },
+        "indexingSettings": {
+          "indexIndices": false,
+          "indexForeignKeys": false,
+          "indexSystemTables": false
+        }
+      }
+    },
+    "dipProperties": {
+      "logging.limit.filePartitioner.noMatch": "100",
+      "dku.exports.chrome.sandbox": "false",
+      "dku.registration.channel": "docker-image",
+      "logging.limit.s3.ignoredFile": "100",
+      "logging.limit.s3.ignoredPath": "100"
+    },
+    "global": {
+      "explicitlyAdded": {},
+      "levels": [
+        {
+          "dip.home": "/home/dataiku/dss",
+          "dku.install.dir": "/home/dataiku/dataiku-dss-14.4.0"
+        },
+        {}
+      ]
+    },
+    "perProject": {
+      "KNN": {
+        "explicitlyAdded": {},
+        "levels": [
+          {
+            "dip.home": "/home/dataiku/dss",
+            "dku.install.dir": "/home/dataiku/dataiku-dss-14.4.0"
+          },
+          {
+            "projectKey": "KNN"
+          },
+          {},
+          {}
+        ]
+      }
+    },
+    "dssUserLogin": "admin",
+    "meaningsList": {
+      "meanings": []
+    },
+    "additionalSparkConf": [],
+    "impersonationEnabled": false,
+    "hadoopSettings": {
+      "kerberosLoginEnabled": false,
+      "extraConf": [],
+      "validationKernelsExtraEnv": []
+    }
+  }
+}

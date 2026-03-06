@@ -1,0 +1,10 @@
+{
+  "columns": [
+    {"name":"Largo de sepalo","type":"string"},
+    {"name":"Ancho de sepalo","type":"string"},
+    {"name":"Largo de petalo","type":"string"},
+    {"name":"Ancho de petalo","type":"string"},
+    {"name":"Especie","type":"string"}
+  ],
+  "userModified": true
+}

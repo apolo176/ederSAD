@@ -1,0 +1,75 @@
+[2026/02/27-08:34:43.402] [DefaultQuartzScheduler_Worker-1-Deferred] [INFO] [dku.unifiedmonitoring.computation]  - Starting monitored project snapshots computation
+[2026/02/27-08:34:43.403] [DefaultQuartzScheduler_Worker-1-Deferred] [INFO] [dku.unifiedmonitoring.computation]  - The status of the following infras for deployed projects will be computed : []
+[2026/02/27-08:34:43.403] [DefaultQuartzScheduler_Worker-1-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: initiating a top-most handle
+[2026/02/27-08:34:43.403] [DefaultQuartzScheduler_Worker-1-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: closing the handle, thus closing the client
+[2026/02/27-08:34:43.403] [DefaultQuartzScheduler_Worker-1-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: removing current thread's handle
+[2026/02/27-08:39:43.393] [DefaultQuartzScheduler_Worker-7-Deferred] [INFO] [dku.unifiedmonitoring.computation]  - Starting monitored project snapshots computation
+[2026/02/27-08:39:43.393] [DefaultQuartzScheduler_Worker-7-Deferred] [INFO] [dku.unifiedmonitoring.computation]  - The status of the following infras for deployed projects will be computed : []
+[2026/02/27-08:39:43.394] [DefaultQuartzScheduler_Worker-7-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: initiating a top-most handle
+[2026/02/27-08:39:43.394] [DefaultQuartzScheduler_Worker-7-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: closing the handle, thus closing the client
+[2026/02/27-08:39:43.394] [DefaultQuartzScheduler_Worker-7-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: removing current thread's handle
+[2026/02/27-08:44:43.392] [DefaultQuartzScheduler_Worker-3-Deferred] [INFO] [dku.unifiedmonitoring.computation]  - Starting monitored project snapshots computation
+[2026/02/27-08:44:43.392] [DefaultQuartzScheduler_Worker-3-Deferred] [INFO] [dku.unifiedmonitoring.computation]  - The status of the following infras for deployed projects will be computed : []
+[2026/02/27-08:44:43.392] [DefaultQuartzScheduler_Worker-3-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: initiating a top-most handle
+[2026/02/27-08:44:43.392] [DefaultQuartzScheduler_Worker-3-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: closing the handle, thus closing the client
+[2026/02/27-08:44:43.392] [DefaultQuartzScheduler_Worker-3-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: removing current thread's handle
+[2026/02/27-08:49:43.393] [DefaultQuartzScheduler_Worker-9-Deferred] [INFO] [dku.unifiedmonitoring.computation]  - Starting monitored project snapshots computation
+[2026/02/27-08:49:43.393] [DefaultQuartzScheduler_Worker-9-Deferred] [INFO] [dku.unifiedmonitoring.computation]  - The status of the following infras for deployed projects will be computed : []
+[2026/02/27-08:49:43.393] [DefaultQuartzScheduler_Worker-9-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: initiating a top-most handle
+[2026/02/27-08:49:43.393] [DefaultQuartzScheduler_Worker-9-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: closing the handle, thus closing the client
+[2026/02/27-08:49:43.393] [DefaultQuartzScheduler_Worker-9-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: removing current thread's handle
+[2026/02/27-08:54:43.392] [DefaultQuartzScheduler_Worker-5-Deferred] [INFO] [dku.unifiedmonitoring.computation]  - Starting monitored project snapshots computation
+[2026/02/27-08:54:43.393] [DefaultQuartzScheduler_Worker-5-Deferred] [INFO] [dku.unifiedmonitoring.computation]  - The status of the following infras for deployed projects will be computed : []
+[2026/02/27-08:54:43.393] [DefaultQuartzScheduler_Worker-5-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: initiating a top-most handle
+[2026/02/27-08:54:43.393] [DefaultQuartzScheduler_Worker-5-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: closing the handle, thus closing the client
+[2026/02/27-08:54:43.393] [DefaultQuartzScheduler_Worker-5-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: removing current thread's handle
+[2026/02/27-08:59:49.322] [DefaultQuartzScheduler_Worker-1-Deferred] [INFO] [dku.unifiedmonitoring.computation]  - Starting monitored project snapshots computation
+[2026/02/27-08:59:49.322] [DefaultQuartzScheduler_Worker-1-Deferred] [INFO] [dku.unifiedmonitoring.computation]  - The status of the following infras for deployed projects will be computed : []
+[2026/02/27-08:59:49.322] [DefaultQuartzScheduler_Worker-1-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: initiating a top-most handle
+[2026/02/27-08:59:49.322] [DefaultQuartzScheduler_Worker-1-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: closing the handle, thus closing the client
+[2026/02/27-08:59:49.322] [DefaultQuartzScheduler_Worker-1-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: removing current thread's handle
+[2026/03/06-08:19:21.521] [DefaultQuartzScheduler_Worker-1-Deferred] [INFO] [dku.unifiedmonitoring.computation]  - Starting monitored project snapshots computation
+[2026/03/06-08:19:21.521] [DefaultQuartzScheduler_Worker-1-Deferred] [INFO] [dku.unifiedmonitoring.computation]  - The status of the following infras for deployed projects will be computed : []
+[2026/03/06-08:19:21.522] [DefaultQuartzScheduler_Worker-1-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: initiating a top-most handle
+[2026/03/06-08:19:21.522] [DefaultQuartzScheduler_Worker-1-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: closing the handle, thus closing the client
+[2026/03/06-08:19:21.522] [DefaultQuartzScheduler_Worker-1-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: removing current thread's handle
+[2026/03/06-08:24:21.509] [DefaultQuartzScheduler_Worker-7-Deferred] [INFO] [dku.unifiedmonitoring.computation]  - Starting monitored project snapshots computation
+[2026/03/06-08:24:21.509] [DefaultQuartzScheduler_Worker-7-Deferred] [INFO] [dku.unifiedmonitoring.computation]  - The status of the following infras for deployed projects will be computed : []
+[2026/03/06-08:24:21.510] [DefaultQuartzScheduler_Worker-7-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: initiating a top-most handle
+[2026/03/06-08:24:21.510] [DefaultQuartzScheduler_Worker-7-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: closing the handle, thus closing the client
+[2026/03/06-08:24:21.510] [DefaultQuartzScheduler_Worker-7-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: removing current thread's handle
+[2026/03/06-08:29:21.508] [DefaultQuartzScheduler_Worker-3-Deferred] [INFO] [dku.unifiedmonitoring.computation]  - Starting monitored project snapshots computation
+[2026/03/06-08:29:21.510] [DefaultQuartzScheduler_Worker-3-Deferred] [INFO] [dku.unifiedmonitoring.computation]  - The status of the following infras for deployed projects will be computed : []
+[2026/03/06-08:29:21.510] [DefaultQuartzScheduler_Worker-3-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: initiating a top-most handle
+[2026/03/06-08:29:21.510] [DefaultQuartzScheduler_Worker-3-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: closing the handle, thus closing the client
+[2026/03/06-08:29:21.510] [DefaultQuartzScheduler_Worker-3-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: removing current thread's handle
+[2026/03/06-08:34:21.508] [DefaultQuartzScheduler_Worker-10-Deferred] [INFO] [dku.unifiedmonitoring.computation]  - Starting monitored project snapshots computation
+[2026/03/06-08:34:21.510] [DefaultQuartzScheduler_Worker-10-Deferred] [INFO] [dku.unifiedmonitoring.computation]  - The status of the following infras for deployed projects will be computed : []
+[2026/03/06-08:34:21.510] [DefaultQuartzScheduler_Worker-10-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: initiating a top-most handle
+[2026/03/06-08:34:21.510] [DefaultQuartzScheduler_Worker-10-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: closing the handle, thus closing the client
+[2026/03/06-08:34:21.510] [DefaultQuartzScheduler_Worker-10-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: removing current thread's handle
+[2026/03/06-08:39:21.510] [DefaultQuartzScheduler_Worker-6-Deferred] [INFO] [dku.unifiedmonitoring.computation]  - Starting monitored project snapshots computation
+[2026/03/06-08:39:21.510] [DefaultQuartzScheduler_Worker-6-Deferred] [INFO] [dku.unifiedmonitoring.computation]  - The status of the following infras for deployed projects will be computed : []
+[2026/03/06-08:39:21.510] [DefaultQuartzScheduler_Worker-6-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: initiating a top-most handle
+[2026/03/06-08:39:21.510] [DefaultQuartzScheduler_Worker-6-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: closing the handle, thus closing the client
+[2026/03/06-08:39:21.510] [DefaultQuartzScheduler_Worker-6-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: removing current thread's handle
+[2026/03/06-08:44:21.509] [DefaultQuartzScheduler_Worker-2-Deferred] [INFO] [dku.unifiedmonitoring.computation]  - Starting monitored project snapshots computation
+[2026/03/06-08:44:21.510] [DefaultQuartzScheduler_Worker-2-Deferred] [INFO] [dku.unifiedmonitoring.computation]  - The status of the following infras for deployed projects will be computed : []
+[2026/03/06-08:44:21.510] [DefaultQuartzScheduler_Worker-2-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: initiating a top-most handle
+[2026/03/06-08:44:21.510] [DefaultQuartzScheduler_Worker-2-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: closing the handle, thus closing the client
+[2026/03/06-08:44:21.510] [DefaultQuartzScheduler_Worker-2-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: removing current thread's handle
+[2026/03/06-08:49:21.509] [DefaultQuartzScheduler_Worker-8-Deferred] [INFO] [dku.unifiedmonitoring.computation]  - Starting monitored project snapshots computation
+[2026/03/06-08:49:21.509] [DefaultQuartzScheduler_Worker-8-Deferred] [INFO] [dku.unifiedmonitoring.computation]  - The status of the following infras for deployed projects will be computed : []
+[2026/03/06-08:49:21.509] [DefaultQuartzScheduler_Worker-8-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: initiating a top-most handle
+[2026/03/06-08:49:21.509] [DefaultQuartzScheduler_Worker-8-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: closing the handle, thus closing the client
+[2026/03/06-08:49:21.509] [DefaultQuartzScheduler_Worker-8-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: removing current thread's handle
+[2026/03/06-08:54:21.508] [DefaultQuartzScheduler_Worker-4-Deferred] [INFO] [dku.unifiedmonitoring.computation]  - Starting monitored project snapshots computation
+[2026/03/06-08:54:21.509] [DefaultQuartzScheduler_Worker-4-Deferred] [INFO] [dku.unifiedmonitoring.computation]  - The status of the following infras for deployed projects will be computed : []
+[2026/03/06-08:54:21.509] [DefaultQuartzScheduler_Worker-4-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: initiating a top-most handle
+[2026/03/06-08:54:21.509] [DefaultQuartzScheduler_Worker-4-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: closing the handle, thus closing the client
+[2026/03/06-08:54:21.509] [DefaultQuartzScheduler_Worker-4-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: removing current thread's handle
+[2026/03/06-08:59:21.509] [DefaultQuartzScheduler_Worker-10-Deferred] [INFO] [dku.unifiedmonitoring.computation]  - Starting monitored project snapshots computation
+[2026/03/06-08:59:21.509] [DefaultQuartzScheduler_Worker-10-Deferred] [INFO] [dku.unifiedmonitoring.computation]  - The status of the following infras for deployed projects will be computed : []
+[2026/03/06-08:59:21.509] [DefaultQuartzScheduler_Worker-10-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: initiating a top-most handle
+[2026/03/06-08:59:21.509] [DefaultQuartzScheduler_Worker-10-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: closing the handle, thus closing the client
+[2026/03/06-08:59:21.509] [DefaultQuartzScheduler_Worker-10-Deferred] [INFO] [dku.gh.single-govern-client-handle]  - Govern client handle: removing current thread's handle

@@ -1,0 +1,32 @@
+{
+  "servers": {
+    "flow_state": {
+      "port": 39793,
+      "key": "jTbIGNzglE70SUG9"
+    },
+    "dss_usage": {
+      "port": 39457,
+      "key": "pwjiIO6JzfMXytQP"
+    },
+    "agent-review": {
+      "port": 36641,
+      "key": "IZrEvw8pvdzYohE5"
+    },
+    "labelings": {
+      "port": 40159,
+      "key": "3NG99FWIXGK7bsWt"
+    },
+    "jobs": {
+      "port": 39079,
+      "key": "9pyep3Ab94TZzNcm"
+    },
+    "experiments": {
+      "port": 45027,
+      "key": "Zzy1NDEyRJV7oSpH"
+    },
+    "hive-catalog": {
+      "port": 39591,
+      "key": "0HEHh5YtbAIpiIDI"
+    }
+  }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/dataiku_data/code-envs/desc" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/dataiku_data/config" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/dataiku_data/config/projects/KNN" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/dataiku_data/lib/R" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/dataiku_data/lib/python" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/dataiku_data/local/static" vcs="Git" />
+  </component>
+</project>

@@ -1,0 +1,134 @@
+*********************************************************
+Data Science Studio installer: 2026/02/27-08:34:18
+Command line: /home/dataiku/dataiku-dss-14.4.0/installer.sh -d /home/dataiku/dss -p 10000
+Version: {"product_version" : "14.4.0", "product_commitid" : ""}
+DIP_HOME: /home/dataiku/dss
+
+[+] Using Java at /usr/bin/java : openjdk version "17.0.18" 2026-01-20 LTS
+[+] Checking required dependencies
++ Detected OS distribution : almalinux 9.7
++ Checking required packages...
+[+] Installation starting
+[+] Initializing Python environment
+[+] Initializing Python environment using platform default
++ Using default base Python for this platform : python3.9
+created virtual environment CPython3.9.25.final.0-64 in 168ms
+  creator CPython3Posix(dest=/home/dataiku/dss/pyenv, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, via=copy, app_data_dir=/home/dataiku/.local/share/virtualenv)
+    added seed packages: pip==25.3, setuptools==80.9.0
+  activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+[+] Precompiling Dataiku Python code
+[+] Precompiling Jupyter Python code
+[+] Precompiling third-party Python 3.9 code
+[+] Performing initial install
+[+] Writing version metadata conf=14400 product=14.4.0 revision=
+[+] Writing default install config file
+[+] Writing default env file
+[+] Preparing data directory initial data
+Loading plugins: 
+[2026/02/27-08:34:19.332] [main] [INFO] [dku.modules]  - Opening all java modules in unnamed module @3d99d22e
+[2026/02/27-08:34:19.332] [main] [INFO] [dku.modules]  - Opening java modules
+[2026/02/27-08:34:19.336] [main] [INFO] [com.dataiku.dip.DKUApp]  - Loading DIP properties from /home/dataiku/dss/config/dip.properties
+[2026/02/27-08:34:19.347] [main] [INFO] [dku.logging]  - Loading logging settings
+[2026/02/27-08:34:19.349] [main] [INFO] [dku.logging]  - Configuring additional logging settings from /home/dataiku/dataiku-dss-14.4.0/resources/logging/dku-log4j.properties
+[2026/02/27-08:34:19.356] [main] [INFO] [dku.logging]  - Configuring additional JUL logging settings from /home/dataiku/dataiku-dss-14.4.0/resources/logging/dku-log-jul.properties
+Installed kernelspec python3 in /home/dataiku/dss/jupyter-run/jupyter/kernels/python3
+Installing /home/dataiku/dataiku-dss-14.4.0/python39.packages/widgetsnbextension/static -> jupyter-js-widgets
+Making directory: /home/dataiku/dss/jupyter-run/jupyter/nbextensions/jupyter-js-widgets/
+Copying: /home/dataiku/dataiku-dss-14.4.0/python39.packages/widgetsnbextension/static/extension.js.map -> /home/dataiku/dss/jupyter-run/jupyter/nbextensions/jupyter-js-widgets/extension.js.map
+Copying: /home/dataiku/dataiku-dss-14.4.0/python39.packages/widgetsnbextension/static/extension.js -> /home/dataiku/dss/jupyter-run/jupyter/nbextensions/jupyter-js-widgets/extension.js
+- Validating: [32mOK[0m
+
+    To initialize this nbextension in the browser every time the notebook (or other app) loads:
+    
+          jupyter nbextension enable widgetsnbextension --user --py
+    
+Extension collapsible_headings/main enabled successfully
+Extension codefolding/main enabled successfully
+Extension toggle_all_line_numbers/main enabled successfully
+Extension hide_input_all/main enabled successfully
+Extension addbefore/main enabled successfully
+Extension jupyter-js-widgets/extension enabled successfully
+[+] Generating default env file
+[+] Generating supervisor configuration
+[+] Generating nginx configuration
+***************************************************************
+* Installation complete (DSS node type: design)
+* Next, start DSS using:
+*         '/home/dataiku/dss/bin/dss start'
+* Dataiku DSS will be accessible on http://<SERVER ADDRESS>:10000
+*
+* You can configure Dataiku DSS to start automatically at server boot with:
+*    sudo -i "/home/dataiku/dataiku-dss-14.4.0/scripts/install/install-boot.sh" "/home/dataiku/dss" dataiku
+***************************************************************
+*********************************************************
+Data Science Studio admin tool: 2026/02/27-08:34:24
+Command line: /home/dataiku/dss/bin/dssadmin install-R-integration
+DIP_HOME: /home/dataiku/dss
+
+[+] Checking dependencies
++ Detected OS distribution : almalinux 9.7
++ Checking required packages...
+[+] Using R binary at /usr/bin/R : version 4.5.2
+[+] Installing required R packages into /home/dataiku/dss/R.lib
+Checking installed packages ...
+[+] Installing R kernel for Jupyter
+[InstallKernelSpec] Installed kernelspec ir in /home/dataiku/dss/jupyter-run/jupyter/kernels/ir
+[+] Creating wrapper script /home/dataiku/dss/bin/R
+[+] Done
+*********************************************************
+Data Science Studio admin tool: 2026/02/27-08:34:24
+Command line: /home/dataiku/dss/bin/dssadmin install-graphics-export
+DIP_HOME: /home/dataiku/dss
+
+[+] Checking dependencies
++ Detected OS distribution : almalinux 9.7
++ Checking required packages...
+[+] Installing additional modules for dashboard and flow export feature
++ Detected Node.js version 22.19.0
++ Installing Puppeteer 24
+
+added 2 packages, changed 13 packages, and audited 101 packages in 12s
+
+7 packages are looking for funding
+  run `npm fund` for details
+
+found 0 vulnerabilities
+[+] Enabling graphics export in DSS
+Loading plugins: 
+[2026/02/27-08:34:37.860] [main] [INFO] [dku.modules]  - Opening all java modules in unnamed module @3d99d22e
+[2026/02/27-08:34:37.860] [main] [INFO] [dku.modules]  - Opening java modules
+[2026/02/27-08:34:37.864] [main] [INFO] [com.dataiku.dip.DKUApp]  - Loading DIP properties from /home/dataiku/dss/config/dip.properties
+[2026/02/27-08:34:37.875] [main] [INFO] [dku.logging]  - Loading logging settings
+[2026/02/27-08:34:37.877] [main] [INFO] [dku.logging]  - Configuring additional logging settings from /home/dataiku/dataiku-dss-14.4.0/resources/logging/dku-log4j.properties
+[2026/02/27-08:34:37.885] [main] [INFO] [dku.logging]  - Configuring additional JUL logging settings from /home/dataiku/dataiku-dss-14.4.0/resources/logging/dku-log-jul.properties
+[2026/02/27-08:34:38.197] [main] [INFO] [dku.modules]  - Opening all java modules in unnamed module @3d99d22e
+[2026/02/27-08:34:38.197] [main] [INFO] [dku.modules]  - Opening java modules
+[2026/02/27-08:34:38.309] [main] [INFO] [com.dataiku.dip.transactions.fs.FSyncUtils]  - Setting up fsync pool with 8 threads and CRC32 check is disabled
+[2026/02/27-08:34:38.310] [main] [INFO] [com.dataiku.dip.DKUApp]  - Reading /home/dataiku/dss/install.ini
+[2026/02/27-08:34:38.450] [main] [INFO] [dip.transactions]  - Transaction provider started (directory=/home/dataiku/dss/config, cache_compression=lz4, main_lock=false, temp_dir=/home/dataiku/dss/tmp/txn/large-files, fs_cache=v1, git_support=true, per_read_txn_cache=true, per_write_txn_cache=true)
+[2026/02/27-08:34:38.458] [main] [DEBUG] [dku.security.encryption]  - Init crypto service
+[2026/02/27-08:34:38.471] [main] [DEBUG] [dku.config.crypto]  - Initializing config crypto
+[2026/02/27-08:34:38.480] [main] [INFO] [com.dataiku.dip.transactions.fs.FSyncUtils]  - Setting up fsync pool with 8 threads and CRC32 check is disabled
+[2026/02/27-08:34:38.480] [main] [INFO] [dip.transactions]  - Transaction provider started (directory=/home/dataiku/dss/config, cache_compression=lz4, main_lock=false, temp_dir=/home/dataiku/dss/tmp/txn/large-files, fs_cache=v1, git_support=true, per_read_txn_cache=true, per_write_txn_cache=true)
+[2026/02/27-08:34:38.508] [main] [INFO] [dku.cli.graphicsExport]  - Setting-up graphics export
+[2026/02/27-08:34:38.516] [main] [DEBUG] [dip.transactions]  - Begin commit
+[2026/02/27-08:34:38.522] [main] [INFO] [dip.commitbehavior]  - Candidate commit [GLOBAL] [no:auth] CLI: Enabled graphics (dashboard and flow) export (from command-line) : 
+ - /general-settings.json
+
+[2026/02/27-08:34:38.522] [main] [INFO] [dip.transactions]  - Writing journal
+[2026/02/27-08:34:38.523] [pool-5-thread-1] [DEBUG] [com.dataiku.dip.transactions.fs.FSyncUtils]  - writeAndSync: /home/dataiku/dss/config/.ts/general-settings.json.0
+[2026/02/27-08:34:38.527] [pool-5-thread-2] [DEBUG] [com.dataiku.dip.transactions.fs.FSyncUtils]  - writeAndSync: /home/dataiku/dss/config/.journal
+[2026/02/27-08:34:38.529] [main] [INFO] [dip.transactions]  - Journal written in 5 ms
+[2026/02/27-08:34:38.529] [main] [INFO] [dip.transactions]  - Executing journal
+[2026/02/27-08:34:38.533] [main] [INFO] [dip.transactions]  - Journal executed in 4 ms
+[2026/02/27-08:34:38.534] [main] [DEBUG] [com.dataiku.dip.transactions.git.CommitQueue]  - Executing Git commit:
+[GLOBAL] [no:auth] CLI: Enabled graphics (dashboard and flow) export (from command-line) : 
+ - /general-settings.json
+
+[2026/02/27-08:34:38.575] [main] [INFO] [dip.transactions]  - Transaction committed [exec=34ms commitWait=0ms commitExec=53ms]
+[2026/02/27-08:34:38.578] [main] [DEBUG] [dku.remoterun.envhelper]  - Fetching remote run env def
+[2026/02/27-08:34:38.578] [main] [INFO] [dku.remoterun.fileshelper]  - Look for resource or file remote-run-env-def.json
+[2026/02/27-08:34:38.579] [main] [INFO] [dku.remoterun.fileshelper]  -  > not found, returning default
+[2026/02/27-08:34:38.579] [main] [INFO] [dku.remoterun.envhelper]  -  > No env def file found, creating default env def
+[+] Done

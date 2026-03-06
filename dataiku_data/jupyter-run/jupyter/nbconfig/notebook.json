@@ -1,0 +1,10 @@
+{
+    "load_extensions": {
+        "collapsible_headings/main": true,
+        "codefolding/main": true,
+        "toggle_all_line_numbers/main": true,
+        "hide_input_all/main": true,
+        "addbefore/main": true,
+        "jupyter-js-widgets/extension": true
+    }
+}

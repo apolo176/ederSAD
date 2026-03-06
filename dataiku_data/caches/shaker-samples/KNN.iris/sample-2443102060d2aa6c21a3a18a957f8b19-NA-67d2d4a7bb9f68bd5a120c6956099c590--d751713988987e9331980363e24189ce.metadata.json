@@ -1,0 +1,14 @@
+{
+  "samplingMethod": "HEAD_SEQUENTIAL",
+  "maxRecords": 10000,
+  "targetRatio": 0.02,
+  "hasFilter": false,
+  "partitionCount": 0,
+  "sampleIsWholeDataset": true,
+  "sampleRecordCount": 150,
+  "datasetRecordCount": 150,
+  "recordCountIsApproximate": false,
+  "recordCountIsObsolete": false,
+  "memoryLimitReached": false,
+  "memoryLimitInMB": 100
+}
