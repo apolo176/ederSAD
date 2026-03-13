@@ -22,5 +22,17 @@
     },
     "timestamp": 1772785161434,
     "numberMostUsedDatasets": 0
+  },
+  {
+    "perfMetrics": {
+      "listing": 1,
+      "getLastRebuild": 1,
+      "collectRecipe": 0,
+      "processRecipe": 0,
+      "compileData": 2,
+      "total": 4
+    },
+    "timestamp": 1773389455304,
+    "numberMostUsedDatasets": 0
   }
 ]

@@ -1,0 +1,27 @@
+{
+  "preprocessing": {
+    "unique_category_threshold": 10,
+    "categorical_features": ["gender", "job", "city"],
+    "missing_values": "impute",
+    "impute_strategy": "mean",
+    "scaling": "standard",
+    "text_process": "tf-idf",
+    "sampling": "undersampling",
+    "drop_features": ["id_columna_inutil"]
+  },
+  "kNN": {
+    "n_neighbors": [3, 5, 7, 9],
+    "weights": ["uniform", "distance"]
+  },
+  "decision_tree": {
+    "criterion": ["gini", "entropy"],
+    "max_depth": [null, 10, 20, 30]
+  },
+  "random_forest": {
+    "n_estimators": [50, 100, 200],
+    "max_depth": [null, 10, 20]
+  },
+  "naive_bayes": {
+    "var_smoothing": [1e-9, 1e-8, 1e-7, 1e-6, 1e-5]
+  }
+}

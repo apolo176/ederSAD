@@ -698,3 +698,177 @@
 [2026/03/06-09:01:21.633] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=luauygzl]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=luauygzl handler=SessionRootHandler
 [2026/03/06-09:01:21.633] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=luauygzl]  List of active sessions: [{'id': 'admin__DKU__141d1b7f-afab-4fdf-b80d-9fa059ab40c7', 'path': 'KNN__DKU__Predict Especie in iris_1.ipynb', 'name': '', 'type': 'notebook', 'start_time': 1772785552131, 'kernel': {'id': '6435ea62-50dc-4ca7-a3e6-977bf461f338', 'name': 'python3', 'last_activity': '2026-03-06T08:25:52.582615Z', 'execution_state': 'idle', 'connections': 0, 'pid': 730}, 'notebook': {'path': 'KNN__DKU__Predict Especie in iris_1.ipynb', 'name': ''}}, {'id': 'admin__DKU__a33e98a3-c291-4d96-8852-23cb9c8df01e', 'path': 'KNN__DKU__Predict Especie in iris.ipynb', 'name': '', 'type': 'notebook', 'start_time': 1772785558991, 'kernel': {'id': '1b9952d2-c5f2-428d-add2-334d44704d10', 'name': 'python3', 'last_activity': '2026-03-06T08:25:59.651004Z', 'execution_state': 'idle', 'connections': 1, 'pid': 748}, 'notebook': {'path': 'KNN__DKU__Predict Especie in iris.ipynb', 'name': ''}}]
 [2026/03/06-09:01:21.633] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=luauygzl]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=luauygzl time=0ms handler=SessionRootHandler
+[2026/03/06-09:02:21.637] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=ojgbplvv]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=ojgbplvv handler=SessionRootHandler
+[2026/03/06-09:02:21.637] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=ojgbplvv]  List of active sessions: [{'id': 'admin__DKU__141d1b7f-afab-4fdf-b80d-9fa059ab40c7', 'path': 'KNN__DKU__Predict Especie in iris_1.ipynb', 'name': '', 'type': 'notebook', 'start_time': 1772785552131, 'kernel': {'id': '6435ea62-50dc-4ca7-a3e6-977bf461f338', 'name': 'python3', 'last_activity': '2026-03-06T08:25:52.582615Z', 'execution_state': 'idle', 'connections': 0, 'pid': 730}, 'notebook': {'path': 'KNN__DKU__Predict Especie in iris_1.ipynb', 'name': ''}}, {'id': 'admin__DKU__a33e98a3-c291-4d96-8852-23cb9c8df01e', 'path': 'KNN__DKU__Predict Especie in iris.ipynb', 'name': '', 'type': 'notebook', 'start_time': 1772785558991, 'kernel': {'id': '1b9952d2-c5f2-428d-add2-334d44704d10', 'name': 'python3', 'last_activity': '2026-03-06T08:25:59.651004Z', 'execution_state': 'idle', 'connections': 1, 'pid': 748}, 'notebook': {'path': 'KNN__DKU__Predict Especie in iris.ipynb', 'name': ''}}]
+[2026/03/06-09:02:21.637] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=ojgbplvv]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=ojgbplvv time=0ms handler=SessionRootHandler
+[2026/03/06-09:03:21.641] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=xonylbwc]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=xonylbwc handler=SessionRootHandler
+[2026/03/06-09:03:21.642] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=xonylbwc]  List of active sessions: [{'id': 'admin__DKU__141d1b7f-afab-4fdf-b80d-9fa059ab40c7', 'path': 'KNN__DKU__Predict Especie in iris_1.ipynb', 'name': '', 'type': 'notebook', 'start_time': 1772785552131, 'kernel': {'id': '6435ea62-50dc-4ca7-a3e6-977bf461f338', 'name': 'python3', 'last_activity': '2026-03-06T08:25:52.582615Z', 'execution_state': 'idle', 'connections': 0, 'pid': 730}, 'notebook': {'path': 'KNN__DKU__Predict Especie in iris_1.ipynb', 'name': ''}}, {'id': 'admin__DKU__a33e98a3-c291-4d96-8852-23cb9c8df01e', 'path': 'KNN__DKU__Predict Especie in iris.ipynb', 'name': '', 'type': 'notebook', 'start_time': 1772785558991, 'kernel': {'id': '1b9952d2-c5f2-428d-add2-334d44704d10', 'name': 'python3', 'last_activity': '2026-03-06T08:25:59.651004Z', 'execution_state': 'idle', 'connections': 1, 'pid': 748}, 'notebook': {'path': 'KNN__DKU__Predict Especie in iris.ipynb', 'name': ''}}]
+[2026/03/06-09:03:21.642] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=xonylbwc]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=xonylbwc time=0ms handler=SessionRootHandler
+[2026/03/06-09:04:21.645] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=svqbhfat]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=svqbhfat handler=SessionRootHandler
+[2026/03/06-09:04:21.646] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=svqbhfat]  List of active sessions: [{'id': 'admin__DKU__141d1b7f-afab-4fdf-b80d-9fa059ab40c7', 'path': 'KNN__DKU__Predict Especie in iris_1.ipynb', 'name': '', 'type': 'notebook', 'start_time': 1772785552131, 'kernel': {'id': '6435ea62-50dc-4ca7-a3e6-977bf461f338', 'name': 'python3', 'last_activity': '2026-03-06T08:25:52.582615Z', 'execution_state': 'idle', 'connections': 0, 'pid': 730}, 'notebook': {'path': 'KNN__DKU__Predict Especie in iris_1.ipynb', 'name': ''}}, {'id': 'admin__DKU__a33e98a3-c291-4d96-8852-23cb9c8df01e', 'path': 'KNN__DKU__Predict Especie in iris.ipynb', 'name': '', 'type': 'notebook', 'start_time': 1772785558991, 'kernel': {'id': '1b9952d2-c5f2-428d-add2-334d44704d10', 'name': 'python3', 'last_activity': '2026-03-06T08:25:59.651004Z', 'execution_state': 'idle', 'connections': 1, 'pid': 748}, 'notebook': {'path': 'KNN__DKU__Predict Especie in iris.ipynb', 'name': ''}}]
+[2026/03/06-09:04:21.646] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=svqbhfat]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=svqbhfat time=0ms handler=SessionRootHandler
+[2026/03/06-09:05:21.649] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=wljhmwyn]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=wljhmwyn handler=SessionRootHandler
+[2026/03/06-09:05:21.650] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=wljhmwyn]  List of active sessions: [{'id': 'admin__DKU__141d1b7f-afab-4fdf-b80d-9fa059ab40c7', 'path': 'KNN__DKU__Predict Especie in iris_1.ipynb', 'name': '', 'type': 'notebook', 'start_time': 1772785552131, 'kernel': {'id': '6435ea62-50dc-4ca7-a3e6-977bf461f338', 'name': 'python3', 'last_activity': '2026-03-06T08:25:52.582615Z', 'execution_state': 'idle', 'connections': 0, 'pid': 730}, 'notebook': {'path': 'KNN__DKU__Predict Especie in iris_1.ipynb', 'name': ''}}, {'id': 'admin__DKU__a33e98a3-c291-4d96-8852-23cb9c8df01e', 'path': 'KNN__DKU__Predict Especie in iris.ipynb', 'name': '', 'type': 'notebook', 'start_time': 1772785558991, 'kernel': {'id': '1b9952d2-c5f2-428d-add2-334d44704d10', 'name': 'python3', 'last_activity': '2026-03-06T08:25:59.651004Z', 'execution_state': 'idle', 'connections': 1, 'pid': 748}, 'notebook': {'path': 'KNN__DKU__Predict Especie in iris.ipynb', 'name': ''}}]
+[2026/03/06-09:05:21.650] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=wljhmwyn]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=wljhmwyn time=0ms handler=SessionRootHandler
+[2026/03/06-09:06:21.653] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=trjmormh]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=trjmormh handler=SessionRootHandler
+[2026/03/06-09:06:21.654] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=trjmormh]  List of active sessions: [{'id': 'admin__DKU__141d1b7f-afab-4fdf-b80d-9fa059ab40c7', 'path': 'KNN__DKU__Predict Especie in iris_1.ipynb', 'name': '', 'type': 'notebook', 'start_time': 1772785552131, 'kernel': {'id': '6435ea62-50dc-4ca7-a3e6-977bf461f338', 'name': 'python3', 'last_activity': '2026-03-06T08:25:52.582615Z', 'execution_state': 'idle', 'connections': 0, 'pid': 730}, 'notebook': {'path': 'KNN__DKU__Predict Especie in iris_1.ipynb', 'name': ''}}, {'id': 'admin__DKU__a33e98a3-c291-4d96-8852-23cb9c8df01e', 'path': 'KNN__DKU__Predict Especie in iris.ipynb', 'name': '', 'type': 'notebook', 'start_time': 1772785558991, 'kernel': {'id': '1b9952d2-c5f2-428d-add2-334d44704d10', 'name': 'python3', 'last_activity': '2026-03-06T08:25:59.651004Z', 'execution_state': 'idle', 'connections': 1, 'pid': 748}, 'notebook': {'path': 'KNN__DKU__Predict Especie in iris.ipynb', 'name': ''}}]
+[2026/03/06-09:06:21.654] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=trjmormh]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=trjmormh time=0ms handler=SessionRootHandler
+[2026/03/06-09:07:03.092] [50/MainThread] [INFO] [NotebookApp]  Starting buffering for 1b9952d2-c5f2-428d-add2-334d44704d10:8c6b1cb96b104e7b981a33f6c755effc
+[2026/03/06-09:07:21.657] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=knkvmdkf]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=knkvmdkf handler=SessionRootHandler
+[2026/03/06-09:07:21.658] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=knkvmdkf]  List of active sessions: [{'id': 'admin__DKU__141d1b7f-afab-4fdf-b80d-9fa059ab40c7', 'path': 'KNN__DKU__Predict Especie in iris_1.ipynb', 'name': '', 'type': 'notebook', 'start_time': 1772785552131, 'kernel': {'id': '6435ea62-50dc-4ca7-a3e6-977bf461f338', 'name': 'python3', 'last_activity': '2026-03-06T08:25:52.582615Z', 'execution_state': 'idle', 'connections': 0, 'pid': 730}, 'notebook': {'path': 'KNN__DKU__Predict Especie in iris_1.ipynb', 'name': ''}}, {'id': 'admin__DKU__a33e98a3-c291-4d96-8852-23cb9c8df01e', 'path': 'KNN__DKU__Predict Especie in iris.ipynb', 'name': '', 'type': 'notebook', 'start_time': 1772785558991, 'kernel': {'id': '1b9952d2-c5f2-428d-add2-334d44704d10', 'name': 'python3', 'last_activity': '2026-03-06T08:25:59.651004Z', 'execution_state': 'idle', 'connections': 0, 'pid': 748}, 'notebook': {'path': 'KNN__DKU__Predict Especie in iris.ipynb', 'name': ''}}]
+[2026/03/06-09:07:21.658] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=knkvmdkf]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=knkvmdkf time=0ms handler=SessionRootHandler
+[2026/03/13-08:10:49.400] [50/MainThread] [INFO] [tornado]  Logging initialization with MDC complete
+[2026/03/13-08:10:49.809] [50/MainThread] [INFO] [NotebookApp]  Serving notebooks from local directory: /home/dataiku/dss/config/ipython_notebooks
+[2026/03/13-08:10:49.809] [50/MainThread] [INFO] [NotebookApp]  Jupyter Notebook 6.4.9-dku-14.3-0 is running at:
+[2026/03/13-08:10:49.809] [50/MainThread] [INFO] [NotebookApp]  http://127.0.0.1:10002/jupyter/
+[2026/03/13-08:10:49.809] [50/MainThread] [INFO] [NotebookApp]  Use Control-C to stop this server and shut down all kernels (twice to skip confirmation).
+[2026/03/13-08:11:53.049] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=fshumeqm]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=fshumeqm handler=SessionRootHandler
+[2026/03/13-08:11:53.052] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=fshumeqm]  List of active sessions: []
+[2026/03/13-08:11:53.052] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=fshumeqm]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=fshumeqm time=3ms handler=SessionRootHandler
+[2026/03/13-08:12:53.059] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=rgcjgqwm]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=rgcjgqwm handler=SessionRootHandler
+[2026/03/13-08:12:53.059] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=rgcjgqwm]  List of active sessions: []
+[2026/03/13-08:12:53.060] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=rgcjgqwm]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=rgcjgqwm time=0ms handler=SessionRootHandler
+[2026/03/13-08:13:53.064] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=gqidshus]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=gqidshus handler=SessionRootHandler
+[2026/03/13-08:13:53.065] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=gqidshus]  List of active sessions: []
+[2026/03/13-08:13:53.065] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=gqidshus]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=gqidshus time=0ms handler=SessionRootHandler
+[2026/03/13-08:14:53.069] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=wlpxdsex]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=wlpxdsex handler=SessionRootHandler
+[2026/03/13-08:14:53.069] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=wlpxdsex]  List of active sessions: []
+[2026/03/13-08:14:53.069] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=wlpxdsex]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=wlpxdsex time=0ms handler=SessionRootHandler
+[2026/03/13-08:15:53.072] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=wvtxtail]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=wvtxtail handler=SessionRootHandler
+[2026/03/13-08:15:53.072] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=wvtxtail]  List of active sessions: []
+[2026/03/13-08:15:53.072] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=wvtxtail]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=wvtxtail time=0ms handler=SessionRootHandler
+[2026/03/13-08:16:53.076] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=mnwvqwnw]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=mnwvqwnw handler=SessionRootHandler
+[2026/03/13-08:16:53.076] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=mnwvqwnw]  List of active sessions: []
+[2026/03/13-08:16:53.076] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=mnwvqwnw]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=mnwvqwnw time=0ms handler=SessionRootHandler
+[2026/03/13-08:17:53.080] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=inqgutsv]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=inqgutsv handler=SessionRootHandler
+[2026/03/13-08:17:53.080] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=inqgutsv]  List of active sessions: []
+[2026/03/13-08:17:53.080] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=inqgutsv]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=inqgutsv time=0ms handler=SessionRootHandler
+[2026/03/13-08:18:53.084] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=zlxbbotk]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=zlxbbotk handler=SessionRootHandler
+[2026/03/13-08:18:53.084] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=zlxbbotk]  List of active sessions: []
+[2026/03/13-08:18:53.085] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=zlxbbotk]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=zlxbbotk time=0ms handler=SessionRootHandler
+[2026/03/13-08:19:53.089] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=dmnubgnc]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=dmnubgnc handler=SessionRootHandler
+[2026/03/13-08:19:53.089] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=dmnubgnc]  List of active sessions: []
+[2026/03/13-08:19:53.089] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=dmnubgnc]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=dmnubgnc time=0ms handler=SessionRootHandler
+[2026/03/13-08:20:53.093] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=mrfeddcr]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=mrfeddcr handler=SessionRootHandler
+[2026/03/13-08:20:53.093] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=mrfeddcr]  List of active sessions: []
+[2026/03/13-08:20:53.093] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=mrfeddcr]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=mrfeddcr time=0ms handler=SessionRootHandler
+[2026/03/13-08:21:53.097] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=pswvgzzv]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=pswvgzzv handler=SessionRootHandler
+[2026/03/13-08:21:53.098] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=pswvgzzv]  List of active sessions: []
+[2026/03/13-08:21:53.098] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=pswvgzzv]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=pswvgzzv time=1ms handler=SessionRootHandler
+[2026/03/13-08:22:53.102] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=doosgqku]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=doosgqku handler=SessionRootHandler
+[2026/03/13-08:22:53.102] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=doosgqku]  List of active sessions: []
+[2026/03/13-08:22:53.102] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=doosgqku]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=doosgqku time=0ms handler=SessionRootHandler
+[2026/03/13-08:23:53.105] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=etjjlgjg]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=etjjlgjg handler=SessionRootHandler
+[2026/03/13-08:23:53.105] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=etjjlgjg]  List of active sessions: []
+[2026/03/13-08:23:53.105] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=etjjlgjg]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=etjjlgjg time=0ms handler=SessionRootHandler
+[2026/03/13-08:24:53.109] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=ynuugugk]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=ynuugugk handler=SessionRootHandler
+[2026/03/13-08:24:53.109] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=ynuugugk]  List of active sessions: []
+[2026/03/13-08:24:53.109] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=ynuugugk]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=ynuugugk time=0ms handler=SessionRootHandler
+[2026/03/13-08:25:53.112] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=ysdrrydy]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=ysdrrydy handler=SessionRootHandler
+[2026/03/13-08:25:53.112] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=ysdrrydy]  List of active sessions: []
+[2026/03/13-08:25:53.113] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=ysdrrydy]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=ysdrrydy time=0ms handler=SessionRootHandler
+[2026/03/13-08:26:53.116] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=kffxqulb]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=kffxqulb handler=SessionRootHandler
+[2026/03/13-08:26:53.116] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=kffxqulb]  List of active sessions: []
+[2026/03/13-08:26:53.116] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=kffxqulb]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=kffxqulb time=0ms handler=SessionRootHandler
+[2026/03/13-08:27:53.122] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=ghyonisn]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=ghyonisn handler=SessionRootHandler
+[2026/03/13-08:27:53.122] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=ghyonisn]  List of active sessions: []
+[2026/03/13-08:27:53.122] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=ghyonisn]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=ghyonisn time=0ms handler=SessionRootHandler
+[2026/03/13-08:28:53.128] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=dymormyp]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=dymormyp handler=SessionRootHandler
+[2026/03/13-08:28:53.128] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=dymormyp]  List of active sessions: []
+[2026/03/13-08:28:53.128] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=dymormyp]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=dymormyp time=0ms handler=SessionRootHandler
+[2026/03/13-08:29:53.134] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=fttupoac]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=fttupoac handler=SessionRootHandler
+[2026/03/13-08:29:53.134] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=fttupoac]  List of active sessions: []
+[2026/03/13-08:29:53.134] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=fttupoac]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=fttupoac time=2ms handler=SessionRootHandler
+[2026/03/13-08:30:53.139] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=gatjfooo]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=gatjfooo handler=SessionRootHandler
+[2026/03/13-08:30:53.139] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=gatjfooo]  List of active sessions: []
+[2026/03/13-08:30:53.139] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=gatjfooo]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=gatjfooo time=0ms handler=SessionRootHandler
+[2026/03/13-08:31:53.143] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=ytqerdad]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=ytqerdad handler=SessionRootHandler
+[2026/03/13-08:31:53.143] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=ytqerdad]  List of active sessions: []
+[2026/03/13-08:31:53.143] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=ytqerdad]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=ytqerdad time=0ms handler=SessionRootHandler
+[2026/03/13-08:32:53.147] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=nhwejyfb]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=nhwejyfb handler=SessionRootHandler
+[2026/03/13-08:32:53.147] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=nhwejyfb]  List of active sessions: []
+[2026/03/13-08:32:53.147] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=nhwejyfb]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=nhwejyfb time=0ms handler=SessionRootHandler
+[2026/03/13-08:33:53.150] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=lncalgax]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=lncalgax handler=SessionRootHandler
+[2026/03/13-08:33:53.150] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=lncalgax]  List of active sessions: []
+[2026/03/13-08:33:53.150] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=lncalgax]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=lncalgax time=0ms handler=SessionRootHandler
+[2026/03/13-08:34:53.154] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=yweddlgf]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=yweddlgf handler=SessionRootHandler
+[2026/03/13-08:34:53.154] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=yweddlgf]  List of active sessions: []
+[2026/03/13-08:34:53.154] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=yweddlgf]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=yweddlgf time=0ms handler=SessionRootHandler
+[2026/03/13-08:35:53.157] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=kcnspeci]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=kcnspeci handler=SessionRootHandler
+[2026/03/13-08:35:53.157] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=kcnspeci]  List of active sessions: []
+[2026/03/13-08:35:53.158] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=kcnspeci]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=kcnspeci time=0ms handler=SessionRootHandler
+[2026/03/13-08:36:53.161] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=lepgmxqr]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=lepgmxqr handler=SessionRootHandler
+[2026/03/13-08:36:53.161] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=lepgmxqr]  List of active sessions: []
+[2026/03/13-08:36:53.161] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=lepgmxqr]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=lepgmxqr time=0ms handler=SessionRootHandler
+[2026/03/13-08:37:53.164] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=ycihpgmx]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=ycihpgmx handler=SessionRootHandler
+[2026/03/13-08:37:53.165] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=ycihpgmx]  List of active sessions: []
+[2026/03/13-08:37:53.165] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=ycihpgmx]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=ycihpgmx time=0ms handler=SessionRootHandler
+[2026/03/13-08:38:53.168] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=oklusxfo]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=oklusxfo handler=SessionRootHandler
+[2026/03/13-08:38:53.168] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=oklusxfo]  List of active sessions: []
+[2026/03/13-08:38:53.168] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=oklusxfo]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=oklusxfo time=0ms handler=SessionRootHandler
+[2026/03/13-08:39:53.172] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=mtgyvtaa]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=mtgyvtaa handler=SessionRootHandler
+[2026/03/13-08:39:53.172] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=mtgyvtaa]  List of active sessions: []
+[2026/03/13-08:39:53.172] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=mtgyvtaa]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=mtgyvtaa time=0ms handler=SessionRootHandler
+[2026/03/13-08:40:53.176] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=jkigxoke]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=jkigxoke handler=SessionRootHandler
+[2026/03/13-08:40:53.176] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=jkigxoke]  List of active sessions: []
+[2026/03/13-08:40:53.176] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=jkigxoke]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=jkigxoke time=0ms handler=SessionRootHandler
+[2026/03/13-08:41:53.181] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=rdnqvdgl]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=rdnqvdgl handler=SessionRootHandler
+[2026/03/13-08:41:53.181] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=rdnqvdgl]  List of active sessions: []
+[2026/03/13-08:41:53.181] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=rdnqvdgl]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=rdnqvdgl time=0ms handler=SessionRootHandler
+[2026/03/13-08:42:53.185] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=ansebsws]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=ansebsws handler=SessionRootHandler
+[2026/03/13-08:42:53.185] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=ansebsws]  List of active sessions: []
+[2026/03/13-08:42:53.185] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=ansebsws]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=ansebsws time=0ms handler=SessionRootHandler
+[2026/03/13-08:43:53.189] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=tsxjcopl]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=tsxjcopl handler=SessionRootHandler
+[2026/03/13-08:43:53.190] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=tsxjcopl]  List of active sessions: []
+[2026/03/13-08:43:53.190] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=tsxjcopl]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=tsxjcopl time=0ms handler=SessionRootHandler
+[2026/03/13-08:44:53.194] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=hfuiyiwj]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=hfuiyiwj handler=SessionRootHandler
+[2026/03/13-08:44:53.194] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=hfuiyiwj]  List of active sessions: []
+[2026/03/13-08:44:53.194] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=hfuiyiwj]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=hfuiyiwj time=0ms handler=SessionRootHandler
+[2026/03/13-08:45:53.198] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=fgvvbtiv]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=fgvvbtiv handler=SessionRootHandler
+[2026/03/13-08:45:53.198] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=fgvvbtiv]  List of active sessions: []
+[2026/03/13-08:45:53.199] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=fgvvbtiv]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=fgvvbtiv time=0ms handler=SessionRootHandler
+[2026/03/13-08:46:53.203] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=zycdtxzn]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=zycdtxzn handler=SessionRootHandler
+[2026/03/13-08:46:53.203] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=zycdtxzn]  List of active sessions: []
+[2026/03/13-08:46:53.203] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=zycdtxzn]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=zycdtxzn time=0ms handler=SessionRootHandler
+[2026/03/13-08:47:53.207] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=sthzirwk]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=sthzirwk handler=SessionRootHandler
+[2026/03/13-08:47:53.207] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=sthzirwk]  List of active sessions: []
+[2026/03/13-08:47:53.207] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=sthzirwk]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=sthzirwk time=0ms handler=SessionRootHandler
+[2026/03/13-08:48:53.211] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=joxcxsnd]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=joxcxsnd handler=SessionRootHandler
+[2026/03/13-08:48:53.212] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=joxcxsnd]  List of active sessions: []
+[2026/03/13-08:48:53.212] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=joxcxsnd]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=joxcxsnd time=0ms handler=SessionRootHandler
+[2026/03/13-08:49:53.215] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=thbkeaii]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=thbkeaii handler=SessionRootHandler
+[2026/03/13-08:49:53.216] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=thbkeaii]  List of active sessions: []
+[2026/03/13-08:49:53.216] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=thbkeaii]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=thbkeaii time=0ms handler=SessionRootHandler
+[2026/03/13-08:50:53.220] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=blkwtzmz]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=blkwtzmz handler=SessionRootHandler
+[2026/03/13-08:50:53.220] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=blkwtzmz]  List of active sessions: []
+[2026/03/13-08:50:53.220] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=blkwtzmz]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=blkwtzmz time=0ms handler=SessionRootHandler
+[2026/03/13-08:51:53.224] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=txdqnsqy]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=txdqnsqy handler=SessionRootHandler
+[2026/03/13-08:51:53.224] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=txdqnsqy]  List of active sessions: []
+[2026/03/13-08:51:53.224] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=txdqnsqy]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=txdqnsqy time=0ms handler=SessionRootHandler
+[2026/03/13-08:52:53.228] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=pohxhyul]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=pohxhyul handler=SessionRootHandler
+[2026/03/13-08:52:53.228] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=pohxhyul]  List of active sessions: []
+[2026/03/13-08:52:53.229] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=pohxhyul]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=pohxhyul time=0ms handler=SessionRootHandler
+[2026/03/13-08:53:53.233] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=asfasznm]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=asfasznm handler=SessionRootHandler
+[2026/03/13-08:53:53.234] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=asfasznm]  List of active sessions: []
+[2026/03/13-08:53:53.234] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=asfasznm]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=asfasznm time=0ms handler=SessionRootHandler
+[2026/03/13-08:54:53.239] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=akhgxfnp]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=akhgxfnp handler=SessionRootHandler
+[2026/03/13-08:54:53.239] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=akhgxfnp]  List of active sessions: []
+[2026/03/13-08:54:53.239] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=akhgxfnp]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=akhgxfnp time=0ms handler=SessionRootHandler
+[2026/03/13-08:55:53.243] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=xsqiuhrf]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=xsqiuhrf handler=SessionRootHandler
+[2026/03/13-08:55:53.243] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=xsqiuhrf]  List of active sessions: []
+[2026/03/13-08:55:53.244] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=xsqiuhrf]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=xsqiuhrf time=0ms handler=SessionRootHandler
+[2026/03/13-08:56:53.247] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=dumchnoj]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=dumchnoj handler=SessionRootHandler
+[2026/03/13-08:56:53.248] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=dumchnoj]  List of active sessions: []
+[2026/03/13-08:56:53.248] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=dumchnoj]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=dumchnoj time=0ms handler=SessionRootHandler
+[2026/03/13-08:57:53.254] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=aamvvbvw]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=aamvvbvw handler=SessionRootHandler
+[2026/03/13-08:57:53.254] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=aamvvbvw]  List of active sessions: []
+[2026/03/13-08:57:53.254] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=aamvvbvw]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=aamvvbvw time=1ms handler=SessionRootHandler
+[2026/03/13-08:58:53.259] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=dlctnwzm]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=dlctnwzm handler=SessionRootHandler
+[2026/03/13-08:58:53.259] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=dlctnwzm]  List of active sessions: []
+[2026/03/13-08:58:53.260] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=dlctnwzm]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=dlctnwzm time=0ms handler=SessionRootHandler
+[2026/03/13-08:59:53.263] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=pbdqamqg]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=pbdqamqg handler=SessionRootHandler
+[2026/03/13-08:59:53.263] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=pbdqamqg]  List of active sessions: []
+[2026/03/13-08:59:53.263] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=pbdqamqg]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=pbdqamqg time=0ms handler=SessionRootHandler
+[2026/03/13-09:00:53.268] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=qpnaqerw]  Start call: /jupyter/api/sessions [GET] user=pintercom call_id=qpnaqerw handler=SessionRootHandler
+[2026/03/13-09:00:53.268] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=qpnaqerw]  List of active sessions: []
+[2026/03/13-09:00:53.268] [50/MainThread] [INFO] [NotebookApp] [dku_call_id=qpnaqerw]  Done call: /jupyter/api/sessions [GET] user=pintercom call_id=qpnaqerw time=0ms handler=SessionRootHandler
