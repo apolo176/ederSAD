@@ -1,0 +1,19 @@
+# Entornos virtuales (venv)
+.venv/
+venv/
+env/
+bin/
+lib/
+include/
+
+# Configuración de PyCharm/VSCode
+.idea/
+.vscode/
+
+# Basura de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Tus carpetas de salida (opcional, si quieres empezar limpio en clase)
+output/
