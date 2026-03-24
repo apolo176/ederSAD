@@ -198,7 +198,7 @@ def preparar_y_dividir(data):
         print(Fore.CYAN + "Mapeo de etiquetas guardado." + Fore.RESET)
 
     # División estratificada. Podemos darle mas instancias a test cambiando el 0.2
-    x_train, x_dev, y_train, y_dev = train_test_split(X, y, test_size=0.2, stratify=y, random_state=42)
+    x_train, x_dev, y_train, y_dev = train_test_split(X, y, test_size=args.preprocessing.get("test_size", 0.2), stratify=y, random_state=42)
 
     return x_train, x_dev, y_train, y_dev
 

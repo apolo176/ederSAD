@@ -8,19 +8,25 @@
     "text_features" : [],
     "text_process": "tf-idf",
     "sampling": "undersampling",
-    "drop_features": []
+    "drop_features": [],
+    "test_size": 0.2
   },
   "kNN": {
     "clasificador__n_neighbors": [3, 5, 7, 9],
-    "clasificador__weights": ["uniform", "distance"]
+    "clasificador__weights": ["uniform", "distance"],
+    "clasificador__metric": ["euclidean", "manhattan"]
   },
   "decision_tree": {
     "clasificador__criterion": ["gini", "entropy"],
-    "clasificador__max_depth": [null, 10, 20, 30]
+    "clasificador__max_depth": [null, 10, 20],
+    "clasificador__min_samples_split": [2, 5, 10],
+    "clasificador__min_samples_leaf": [1, 2, 4]
   },
   "random_forest": {
-    "clasificador__n_estimators": [50, 100, 200],
-    "clasificador__max_depth": [null, 10, 20]
+    "clasificador__n_estimators": [50, 100],
+    "clasificador__max_depth": [null, 10],
+    "clasificador__min_samples_split": [2, 5],
+    "clasificador__min_samples_leaf": [1, 2]
   },
   "naive_bayes": {
     "clasificador__var_smoothing": [1e-9, 1e-8, 1e-7, 1e-6, 1e-5]
