@@ -12,7 +12,7 @@
     "test_size": 0.2
   },
   "kNN": {
-    "clasificador__n_neighbors": [3, 5, 7, 9],
+    "clasificador__n_neighbors": {"min": 1, "max": 15, "step": 2},
     "clasificador__weights": ["uniform", "distance"],
     "clasificador__metric": ["euclidean", "manhattan"]
   },

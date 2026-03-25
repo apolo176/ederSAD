@@ -93,88 +93,6 @@ def calculate_confusion_matrix(y_true, y_pred):
 # =======================================================================================================
 # ------------------------------------------ PREPROCESADO -----------------------------------------------
 # =======================================================================================================
-# Esto antes hacia el preprocesado podriamos meterlo si hay un desastre en el examen pero se inventa
-# columnas si las necesita en test y hace cosas chungas
-
-#def preparar_y_dividir(data):
-#    """
-#    1. Divide estratificadamente.
-#    2. Imputa, escala y codifica (entrenando en train, aplicando en train y dev).
-#    3. Balancea SOLO el train.
-#    """
-#    print("- Dividiendo datos (Train/Dev)...")
-#    X = data.drop(columns=[args.prediction])
-#    y = data[args.prediction]
-#
-#    # 1. División estratificada
-#    x_train, x_dev, y_train, y_dev = train_test_split(X, y, test_size=0.2, stratify=y, random_state=42)
-#
-#    # 2. Borrado de columnas innecesarias
-#    drop_cols = args.preprocessing.get("drop_features", [])
-#    drop_cols = [c for c in drop_cols if c in x_train.columns]
-#    if drop_cols:
-#        x_train = x_train.drop(columns=drop_cols)
-#        x_dev = x_dev.drop(columns=drop_cols)
-#
-#    # 3. Tratamiento de valores nulos (Imputación)
-#    if args.preprocessing["missing_values"] == "impute":
-#        strategy = args.preprocessing.get("impute_strategy", "mean")
-#        num_cols = x_train.select_dtypes(include=['int64', 'float64']).columns
-#
-#        if len(num_cols) > 0:
-#            imputer = SimpleImputer(strategy=strategy)
-#            x_train[num_cols] = imputer.fit_transform(x_train[num_cols])
-#            x_dev[num_cols] = imputer.transform(x_dev[num_cols])
-#
-#        # Imputar categóricas con moda (most frequent)
-#        cat_cols = x_train.select_dtypes(include=['object']).columns
-#        if len(cat_cols) > 0:
-#            cat_imputer = SimpleImputer(strategy='most_frequent')
-#            x_train[cat_cols] = cat_imputer.fit_transform(x_train[cat_cols])
-#            x_dev[cat_cols] = cat_imputer.transform(x_dev[cat_cols])
-#
-#    # 4. Codificación Categóricas a Numéricas (Label Encoding)
-#    cat_cols = x_train.select_dtypes(include=['object']).columns
-#    for col in cat_cols:
-#        le = LabelEncoder()
-#        # Entrenamos con todos los valores posibles uniendo train y dev para evitar errores de clases nuevas
-#        le.fit(pd.concat([x_train[col], x_dev[col]]))
-#        x_train[col] = le.transform(x_train[col])
-#        x_dev[col] = le.transform(x_dev[col])
-#
-#    # 5. Escalado
-#    scale_method = args.preprocessing.get("scaling", "standard")
-#    scaler = None
-#    if scale_method == "standard":
-#        scaler = StandardScaler()
-#    elif scale_method == "minmax":
-#        scaler = MinMaxScaler()
-#    elif scale_method == "maxabs":
-#        scaler = MaxAbsScaler()
-#
-#    if scaler:
-#        x_train[x_train.columns] = scaler.fit_transform(x_train)
-#        x_dev[x_dev.columns] = scaler.transform(x_dev)
-#
-#    # 6. Balanceo de clases (SOLO EN TRAIN)
-#    sampling = args.preprocessing.get("sampling", "none")
-#    if sampling == "undersampling":
-#        print("- Aplicando Undersampling al Train...")
-#        sampler = RandomUnderSampler(random_state=42)
-#        x_train, y_train = sampler.fit_resample(x_train, y_train)
-#    elif sampling == "oversampling":
-#        print("- Aplicando Oversampling al Train...")
-#        sampler = RandomOverSampler(random_state=42)
-#        x_train, y_train = sampler.fit_resample(x_train, y_train)
-#
-#    # Guardamos los CSV post-procesados como te pidió la profesora
-#    train_post = pd.concat([x_train, y_train], axis=1)
-#    dev_post = pd.concat([x_dev, y_dev], axis=1)
-#    train_post.to_csv('output/trainPostProcesado.csv', index=False)
-#    dev_post.to_csv('output/DevPostProcesado.csv', index=False)
-#    print(Fore.GREEN + "Datos preprocesados y guardados en 'output/'" + Fore.RESET)
-#
-#    return x_train, x_dev, y_train, y_dev
 
 # Aqui dividimos train y dev. Primero separamos la columna objetivo y las demas y luego borramos las columnas que aparezcan en drop_features
 def preparar_y_dividir(data):
@@ -379,6 +297,18 @@ def mostrar_resultados_tabla(gs, x_dev, y_dev, algoritmo_nombre):
 # =======================================================================================================
 # ------------------------------------------- ALGORITMOS ------------------------------------------------
 # =======================================================================================================
+#Helper para sacar el rango
+def procesar_parametros(params_crudos):
+    params_limpios = {}
+    for clave, valor in params_crudos.items():
+        # Si detecta tu truco del diccionario min/max/step...
+        if isinstance(valor, dict) and "min" in valor and "max" in valor and "step" in valor:
+            # Crea la lista automáticamente (ej: del 1 al 100 de 5 en 5)
+            params_limpios[clave] = list(range(valor["min"], valor["max"] + 1, valor["step"]))
+        else:
+            # Si es una lista normal (como ["uniform", "distance"]), la deja igual
+            params_limpios[clave] = valor
+    return params_limpios
 
 def ejecutar_modelo(algoritmo_nombre, x_train, x_dev, y_train, y_dev):
     print(f"\n- Construyendo pipeline y entrenando {algoritmo_nombre} con GridSearchCV...")
@@ -390,12 +320,14 @@ def ejecutar_modelo(algoritmo_nombre, x_train, x_dev, y_train, y_dev):
     # Obtenemos los parámetros del JSON según el algoritmo elegido
     if algoritmo_nombre == "knn":
         params = args.kNN
+        params = procesar_parametros(params)
     elif algoritmo_nombre == "decision_tree":
         params = args.decision_tree
     elif algoritmo_nombre == "random_forest":
         params = args.random_forest
     elif algoritmo_nombre == "naive_bayes":
         params = args.naive_bayes
+
 
     # Entrenamos buscando los mejores hiperparámetros
     gs = GridSearchCV(pipeline, params, cv=5, n_jobs=args.cpu, scoring=args.estimator)
@@ -477,3 +409,50 @@ if __name__ == "__main__":
     else:
         print(Fore.RED + "Modo no soportado" + Fore.RESET)
         sys.exit(1)
+
+
+"""
+==================================================================================================
+CHULETA DE SUPERVIVENCIA - EXAMEN S.A.D. (Sistemas de Ayuda a la Decisión)
+==================================================================================================
+
+1. MÉTRICAS DE EVALUACIÓN (¿Cuál elijo y por qué?)
+--------------------------------------------------
+- Accuracy (Exactitud): % de aciertos totales. MIENTE si los datos están desbalanceados (ej. 99% sanos, 1% enfermos. Si digo siempre "sano", tengo 99% accuracy pero el modelo es inútil).
+- Precision: De todos los que el modelo dijo que eran de la Clase X, ¿cuántos lo eran realmente? (Útil si los Falsos Positivos son muy caros/peligrosos).
+- Recall (Exhaustividad): De todos los que REALMENTE eran de la Clase X, ¿cuántos encontró el modelo? (Útil en medicina: no quieres dejar escapar a un enfermo, Falsos Negativos).
+- F1-Score: La media armónica entre Precision y Recall. Es la métrica REINA para clases desbalanceadas.
+    * F1 'macro': Calcula el F1 para cada clase y hace la media aritmética. Trata a todas las clases por igual. USA ESTA SI LA PROFESORA TE PIDE QUE LA CLASE MINORITARIA IMPORTE TANTO COMO LA MAYORITARIA.
+    * F1 'micro': Suma todos los Verdaderos Positivos, Falsos Positivos, etc., globalmente. (En multiclase, suele ser igual al Accuracy).
+    * F1 'weighted': Hace la media pero dándole más peso a las clases que tienen más muestras.
+    * F1 'None': Devuelve un array con la nota exacta de cada clase por separado. Ideal para ver si el modelo ignora alguna clase.
+
+2. BALANCEO DE DATOS (Undersampling / Oversampling)
+---------------------------------------------------
+- ¿Para qué sirve?: Para que el modelo no se vuelva "vago" y prediga siempre la clase mayoritaria.
+- ¿Qué pasa si la profesora me dice "Quita el balanceo y compara"?: 
+  Ve al JSON, pon "sampling": "none", ejecuta y mira el 'F1 (None)'. Verás que la clase minoritaria (la que tiene menos datos) pasa a tener un F1 muy bajo o 0. El modelo la ha ignorado porque le sale más rentable predecir la mayoritaria.
+- REGLA DE ORO: El balanceo SOLO se aplica al conjunto de entrenamiento (Train). Nunca al Dev ni al Test (por eso usamos el Pipeline de imblearn).
+
+3. PREPROCESAMIENTO: TF-IDF vs ONE-HOT ENCODER
+----------------------------------------------
+- One-Hot Encoder: Crea columnas de 0s y 1s. Útil para categorías cerradas y cortas (ej. Color: Rojo, Verde, Azul).
+- TF-IDF (Term Frequency - Inverse Document Frequency): Útil SOLO para TEXTO LIBRE (ej. descripciones, tweets). 
+  * ¿Cómo funciona?: Cuenta cuántas veces aparece una palabra en una fila, pero la PENALIZA si esa palabra aparece en todas las filas (ej. "el", "la", "de"). Así se queda solo con las palabras clave que diferencian a las clases.
+
+4. HIPERPARÁMETROS CLAVE (Búsqueda GridSearchCV)
+------------------------------------------------
+- kNN: 
+  * K (n_neighbors): Busca siempre impares (para evitar empates). La mejor K suele rondar la raíz cuadrada del nº de filas.
+  * weights: 'distance' da más peso a los puntos cercanos (útil para desempatar zonas densas).
+- Árboles (Decision Tree / Random Forest): 
+  * max_depth: Frena el crecimiento. Evita que el árbol se aprenda los datos de memoria (Overfitting).
+  * min_samples_split / leaf: Exige un mínimo de datos para crear una rama/hoja. Suaviza el modelo.
+- Rango de hiperparámetros: Si usamos un diccionario {"min": 1, "max": 10, "step": 2}, hacemos un barrido grueso a fino de forma automatizada.
+
+5. ARQUITECTURA DEL CÓDIGO (Data Leakage y Pipelines)
+-----------------------------------------------------
+- ¿Por qué el escalador (Z-score) y el imputador van DENTRO de un Pipeline?
+  Para evitar la "Fuga de Datos" (Data Leakage). El escalador debe calcular la media y desviación estándar SOLO con x_train. Luego, usa esos mismos valores guardados para transformar x_dev y Test. Si escaláramos todo el CSV antes de dividirlo, estaríamos haciendo trampa porque el modelo "vería" información del futuro.
+==================================================================================================
+"""
