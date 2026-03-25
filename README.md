@@ -5,7 +5,7 @@ Este proyecto implementa un flujo completo de Machine Learning automatizado para
 ## 🛠️ Requisitos e Instalación
 
 
-1. Crea y activa un entorno virtual conda
+1. Crea y activa un entorno virtual conda / venv
 
 2. Instala las dependencias necesarias:
 
