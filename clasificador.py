@@ -41,7 +41,14 @@ import re
 # Descargas necesarias de NLTK
 nltk.download('punkt')
 nltk.download('stopwords')
-
+class DenseTransformer(BaseEstimator, TransformerMixin):
+    def fit(self, X, y=None):
+        return self
+    def transform(self, X):
+        # Si es una matriz dispersa de scipy, la convertimos a array de numpy
+        if hasattr(X, "toarray"):
+            return X.toarray()
+        return X
 class TextCleaner(BaseEstimator, TransformerMixin):
     def __init__(self, language='spanish'):
         self.language = language
@@ -149,56 +156,57 @@ def preparar_y_dividir(data):
 
 # Flujo para los datos Pasito a Pasito suave suavesito
 def crear_pipeline(algoritmo_nombre, x_train):
-    # Paso 1. Identificar columnas por tipo (Texto, numero, o categorias
-    num_cols = x_train.select_dtypes(include=['int64', 'float64']).columns.tolist()
+    # 1. Identificar columnas dinámicamente
+    # Sacamos las de texto primero (vienen del JSON de config)
     text_cols = args.preprocessing.get("text_features", [])
-    cat_cols = x_train.select_dtypes(include=['object', 'category']).columns.tolist()
 
-    # 2. Pipeline para números: Imputar -> Escalar
-    scale_method = args.preprocessing.get("scaling", "standard").lower()
+    # Columnas numéricas: Todo lo que sea float o int y NO esté en text_cols
+    num_cols = [c for c in x_train.select_dtypes(include=['int64', 'float64']).columns
+                if c not in text_cols]
 
-    if scale_method == "minmax":
-        scaler = MinMaxScaler()
-    elif scale_method == "maxabs":
-        scaler = MaxAbsScaler()
-    elif scale_method in ["standard", "z-score", "zscore"]:
-        scaler = StandardScaler()
-    else:
-        scaler = StandardScaler()
+    # Columnas categóricas: Todo lo que sea object/category y NO esté en text_cols
+    cat_cols = [c for c in x_train.select_dtypes(include=['object', 'category']).columns
+                if c not in text_cols]
 
-    #Estrategias: mean(Media Solo numericos), median (Mediana), most_frequent (Moda), constant ("constant", valorConst)
-    num_transformer = ImbPipeline(steps=[
-        ('imputer', SimpleImputer(strategy=args.preprocessing.get("impute_strategy", "mean"))),
-        ('scaler', scaler)
-    ])
+    transformers = []
 
-    #Paso 3. Pipeline para categorías: Imputar moda -> OneHotEncoder (ignora categorías nuevas en test)
-    cat_transformer = ImbPipeline(steps=[
-        ('imputer', SimpleImputer(strategy='most_frequent')),
-        ('encoder', OneHotEncoder(handle_unknown='ignore', sparse_output=False))
-    ])
+    # 2. Añadir rama Numérica (si existen)
+    if num_cols:
+        scale_method = args.preprocessing.get("scaling", "standard").lower()
+        scaler = StandardScaler()  # Default
+        if scale_method == "minmax":
+            scaler = MinMaxScaler()
+        elif scale_method == "maxabs":
+            scaler = MaxAbsScaler()
 
-    #Paso 4. Texto (TF-IDF)
-    #Esto necesita ser un pipeline propio por que patata
-    def get_text_pipeline():
-        return ImbPipeline(steps=[
-            ('limpiador', TextCleaner(language=args.preprocessing.get("language", "english"))),
-            ('tfidf', TfidfVectorizer())
+        num_transformer = ImbPipeline(steps=[
+            ('imputer', SimpleImputer(strategy=args.preprocessing.get("impute_strategy", "mean"))),
+            ('scaler', scaler)
         ])
-    transformers = [
-        ('num', num_transformer, num_cols),
-        ('cat', cat_transformer, cat_cols)
-    ]
+        transformers.append(('num', num_transformer, num_cols))
 
-    # Solo añadimos la rama de texto si hay columnas definidas
+    # 3. Añadir rama Categórica (si existen)
+    if cat_cols:
+        cat_transformer = ImbPipeline(steps=[
+            ('imputer', SimpleImputer(strategy='most_frequent')),
+            ('encoder', OneHotEncoder(handle_unknown='ignore', sparse_output=False))
+        ])
+        transformers.append(('cat', cat_transformer, cat_cols))
+
+    # 4. Añadir ramas de Texto (una por cada columna de texto)
     for col in text_cols:
         if col in x_train.columns:
-            # TF-IDF trabaja columna por columna, le pasamos el nombre
-            transformers.append((f'text_{col}', get_text_pipeline(), col))
+            text_pipeline = ImbPipeline(steps=[
+                ('limpiador', TextCleaner(language=args.preprocessing.get("language", "spanish"))),
+                ('tfidf', TfidfVectorizer())
+            ])
+            transformers.append((f'text_{col}', text_pipeline, col))
 
-    #Paso 4: Unir preprocesamiento con ColumnTransformer
+    # Si por casualidad el JSON viene vacío de columnas útiles
+    if not transformers:
+        raise ValueError("No se detectaron columnas para procesar. Revisa el JSON y el CSV.")
+
     preprocessor = ColumnTransformer(transformers=transformers)
-
     # 5. Seleccionar el modelo
     if algoritmo_nombre == "knn":
         modelo = KNeighborsClassifier()
@@ -223,6 +231,9 @@ def crear_pipeline(algoritmo_nombre, x_train):
     pasos = [('preprocesador', preprocessor)]
     if sampler is not None:
         pasos.append(('balanceo', sampler))
+    if algoritmo_nombre == "naive_bayes":
+        pasos.append(('to_dense', DenseTransformer()))
+
     pasos.append(('clasificador', modelo))
 
     pipeline_final = ImbPipeline(steps=pasos)
