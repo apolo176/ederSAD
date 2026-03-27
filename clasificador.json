@@ -9,7 +9,8 @@
     "text_process": "tf-idf",
     "sampling": "undersampling",
     "drop_features": [],
-    "test_size": 0.2
+    "test_size": 0.2,
+    "language":"spanish"
   },
   "kNN": {
     "clasificador__n_neighbors": {"min": 1, "max": 15, "step": 2},

@@ -35,7 +35,34 @@ import nltk
 from imblearn.under_sampling import RandomUnderSampler
 from imblearn.over_sampling import RandomOverSampler
 from tqdm import tqdm
+from sklearn.base import BaseEstimator, TransformerMixin
+import re
 
+# Descargas necesarias de NLTK
+nltk.download('punkt')
+nltk.download('stopwords')
+
+class TextCleaner(BaseEstimator, TransformerMixin):
+    def __init__(self, language='spanish'):
+        self.language = language
+        self.stop_words = set(nltk.corpus.stopwords.words(self.language))
+
+    def fit(self, X, y=None):
+        return self
+
+    def transform(self, X):
+        # Si X es una Serie de Pandas, la procesamos
+        return X.apply(self._clean)
+
+    def _clean(self, text):
+        if not isinstance(text, str):
+            return ""
+        # 1. Minúsculas y quitar caracteres raros
+        text = re.sub(r'[^\w\s]', '', text.lower())
+        # 2. Tokenización simple y quitar stopwords
+        tokens = nltk.word_tokenize(text)
+        filtered = [w for w in tokens if w not in self.stop_words]
+        return " ".join(filtered)
 
 def signal_handler(sig, frame):
     print("\nSaliendo del programa...")
@@ -152,9 +179,10 @@ def crear_pipeline(algoritmo_nombre, x_train):
     ])
 
     #Paso 4. Texto (TF-IDF)
-    #Esto necesita ser un pipeline por que patata
+    #Esto necesita ser un pipeline propio por que patata
     def get_text_pipeline():
         return ImbPipeline(steps=[
+            ('limpiador', TextCleaner(language=args.preprocessing.get("language", "english"))),
             ('tfidf', TfidfVectorizer())
         ])
     transformers = [
@@ -165,7 +193,7 @@ def crear_pipeline(algoritmo_nombre, x_train):
     # Solo añadimos la rama de texto si hay columnas definidas
     for col in text_cols:
         if col in x_train.columns:
-            # TF-IDF suele trabajar columna por columna, le pasamos el nombre
+            # TF-IDF trabaja columna por columna, le pasamos el nombre
             transformers.append((f'text_{col}', get_text_pipeline(), col))
 
     #Paso 4: Unir preprocesamiento con ColumnTransformer

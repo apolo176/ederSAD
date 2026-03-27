@@ -5,8 +5,12 @@ Este proyecto implementa un flujo completo de Machine Learning automatizado para
 ## 🛠️ Requisitos e Instalación
 
 
-1. Crea y activa un entorno virtual conda / venv
-
+1. Crea y activa un entorno virtual conda / venv : Python 3.12.3
+```bash
+conda create -n eder python=3.12.3
+conda activate eder
+conda install pip
+```
 2. Instala las dependencias necesarias:
 
 ```bash
@@ -16,7 +20,7 @@ pip install -r requirements.txt
 
 Toda la lógica de preprocesamiento, selección de algoritmos y barrido de hiperparámetros se controla desde clasificador.json.
 
-El pipeline detectará automáticamente qué columnas son numéricas o categóricas. Tenemos que indicar en el json las de texto libre (text_features).
+El pipeline detectará automáticamente qué columnas son numéricas o categóricas. Tenemos que indicar en el json las de texto libre (text_features). Tambien podemos borrar columnas innecesarias indicandolo en drop_features.
 
 ## 🚀 Modos de Ejecución
 

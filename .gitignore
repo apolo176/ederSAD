@@ -17,3 +17,4 @@ __pycache__/
 
 # Tus carpetas de salida (opcional, si quieres empezar limpio en clase)
 output/
+dataiku_data/
