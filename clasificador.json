@@ -1,11 +1,10 @@
 {
   "preprocessing": {
     "unique_category_threshold": 10,
-    "categorical_features": [],
     "missing_values": "impute",
     "impute_strategy": "mean",
-    "scaling": "standard",
-    "text_features" : [],
+    "scaling": "minmax",
+    "text_features" : ["texto"],
     "text_process": "tf-idf",
     "sampling": "undersampling",
     "drop_features": [],
@@ -19,17 +18,21 @@
   },
   "decision_tree": {
     "clasificador__criterion": ["gini", "entropy"],
-    "clasificador__max_depth": [null, 10, 20],
-    "clasificador__min_samples_split": [2, 5, 10],
-    "clasificador__min_samples_leaf": [1, 2, 4]
+    "clasificador__max_depth": {"min": 5, "max": 20, "step": 5},
+    "clasificador__min_samples_split": {"min": 2, "max": 10, "step": 2},
+    "clasificador__min_samples_leaf": {"min": 1, "max": 5, "step": 1}
   },
   "random_forest": {
-    "clasificador__n_estimators": [50, 100],
+    "clasificador__n_estimators": {"min": 50, "max": 250, "step": 50},
     "clasificador__max_depth": [null, 10],
-    "clasificador__min_samples_split": [2, 5],
-    "clasificador__min_samples_leaf": [1, 2]
+    "clasificador__min_samples_split": {"min": 2, "max": 10, "step": 2},
+    "clasificador__min_samples_leaf": {"min": 1, "max": 5, "step": 1}
   },
   "naive_bayes": {
     "clasificador__var_smoothing": [1e-9, 1e-8, 1e-7, 1e-6, 1e-5]
+  },
+  "multinomial_nb": {
+    "clasificador__alpha": [0.01, 0.1, 0.5, 1.0, 5.0, 10.0],
+    "clasificador__fit_prior": [true, false]
   }
 }

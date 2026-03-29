@@ -18,7 +18,7 @@ from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.preprocessing import MaxAbsScaler, MinMaxScaler, StandardScaler, LabelEncoder
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 from sklearn.neighbors import KNeighborsClassifier
-from sklearn.naive_bayes import GaussianNB
+from sklearn.naive_bayes import GaussianNB, MultinomialNB
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.impute import SimpleImputer
@@ -40,6 +40,7 @@ import re
 
 # Descargas necesarias de NLTK
 nltk.download('punkt')
+nltk.download('punkt_tab')  # <--- ¡Añade esta línea!
 nltk.download('stopwords')
 class DenseTransformer(BaseEstimator, TransformerMixin):
     def fit(self, X, y=None):
@@ -215,7 +216,9 @@ def crear_pipeline(algoritmo_nombre, x_train):
     elif algoritmo_nombre == "random_forest":
         modelo = RandomForestClassifier(random_state=42)
     elif algoritmo_nombre == "naive_bayes":
-        modelo = GaussianNB()
+        modelo = GaussianNB() # Solo para números (necesita DenseTransformer si hay texto)
+    elif algoritmo_nombre == "multinomial_nb":
+        modelo = MultinomialNB() # El rey del texto
     else:
         raise ValueError("Algoritmo no soportado")
 
@@ -277,7 +280,7 @@ def mostrar_resultados(gs, x_dev, y_dev):
 
 
 
-def mostrar_resultados_tabla(gs, x_dev, y_dev, algoritmo_nombre):
+def mostrar_resultados_tabla(gs, x_train, y_train,x_dev, y_dev, algoritmo_nombre):
     print(Fore.CYAN + "\n- Extrayendo TODAS las métricas para TODOS los modelos probados..." + Fore.RESET)
 
     lista_resultados = []
@@ -359,14 +362,17 @@ def ejecutar_modelo(algoritmo_nombre, x_train, x_dev, y_train, y_dev):
     # Obtenemos los parámetros del JSON según el algoritmo elegido
     if algoritmo_nombre == "knn":
         params = args.kNN
-        params = procesar_parametros(params)
     elif algoritmo_nombre == "decision_tree":
         params = args.decision_tree
     elif algoritmo_nombre == "random_forest":
         params = args.random_forest
-    elif algoritmo_nombre == "naive_bayes":
+    elif algoritmo_nombre == "naive_bayes" :
         params = args.naive_bayes
+    elif algoritmo_nombre == "multinomial_nb":
+        params = args.multinomial_nb
+    
 
+    params = procesar_parametros(params)
 
     # Entrenamos buscando los mejores hiperparámetros
     gs = GridSearchCV(pipeline, params, cv=5, n_jobs=args.cpu, scoring=args.estimator)
@@ -376,7 +382,7 @@ def ejecutar_modelo(algoritmo_nombre, x_train, x_dev, y_train, y_dev):
     print("Tiempo de ejecución:" + Fore.MAGENTA, round(end_time - start_time, 2), Fore.RESET + "segundos")
 
     # muestra resultados
-    mostrar_resultados_tabla(gs, x_dev, y_dev, algoritmo_nombre)
+    mostrar_resultados_tabla(gs, x_train,y_train, x_dev, y_dev, algoritmo_nombre)
     save_model(gs, y_dev, x_dev)
 
 # =======================================================================================================
