@@ -40,7 +40,7 @@ import re
 
 # Descargas necesarias de NLTK
 nltk.download('punkt')
-nltk.download('punkt_tab')  # <--- ¡Añade esta línea!
+nltk.download('punkt_tab')  
 nltk.download('stopwords')
 class DenseTransformer(BaseEstimator, TransformerMixin):
     def fit(self, X, y=None):
@@ -81,7 +81,7 @@ def parse_args():
     parse = argparse.ArgumentParser(description="Practica de algoritmos de clasificación de datos.")
     parse.add_argument("-m", "--mode", help="Modo de ejecución (train o test)", required=True)
     parse.add_argument("-f", "--file", help="Fichero csv", required=True)
-    parse.add_argument("-a", "--algorithm", help="Algoritmo (kNN, decision_tree o random_forest)", required=False,
+    parse.add_argument("-a", "--algorithm", help="Algoritmo (kNN, decision_tree, random_forest o naive_bayes(gaussianNB o multinomialNB))", required=False,
                        default="kNN")
     parse.add_argument("-p", "--prediction", help="Columna a predecir", required=True)
     parse.add_argument("-e", "--estimator", help="Estimador a utilizar", required=False, default="f1_macro")
