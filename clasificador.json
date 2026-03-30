@@ -3,17 +3,17 @@
     "unique_category_threshold": 10,
     "missing_values": "impute",
     "impute_strategy": "mean",
-    "scaling": "minmax",
-    "text_features" : ["texto"],
+    "scaling": "z-score",
+    "text_features" : [],
     "text_process": "tf-idf",
-    "sampling": "undersampling",
+    "sampling": "oversampling",
     "drop_features": [],
     "test_size": 0.2,
     "language":"spanish"
   },
   "kNN": {
-    "clasificador__n_neighbors": {"min": 1, "max": 15, "step": 2},
-    "clasificador__weights": ["uniform", "distance"],
+    "clasificador__n_neighbors": {"min": 3, "max": 7, "step": 2},
+    "clasificador__weights": ["distance", "uniform"],
     "clasificador__metric": ["euclidean", "manhattan"]
   },
   "decision_tree": {
@@ -23,10 +23,10 @@
     "clasificador__min_samples_leaf": {"min": 1, "max": 5, "step": 1}
   },
   "random_forest": {
-    "clasificador__n_estimators": {"min": 50, "max": 250, "step": 50},
-    "clasificador__max_depth": [null, 10],
-    "clasificador__min_samples_split": {"min": 2, "max": 10, "step": 2},
-    "clasificador__min_samples_leaf": {"min": 1, "max": 5, "step": 1}
+    "clasificador__n_estimators": {"min": 177, "max": 183, "step": 3},
+    "clasificador__max_depth": [6, 13, 17],
+    "clasificador__min_samples_split": {"min": 7, "max": 10, "step": 2},
+    "clasificador__min_samples_leaf": {"min": 1, "max": 5, "step": 2}
   },
   "naive_bayes": {
     "clasificador__var_smoothing": [1e-9, 1e-8, 1e-7, 1e-6, 1e-5]

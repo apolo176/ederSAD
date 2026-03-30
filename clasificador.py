@@ -32,8 +32,8 @@ from imblearn.pipeline import Pipeline as ImbPipeline
 import nltk
 
 # Imblearn
-from imblearn.under_sampling import RandomUnderSampler
-from imblearn.over_sampling import RandomOverSampler
+from imblearn.under_sampling import RandomUnderSampler, EditedNearestNeighbours
+from imblearn.over_sampling import RandomOverSampler, SMOTE, ADASYN
 from tqdm import tqdm
 from sklearn.base import BaseEstimator, TransformerMixin
 import re
@@ -229,13 +229,20 @@ def crear_pipeline(algoritmo_nombre, x_train):
         sampler = RandomUnderSampler(random_state=42)
     elif sampling == "oversampling":
         sampler = RandomOverSampler(random_state=42)
+    elif sampling == "smote":
+        sampler = SMOTE(random_state=42)
+    elif sampling == "ADASYN":
+        sampler = ADASYN(random_state=42)
+    elif sampling == "edited_nearest_neighbor":
+        sampler = EditedNearestNeighbours(random_state=42)
+
 
     # 7. Construir el Pipeline final (Preproceso -> Balanceo -> Modelo)
     pasos = [('preprocesador', preprocessor)]
     if sampler is not None:
         pasos.append(('balanceo', sampler))
     if algoritmo_nombre == "naive_bayes":
-        pasos.append(('to_dense', DenseTransformer()))
+        pasos.append(('to_den se', DenseTransformer()))
 
     pasos.append(('clasificador', modelo))
 
@@ -275,7 +282,6 @@ def mostrar_resultados(gs, x_dev, y_dev):
     if args.verbose:
         print(Fore.YELLOW + "> Informe de clasificación:\n" + Fore.RESET,
               calculate_classification_report(y_dev, y_pred))
-        print(Fore.YELLOW + "> Matriz de confusión:\n" + Fore.RESET, calculate_confusion_matrix(y_dev, y_pred))
 
 
 
@@ -330,6 +336,7 @@ def mostrar_resultados_tabla(gs, x_train, y_train,x_dev, y_dev, algoritmo_nombre
 
     print(Fore.MAGENTA + f"\n--- TABLA COMPLETA DE MODELOS PROBADOS ({algoritmo_nombre}) ---" + Fore.RESET)
     print(df_todos.to_string(index=False))
+    print(Fore.YELLOW + "> Matriz de confusión:\n" + Fore.RESET, calculate_confusion_matrix(y_dev, y_pred))
 
     # 7. Guardamos en CSV para la profesora
     archivo_salida = f'output/metricas_completas_{algoritmo_nombre}.csv'
